@@ -114,23 +114,23 @@
 
 ## 6. Define the Daily Coaching Engine
 
-- [ ] Choose default daily session duration.
-- [ ] Support configurable session lengths.
-- [ ] Define the optimization objective for session assembly.
-- [ ] Balance:
-  - [ ] exam weighting,
-  - [ ] weakest areas,
-  - [ ] spaced review,
-  - [ ] skill freshness,
-  - [ ] learner fatigue,
-  - [ ] exam-date urgency,
-  - [ ] section coverage.
-- [ ] Define focused vs mixed-session logic.
-- [ ] Define how mock exams affect upcoming sessions.
-- [ ] Define how a fixed exam date changes priorities.
-- [ ] Allow learner override without destroying personalization.
-- [ ] Explain “why this today?”
-- [ ] Define partial-session completion behavior.
+- [x] Choose default daily session duration.
+- [x] Support configurable session lengths.
+- [x] Define the optimization objective for session assembly.
+- [x] Balance:
+  - [x] exam weighting,
+  - [x] weakest areas,
+  - [x] spaced review,
+  - [x] skill freshness,
+  - [x] learner fatigue,
+  - [x] exam-date urgency,
+  - [x] section coverage.
+- [x] Define focused vs mixed-session logic.
+- [x] Define how mock exams affect upcoming sessions.
+- [x] Define how a fixed exam date changes priorities.
+- [x] Allow learner override without destroying personalization.
+- [x] Explain “why this today?”
+- [x] Define partial-session completion behavior.
 
 **Done when:** Given a learner state and 25 minutes, Bestehen can explain exactly why it chose today's work.
 
