@@ -68,14 +68,14 @@
 
 ## 4. Define the Learner Model
 
-- [ ] Define grammar mastery.
-- [ ] Define vocabulary/domain mastery.
-- [ ] Define reading skills.
-- [ ] Define listening skills.
-- [ ] Define writing competencies.
-- [ ] Define speaking competencies.
-- [ ] Define exam-strategy skills.
-- [ ] Define topic familiarity.
+- [x] Define grammar mastery.
+- [x] Define vocabulary/domain mastery.
+- [x] Define reading skills.
+- [x] Define listening skills.
+- [x] Define writing competencies.
+- [x] Define speaking competencies.
+- [x] Define exam-strategy skills.
+- [x] Define topic familiarity.
 - [ ] Define mistake history.
 - [ ] Define recurrence frequency.
 - [ ] Define recency/decay.
