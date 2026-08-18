@@ -8,17 +8,17 @@
 
 ## 1. Lock the Product Thesis
 
-- [ ] Finalize the one-sentence product definition.
-- [ ] Confirm the identity: **personal German exam coach**.
-- [ ] Confirm the objective: **maximize the learner's probability of passing TELC B1**.
-- [ ] Confirm that German is learned **through exam preparation**, not a traditional course curriculum.
-- [ ] Confirm the initial learner profile:
-  - [ ] may start around A1,
-  - [ ] intends to reach/pass B1,
-  - [ ] prioritizes certification over broad language mastery.
-- [ ] Decide whether TELC B1 is the only initial target or the first target in an expandable exam framework.
-- [ ] Define what Bestehen intentionally does *not* try to be.
-- [ ] Define product success beyond engagement and streaks.
+- [x] Finalize the one-sentence product definition.
+- [x] Confirm the identity: **personal German exam coach**.
+- [x] Confirm the objective: **maximize the learner's probability of passing TELC B1**.
+- [x] Confirm that German is learned **through exam preparation**, not a traditional course curriculum.
+- [x] Confirm the initial learner profile:
+  - [x] may start around A1,
+  - [x] intends to reach/pass B1,
+  - [x] prioritizes certification over broad language mastery.
+- [x] Decide whether TELC B1 is the only initial target or the first target in an expandable exam framework.
+- [x] Define what Bestehen intentionally does *not* try to be.
+- [x] Define product success beyond engagement and streaks.
 
 **Done when:** Every major feature can be judged against “Does this improve exam readiness?”
 
@@ -449,151 +449,150 @@
 - [ ] Ensure generated reading passages remain natural German.
 - [ ] Define generated-audio requirements.
 - [ ] Define writing/speaking prompt generation requirements.
-- [ ] Define where human-curated gold content is required.
-- [ ] Define content-error reporting and correction.
+- [ ] Define content refresh/rotation.
+- [ ] Define source attribution rules where needed.
 
-**Done when:** Practice can scale without becoming low-quality AI exercise soup.
+**Done when:** Bestehen has enough high-quality practice without depending on redistributing copyrighted exam material.
 
 ---
 
-## 22. Define User Control vs Coach Autonomy
+## 22. Define Corpus → App Product Contract
 
-- [ ] Decide what the coach controls automatically.
-- [ ] Decide what learners can manually choose:
-  - [ ] section,
-  - [ ] skill,
-  - [ ] duration,
+- [ ] Define what the App requests from Corpus.
+- [ ] Define what Corpus returns.
+- [ ] Define how the App uses:
+  - [ ] task patterns,
+  - [ ] topic frequency,
+  - [ ] vocabulary frequency,
+  - [ ] grammar frequency,
   - [ ] difficulty,
-  - [ ] mock exam,
-  - [ ] review,
-  - [ ] assistance.
-- [ ] Define how overrides interact with personalization.
-- [ ] Explain deviations from the recommended plan.
-- [ ] Provide a “just practice X” path.
-- [ ] Keep “coach me” as the default.
+  - [ ] TELC relevance,
+  - [ ] distractor patterns,
+  - [ ] skill relationships.
+- [ ] Decide whether App needs raw/reference source access.
+- [ ] Define behavior if Corpus lacks enough evidence.
+- [ ] Define version compatibility expectations.
 
-**Done when:** Advanced users have control while the default experience remains strongly coached.
-
----
-
-## 23. Define Exam-Date and Urgency Behavior
-
-- [ ] Define no-exam-date behavior.
-- [ ] Define target-month behavior.
-- [ ] Define exact-date behavior.
-- [ ] Define recommended daily workload.
-- [ ] Define behavior when the learner is behind schedule.
-- [ ] Define handling of unrealistic deadlines.
-- [ ] Define 60-day, 30-day, 21-day, and 7-day modes.
-- [ ] Define final-day guidance.
-- [ ] Define post-exam state.
-
-**Done when:** The same learner model supports casual preparation and fixed-deadline preparation.
+**Done when:** The two products can evolve independently without ambiguity about their responsibilities.
 
 ---
 
-## 24. Define Analytics and Product Success Metrics
+## 23. Define Notifications, Scheduling, and Habit Support
 
-- [ ] Define learner-outcome metrics.
-- [ ] Define readiness-model accuracy metrics.
-- [ ] Define mock-to-real-exam correlation once outcome data exists.
-- [ ] Define skill-improvement metrics.
-- [ ] Define session completion metrics.
-- [ ] Define recommendation-following metrics.
-- [ ] Define retention metrics without making retention the goal.
+- [ ] Define reminder types.
+- [ ] Define configurable study schedule.
+- [ ] Define due-review reminders.
+- [ ] Define mock-exam reminders.
+- [ ] Define exam-date urgency reminders.
+- [ ] Avoid shame-based missed-day messaging.
+- [ ] Define quiet hours.
+- [ ] Define notification frequency caps.
+- [ ] Define behavior when the learner ignores reminders.
+- [ ] Keep reminders tied to preparation value, not generic engagement.
+
+**Done when:** Habit support helps the learner prepare without becoming noisy or manipulative.
+
+---
+
+## 24. Define Account, Data, and Portability Expectations
+
+- [ ] Decide whether sign-in is required initially.
+- [ ] Define learner profile data.
+- [ ] Define progress/evidence history retention.
+- [ ] Define audio retention expectations.
+- [ ] Define generated-content retention.
+- [ ] Define export needs.
+- [ ] Define deletion expectations.
+- [ ] Define device sync expectations.
+- [ ] Define offline expectations.
+- [ ] Define privacy-sensitive AI data handling requirements at product level.
+
+**Done when:** Architecture can later make storage/auth choices without inventing the user contract.
+
+---
+
+## 25. Define Accessibility and Device Experience
+
+- [ ] Define launch platforms.
+- [ ] Define phone-first vs tablet/desktop expectations.
+- [ ] Define keyboard navigation expectations where relevant.
+- [ ] Define screen-reader expectations.
+- [ ] Define color/contrast requirements.
+- [ ] Define text scaling.
+- [ ] Define caption/transcript expectations.
+- [ ] Define microphone-permission fallback.
+- [ ] Define accessibility for timed experiences.
+- [ ] Define low-connectivity behavior.
+
+**Done when:** Core exam preparation is usable without architecture later deciding whether accessibility matters.
+
+---
+
+## 26. Define Product Analytics and Evaluation
+
+- [ ] Define core product metrics.
+- [ ] Define readiness-calibration metrics.
+- [ ] Define learning-outcome metrics.
+- [ ] Define repair-success metrics.
+- [ ] Define retention metrics separately from learning metrics.
+- [ ] Define mock-to-real-exam comparison when outcome data exists.
+- [ ] Define feedback/quality sampling.
+- [ ] Define AI evaluation quality monitoring.
 - [ ] Define content-quality metrics.
-- [ ] Define writing/speaking evaluation consistency metrics.
-- [ ] Define a north-star metric centered on exam readiness.
-- [ ] Define optional learner reporting of real exam results for calibration.
+- [ ] Define cost-per-active-learner / cost-per-session monitoring.
+- [ ] Avoid optimizing only for engagement.
 
-**Done when:** Product success is measured by improved pass readiness, not just screen time.
-
----
-
-## 25. Decide Business Model and Product Boundaries
-
-- [ ] Decide whether the initial personal project is private/free.
-- [ ] If public later, define free vs paid principles.
-- [ ] Identify costly AI capabilities:
-  - [ ] speaking,
-  - [ ] writing evaluation,
-  - [ ] generated audio,
-  - [ ] full mocks.
-- [ ] Avoid monetization that damages the core coaching loop.
-- [ ] Define account/data portability expectations.
-- [ ] Define learner data retention/deletion expectations.
-
-**Done when:** The product model supports the intended experience without creating architecture surprises.
+**Done when:** We can later tell whether Bestehen works, not merely whether people use it.
 
 ---
 
-## 26. Define Platform and Non-Functional Expectations
+## 27. Define Business / Cost Boundaries
 
-- [ ] Confirm responsive web as the initial platform.
-- [ ] Define mobile-browser priority.
-- [ ] Define microphone/browser requirements.
-- [ ] Define accessibility expectations.
-- [ ] Define keyboard-only behavior.
-- [ ] Define audio controls.
-- [ ] Define supported browsers/devices.
-- [ ] Define acceptable latency for AI feedback.
-- [ ] Define offline expectations, if any.
-- [ ] Define privacy expectations for voice/audio.
-- [ ] Define reliability expectations during timed mocks.
+- [ ] Confirm personal-project assumptions.
+- [ ] Define acceptable recurring-cost philosophy.
+- [ ] Decide where premium AI is justified.
+- [ ] Define cheap/deterministic fallbacks.
+- [ ] Define caching/batching expectations.
+- [ ] Define acceptable generated-audio cost strategy.
+- [ ] Define storage-cost expectations.
+- [ ] Define whether free/paid product tiers matter initially.
+- [ ] Avoid design choices that require enterprise-scale infrastructure.
 
-**Done when:** Design and architecture can make informed platform decisions.
+**Done when:** The shaped product can be operated affordably before scale.
 
 ---
 
-## 27. Validate with End-to-End Scenarios
+## 28. Produce the Final Bestehen / App Product Specification
 
-- [ ] Write an A1 Day-1 scenario.
-- [ ] Write an A2 midpoint scenario.
-- [ ] Write a strong-reading / weak-speaking scenario.
-- [ ] Write an exam-in-30-days scenario.
-- [ ] Write a return-after-3-weeks scenario.
-- [ ] Write a failed-mock → repair → retry scenario.
-- [ ] Write a speaking-practice scenario.
-- [ ] Write a writing-repair scenario.
-- [ ] Write a “ready to book” scenario.
-- [ ] Verify learner model, readiness model, daily engine, and coach behavior are coherent in every scenario.
-
-**Done when:** The product works as one system rather than a set of individually appealing features.
-
----
-
-## 28. Produce the Final Product Specification
-
-- [ ] Write the final Bestehen / App PRD.
+- [ ] Consolidate all shaping documents into a final PRD/spec.
 - [ ] Document the complete learner journey.
 - [ ] Document the learner model.
-- [ ] Document Mistake Memory.
-- [ ] Document the Daily Coaching Engine.
-- [ ] Document A1 → B1 progression.
-- [ ] Document every exam-section coaching flow.
-- [ ] Document Readiness calculation and uncertainty.
-- [ ] Document mock exams.
-- [ ] Document “ready to book” logic.
-- [ ] Document content-generation strategy.
-- [ ] Document coach behavior.
+- [ ] Document the coaching engine.
+- [ ] Document mistake memory.
+- [ ] Document A1→B1 progression.
+- [ ] Document every exam-skill experience.
+- [ ] Document review/spaced repetition.
+- [ ] Document TELC readiness.
+- [ ] Document mock exams and ready-to-book logic.
+- [ ] Document coach personality.
 - [ ] Document information architecture.
-- [ ] Document analytics and success metrics.
-- [ ] Document explicit non-goals.
-- [ ] Document deferred ideas.
-- [ ] Separate remaining architecture questions from unresolved product questions.
+- [ ] Document content strategy.
+- [ ] Document Corpus contract.
+- [ ] Document notifications/habit support.
+- [ ] Document account/data expectations.
+- [ ] Document accessibility/device expectations.
+- [ ] Document analytics and cost constraints.
+- [ ] Document explicitly deferred features.
+- [ ] Separate unresolved architecture questions from unresolved product questions.
 
 ### Bestehen / App is fully shaped when:
 
-- [ ] We know **who the learner is and what success means**.
-- [ ] We can describe the complete **A1 → B1 → exam-ready journey**.
-- [ ] We know **what the learner model stores**.
-- [ ] We know **how today's session is chosen**.
-- [ ] We know **how mistakes alter future training**.
-- [ ] We know **how assistance disappears as ability improves**.
-- [ ] Reading, Language Elements, Listening, Writing, and Speaking all have complete coaching flows.
-- [ ] We have a defensible **TELC Readiness model**.
-- [ ] We know when the coach can say **“you are ready to book the exam.”**
-- [ ] The product has a clear **exam-coach voice and UX hierarchy**.
-- [ ] The content strategy scales without depending on copying source exams.
-- [ ] Representative end-to-end scenarios are internally consistent.
-- [ ] No major product decision needs to be invented by the design or architecture agent.
+- [ ] An A1 learner can be described from first launch to exam booking without inventing new major product behavior.
+- [ ] Every major skill has a defined coaching experience.
+- [ ] Every mistake has a path into future coaching.
+- [ ] Readiness is defensible and respects TELC's pass constraints.
+- [ ] The coach can explain what to do today and why.
+- [ ] Corpus intelligence has a clear role without becoming the learner product.
+- [ ] Product success is measurable beyond engagement.
+- [ ] Recurring-cost assumptions are explicit and sustainable.
+- [ ] No major product decision needs to be invented by the architecture agent.
