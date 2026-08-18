@@ -133,7 +133,7 @@ Successful evidence is what lowers weakness priority. Time determines when that 
 
 ## 4. Detailed Product Model / Rules for This Stage
 
-## 4.1 Core terms
+### 4.1 Core terms
 
 | Term | Product definition |
 |---|---|
@@ -151,7 +151,7 @@ Successful evidence is what lowers weakness priority. Time determines when that 
 
 The 60-day recurrence window and later intervals in this document are implementable starting defaults, not scientific constants. Stage 14 and Stage 26 may recalibrate them while preserving the behavior.
 
-## 4.2 What counts as a mistake event
+### 4.2 What counts as a mistake event
 
 A mistake event is created when all of the following are true:
 
@@ -184,7 +184,7 @@ The following do **not** become learner mistake events:
 
 A technically invalid attempt remains in operational history if needed, but it has zero capability and weakness effect.
 
-## 4.3 Mistake manifestation types
+### 4.3 Mistake manifestation types
 
 Manifestation describes the observable shortfall before root-cause interpretation.
 
@@ -204,7 +204,7 @@ Manifestation describes the observable shortfall before root-cause interpretatio
 
 One attempt may contain multiple manifestations, especially productive work, but events with the same root pattern in that attempt are grouped into one episode for recurrence. Frequency within the response is still useful severity evidence.
 
-## 4.4 Root-cause taxonomy
+### 4.4 Root-cause taxonomy
 
 The required Stage 05 categories are the top-level product taxonomy. Subtypes help repair selection but are used only when supported.
 
@@ -230,7 +230,7 @@ The required Stage 05 categories are the top-level product taxonomy. Subtypes he
 - **Timing:** Timed failure does not automatically lower the language node. Update timing/strategy, language, or both only when evidence supports each attribution.
 - **Topic familiarity:** Topic is context, not a root cause by itself. A health-task error becomes a health-domain weakness only after repeated directly diagnosed lexical/context evidence.
 
-## 4.5 Diagnosis confidence
+### 4.5 Diagnosis confidence
 
 Each cause is stored as:
 
@@ -250,7 +250,7 @@ Rules:
 - A cause can be corrected later without deleting the original event; derived weakness states are recalculated from the corrected attribution.
 - Premium AI is not called merely to turn every unresolved event into a label.
 
-## 4.6 Episode grouping and opportunity counting
+### 4.6 Episode grouping and opportunity counting
 
 Recurrence uses independent episodes and relevant opportunities.
 
@@ -288,7 +288,7 @@ The model records relevant opportunities so recurrence is not based only on fail
 - skipped/invalid tasks do not count;
 - assisted opportunities are retained separately from unassisted ones.
 
-## 4.7 Mistake lifecycle
+### 4.7 Mistake lifecycle
 
 ~~~mermaid
 stateDiagram-v2
@@ -319,7 +319,7 @@ stateDiagram-v2
 
 “Resolved” does not mean deleted or impossible to recur. It means no current dedicated coaching is justified.
 
-## 4.8 When a mistake becomes a known weakness
+### 4.8 When a mistake becomes a known weakness
 
 A fine-grained pattern becomes a known weakness when all required gates are met.
 
@@ -351,7 +351,7 @@ An isolated candidate moves to Historical / unconfirmed when either:
 - two fresh comparable opportunities on different occasions succeed without recurrence; or
 - it ages beyond 60 days without another relevant opportunity, in which case it becomes stale/unverified rather than “repaired.”
 
-## 4.9 Priority model
+### 4.9 Priority model
 
 Priority answers: **How strongly should this weakness influence upcoming coaching?** It is separate from mastery and separate from whether the learner is a good or bad student.
 
@@ -398,7 +398,7 @@ Tie-breakers for limited session time are:
 4. shortest reachable repair that produces useful transfer evidence;
 5. breadth/coverage needs.
 
-## 4.10 Recurrence, decay, and reopening
+### 4.10 Recurrence, decay, and reopening
 
 ### Recurrence
 
@@ -432,7 +432,7 @@ Opportunity rate accompanies these labels. “Three failures” is never shown w
 - If the recurrence occurs under target conditions or after multiple successful repairs, repair resistance raises priority.
 - If the new event is low-confidence or technically questionable, schedule a recheck instead of reopening.
 
-## 4.11 Repair and resolution behavior
+### 4.11 Repair and resolution behavior
 
 ### Repair sequence
 
@@ -466,7 +466,7 @@ Additional rules:
 - Failure during stabilization returns the weakness to Known and normally schedules a shorter interval.
 - A repaired weakness may still have only Functional or Reliable mastery. “Repaired” means the recurring blocker no longer justifies dedicated repair; it does not automatically mean Target-evidenced.
 
-## 4.12 Spaced return of old mistakes
+### 4.12 Spaced return of old mistakes
 
 Mistake Memory owns the minimum return pattern; Stage 14 will integrate and tune it across all review material.
 
@@ -489,7 +489,7 @@ Rules:
 - If the learner is inactive, do not create a punitive backlog. On return, select a small number of highest-value stale checks.
 - Exact intervals later adapt by exam importance, difficulty, stability, exam date, and opportunity frequency.
 
-## 4.13 Cross-skill and cross-modality transfer
+### 4.13 Cross-skill and cross-modality transfer
 
 A mistake pattern may have:
 
@@ -520,7 +520,7 @@ A mistake pattern may have:
 | Misses “nur werktags” in Reading twice | Reading restriction/comprehension or scanning weakness | Test the same restriction cue in Listening only as a new verification opportunity | Do not infer a Listening weakness |
 | Fails to respond to a partner's alternative in Speaking | Interactive-speaking production/strategy weakness | Practice response phrases, then use a fresh interactive exchange | A monologue cannot resolve interaction |
 
-## 4.14 Learner-facing recurring-weakness explanations
+### 4.14 Learner-facing recurring-weakness explanations
 
 A recurring-weakness explanation answers five questions:
 
@@ -586,7 +586,7 @@ A recurring-weakness explanation answers five questions:
 | Production | “Your message is understandable, but the request itself is still unclear.” |
 | Timing | “You can complete the task untimed; the current blocker is finishing it within exam time.” |
 
-## 4.15 Necessary data versus overkill
+### 4.15 Necessary data versus overkill
 
 Bestehen is a personal project. Mistake Memory should store enough structured evidence to drive coaching and explain decisions, but not build a research-grade telemetry system.
 
@@ -639,7 +639,7 @@ Do not require:
 
 The first model should optimize for trustworthy coaching decisions, not maximum data collection.
 
-## 4.16 Worked examples
+### 4.16 Worked examples
 
 ### Example A — Reading restriction becomes a known weakness
 
