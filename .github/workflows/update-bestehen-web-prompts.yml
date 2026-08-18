@@ -1,0 +1,153 @@
+name: One-time update Bestehen web prompts
+
+on:
+  push:
+    paths:
+      - '.github/workflows/update-bestehen-web-prompts.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-prompts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pandoc
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pandoc
+
+      - name: Create Markdown working copies of shared documents
+        run: |
+          pandoc 01_Bestehen_Product_Overview.docx -t gfm -o 01_Bestehen_Product_Overview.md
+          pandoc 02_Bestehen_Identity.docx -t gfm -o 02_Bestehen_Identity.md
+
+      - name: Update all App and Corpus prompts for GitHub web execution
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          GITHUB_SECTION = """## GitHub web execution requirements — mandatory
+
+          This prompt is designed to be run from the ChatGPT web interface with the **@GitHub** connector. The repository is:
+
+          - **Repository:** `m-elsharkawi/Bestehen-Shaping`
+          - **Branch:** `main`
+
+          Treat GitHub as the source of truth for all project context and shaping outputs.
+
+          - Use **@GitHub** to read repository files. Do not assume a local checkout, terminal, filesystem mount, or access to files from a previous chat.
+          - Before changing an existing text file, fetch its current contents from GitHub so you are working from the latest `main` state.
+          - Use **@GitHub** to create new Markdown files and to update existing Markdown/checklist files. If a target output already exists, read it first and amend it rather than blindly replacing it.
+          - When updating an existing file through GitHub, use its current file/blob SHA as required by the connector. Re-fetch before a later sequential update if the file has changed.
+          - Do not run parallel writes against the same path. Checklist updates for this stage must be sequential so later writes do not overwrite earlier progress.
+          - Work directly on `main` for this shaping workflow unless the owner explicitly asks for a branch or pull request.
+          - Use clear stage-specific commit messages for GitHub writes, for example `App shaping stage 04: update learner model` or `Corpus shaping stage 08: update checklist`.
+          - Do not merely return proposed file contents in chat when the GitHub write tools are available. The task is complete only when the required Markdown output and checklist changes are actually written to this repository.
+
+          The `.docx` files at the repository root are archival/original copies. For web-agent work, use the Markdown counterparts listed below as the readable working sources.
+          """
+
+          READ_SECTION = """## Read these before making decisions
+
+          Start by reading the following shared files from the **repository root** using @GitHub:
+
+          - `01_Bestehen_Product_Overview.md`
+          - `02_Bestehen_Identity.md`
+          - `Bestehen_Corpus_Product_Shaping_Checklist.md`
+          - `Bestehen_App_Product_Shaping_Checklist.md`
+
+          Use the overview and identity Markdown files as the canonical readable context for this web-based shaping workflow. The same-named `.docx` files are retained as original/archival copies and do not need to be parsed by the web agent.
+
+          Also read **all existing Markdown outputs for earlier stages of this same product** if they already exist in the product output folder. Treat earlier decisions as the current product baseline, but call out genuine contradictions and resolve them when possible.
+
+          Do not silently replace established product decisions. If you materially change an earlier decision, explain why and use @GitHub to update the affected Markdown shaping document(s) so the repository remains internally consistent.
+          """
+
+          def update_prompt(path: Path):
+              text = path.read_text(encoding='utf-8')
+              pattern = r'\n\s*## Read these before making decisions\n.*?\n\s*### Stage continuity\n'
+              replacement = (
+                  '\n\n    ' + GITHUB_SECTION.replace('\n', '\n    ').rstrip()
+                  + '\n\n    ' + READ_SECTION.replace('\n', '\n    ').rstrip()
+                  + '\n\n    ### Stage continuity\n'
+              )
+              text, count = re.subn(pattern, replacement, text, flags=re.S)
+              if count != 1:
+                  raise RuntimeError(f'Expected one read-context section in {path}; found {count}')
+
+              replacements = {
+                  '`docs/shaping/Bestehen_App_Product_Shaping_Checklist.md`': '`Bestehen_App_Product_Shaping_Checklist.md`',
+                  '`docs/shaping/Bestehen_Corpus_Product_Shaping_Checklist.md`': '`Bestehen_Corpus_Product_Shaping_Checklist.md`',
+                  '`docs/shaping/app/`': '`app/`',
+                  '`docs/shaping/corpus/`': '`corpus/`',
+                  '`docs/shaping/app/': '`app/',
+                  '`docs/shaping/corpus/': '`corpus/',
+              }
+              for old, new in replacements.items():
+                  text = text.replace(old, new)
+
+              text = text.replace(
+                  '- Work directly in the project files.',
+                  '- Work directly in `m-elsharkawi/Bestehen-Shaping` using **@GitHub** for repository reads and writes.'
+              )
+              text = text.replace(
+                  '- All new shaping outputs must be **Markdown (`.md`)**.',
+                  '- All new shaping outputs must be **Markdown (`.md`)** and must be committed to the repository through **@GitHub**.'
+              )
+              text = text.replace(
+                  '2. As you make and document a decision, update the corresponding checkbox from `[ ]` to `[x]` **while working**, not only at the very end.',
+                  '2. As you make and document a decision, use **@GitHub** to update the corresponding checkbox from `[ ]` to `[x]` **while working**, not only at the very end.'
+              )
+              text = text.replace(
+                  '6. Before finishing, re-read the full stage section and reconcile the checklist with the output.',
+                  '6. Before finishing, re-fetch the checklist from GitHub, re-read the full stage section, reconcile it with the output, and make a final checklist update if needed.'
+              )
+
+              if 'docs/shaping/' in text:
+                  raise RuntimeError(f'Stale docs/shaping path remains in {path}')
+              path.write_text(text, encoding='utf-8')
+
+          app_files = sorted(Path('prompts/app').glob('*.txt'))
+          corpus_files = sorted(Path('prompts/corpus').glob('*.txt'))
+          if len(app_files) != 28 or len(corpus_files) != 17:
+              raise RuntimeError(f'Expected 28 App and 17 Corpus prompts; found {len(app_files)} and {len(corpus_files)}')
+
+          for prompt in app_files + corpus_files:
+              update_prompt(prompt)
+
+          print(f'Updated {len(app_files)} App prompts and {len(corpus_files)} Corpus prompts.')
+          PY
+
+      - name: Validate paths and web-agent requirements
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          files = sorted(Path('prompts/app').glob('*.txt')) + sorted(Path('prompts/corpus').glob('*.txt'))
+          assert len(files) == 45
+          for p in files:
+              text = p.read_text(encoding='utf-8')
+              assert 'm-elsharkawi/Bestehen-Shaping' in text, p
+              assert '@GitHub' in text, p
+              assert 'docs/shaping/' not in text, p
+              assert '01_Bestehen_Product_Overview.md' in text, p
+              assert '02_Bestehen_Identity.md' in text, p
+          assert Path('01_Bestehen_Product_Overview.md').exists()
+          assert Path('02_Bestehen_Identity.md').exists()
+          print('Validation passed for all 45 prompts.')
+          PY
+
+      - name: Commit the one-time transformation and remove this workflow
+        shell: bash
+        run: |
+          git config user.name "Bestehen Shaping Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/update-bestehen-web-prompts.yml
+          git add prompts/app prompts/corpus 01_Bestehen_Product_Overview.md 02_Bestehen_Identity.md
+          git commit -m "Update shaping prompts for GitHub web workflow"
+          git push origin main
