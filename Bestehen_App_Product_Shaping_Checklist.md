@@ -26,20 +26,20 @@
 
 ## 2. Define the Complete Learner Journey
 
-- [ ] Map first visit → “book your exam.”
-- [ ] Define onboarding.
-- [ ] Define target/exam-date setup.
-- [ ] Define initial diagnostic.
-- [ ] Define first readiness result.
-- [ ] Define the first recommended session.
-- [ ] Define daily training.
-- [ ] Define weekly/monthly progress moments.
-- [ ] Define transition into realistic exam conditions.
-- [ ] Define mock-exam cadence.
-- [ ] Define “you are ready” state.
-- [ ] Define what happens after readiness is reached.
-- [ ] Define recovery after a weak mock exam.
-- [ ] Define return flow after missed days or long absence.
+- [x] Map first visit → “book your exam.”
+- [x] Define onboarding.
+- [x] Define target/exam-date setup.
+- [x] Define initial diagnostic.
+- [x] Define first readiness result.
+- [x] Define the first recommended session.
+- [x] Define daily training.
+- [x] Define weekly/monthly progress moments.
+- [x] Define transition into realistic exam conditions.
+- [x] Define mock-exam cadence.
+- [x] Define “you are ready” state.
+- [x] Define what happens after readiness is reached.
+- [x] Define recovery after a weak mock exam.
+- [x] Define return flow after missed days or long absence.
 
 **Done when:** The full learner journey can be storyboarded without inventing new major states.
 
