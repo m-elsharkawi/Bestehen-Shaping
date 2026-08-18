@@ -91,17 +91,17 @@
 
 ## 5. Define Mistake Memory
 
-- [ ] Define a mistake event.
+- [x] Define a mistake event.
 - [ ] Classify mistakes:
-  - [ ] vocabulary gap,
-  - [ ] grammar gap,
-  - [ ] listening-recognition failure,
-  - [ ] misunderstanding,
-  - [ ] exam-strategy error,
-  - [ ] attention/careless error,
-  - [ ] production error.
-- [ ] Define how repeated mistakes gain priority.
-- [ ] Define how resolved weaknesses lose priority.
+  - [x] vocabulary gap,
+  - [x] grammar gap,
+  - [x] listening-recognition failure,
+  - [x] misunderstanding,
+  - [x] exam-strategy error,
+  - [x] attention/careless error,
+  - [x] production error.
+- [x] Define how repeated mistakes gain priority.
+- [x] Define how resolved weaknesses lose priority.
 - [ ] Allow mistakes in one modality to influence another when relevant.
 - [ ] Define recurring-mistake explanations.
 - [ ] Define when a mistake becomes a known weakness.
