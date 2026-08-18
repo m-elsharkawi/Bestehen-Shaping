@@ -76,14 +76,14 @@
 - [x] Define speaking competencies.
 - [x] Define exam-strategy skills.
 - [x] Define topic familiarity.
-- [ ] Define mistake history.
-- [ ] Define recurrence frequency.
-- [ ] Define recency/decay.
-- [ ] Define confidence in each estimate.
-- [ ] Separate assisted vs unassisted performance.
-- [ ] Separate timed vs untimed performance.
-- [ ] Separate passive understanding from productive ability.
-- [ ] Connect learner skills to the Corpus skill graph.
+- [x] Define mistake history.
+- [x] Define recurrence frequency.
+- [x] Define recency/decay.
+- [x] Define confidence in each estimate.
+- [x] Separate assisted vs unassisted performance.
+- [x] Separate timed vs untimed performance.
+- [x] Separate passive understanding from productive ability.
+- [x] Connect learner skills to the Corpus skill graph.
 
 **Done when:** “Weak at listening” becomes a useful set of specific, measurable skill states.
 
