@@ -47,20 +47,20 @@
 
 ## 3. Design the Initial Diagnostic
 
-- [ ] Decide target duration.
-- [ ] Decide A1/A2/B1 content mix.
-- [ ] Collect initial evidence for:
-  - [ ] Reading
-  - [ ] Language Elements
-  - [ ] Listening
-  - [ ] Writing
-  - [ ] Speaking
-- [ ] Define a lightweight speaking sample.
-- [ ] Define a lightweight writing sample.
-- [ ] Represent uncertainty where evidence is weak.
-- [ ] Decide whether estimated CEFR level is shown.
-- [ ] Define how results initialize the learner model.
-- [ ] Define behavior when the learner is far below real B1 difficulty.
+- [x] Decide target duration.
+- [x] Decide A1/A2/B1 content mix.
+- [x] Collect initial evidence for:
+  - [x] Reading
+  - [x] Language Elements
+  - [x] Listening
+  - [x] Writing
+  - [x] Speaking
+- [x] Define a lightweight speaking sample.
+- [x] Define a lightweight writing sample.
+- [x] Represent uncertainty where evidence is weak.
+- [x] Decide whether estimated CEFR level is shown.
+- [x] Define how results initialize the learner model.
+- [x] Define behavior when the learner is far below real B1 difficulty.
 
 **Done when:** Personalization starts on Day 1 without forcing a long traditional placement test.
 
