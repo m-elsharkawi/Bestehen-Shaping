@@ -21,9 +21,9 @@
   - [x] ÖSD A2
   - [x] DTZ A2–B1
   - [x] Other credible A2/B1 exam-style material
-- [ ] Define what is explicitly out of scope initially.
-- [ ] Decide whether Corpus is internal-only or intentionally designed as a reusable platform/API later.
-- [ ] Define success criteria for a **useful corpus**, not merely a large corpus.
+- [x] Define what is explicitly out of scope initially.
+- [x] Decide whether Corpus is internal-only or intentionally designed as a reusable platform/API later.
+- [x] Define success criteria for a **useful corpus**, not merely a large corpus.
 
 **Done when:** The scope is clear enough that an architecture agent does not need to decide what the product is.
 
