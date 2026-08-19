@@ -348,12 +348,12 @@
 - [x] Define listening playback restrictions.
 - [x] Define speaking simulation.
 - [x] Define scoring.
-- [ ] Define post-exam analysis.
-- [ ] Feed mock mistakes into the learner model.
-- [ ] Define when the coach recommends another mock.
-- [ ] Define how many passing mocks contribute to readiness.
-- [ ] Distinguish source/reference exams from generated simulations.
-- [ ] Ensure mocks respect content-usage restrictions.
+- [x] Define post-exam analysis.
+- [x] Feed mock mistakes into the learner model.
+- [x] Define when the coach recommends another mock.
+- [x] Define how many passing mocks contribute to readiness.
+- [x] Distinguish source/reference exams from generated simulations.
+- [x] Ensure mocks respect content-usage restrictions.
 
 **Done when:** Learners can rehearse actual exam structure and pressure before booking.
 
