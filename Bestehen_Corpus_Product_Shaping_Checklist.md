@@ -138,18 +138,18 @@
 
 ## 6. Build the Exam and Skill Taxonomy
 
-- [ ] Define exam-provider metadata.
-- [ ] Define CEFR and mixed-level handling.
-- [ ] Define section taxonomy:
-  - [ ] Reading
-  - [ ] Language Elements / Sprachbausteine
-  - [ ] Listening
-  - [ ] Writing
-  - [ ] Speaking
-- [ ] Define task-type taxonomy.
-- [ ] Define topic taxonomy.
-- [ ] Define grammar taxonomy.
-- [ ] Define vocabulary/domain taxonomy.
+- [x] Define exam-provider metadata.
+- [x] Define CEFR and mixed-level handling.
+- [x] Define section taxonomy:
+  - [x] Reading
+  - [x] Language Elements / Sprachbausteine
+  - [x] Listening
+  - [x] Writing
+  - [x] Speaking
+- [x] Define task-type taxonomy.
+- [x] Define topic taxonomy.
+- [x] Define grammar taxonomy.
+- [x] Define vocabulary/domain taxonomy.
 - [ ] Define reading skill taxonomy.
 - [ ] Define listening skill taxonomy.
 - [ ] Define writing competency taxonomy.
