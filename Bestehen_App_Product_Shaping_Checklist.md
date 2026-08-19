@@ -624,9 +624,32 @@
 
 ---
 
-## 27. Define Business / Cost Boundaries
+## 27. Validate with End-to-End Scenarios + Legacy Business / Cost Boundaries
 
-> **Resolved early by Stage 25:** The Stage 25 agent prompt covered **Business Model and Product Boundaries**, including all business/cost requirements in this section. The authoritative decisions are documented in `app/25-business-model-and-product-boundaries.md`; Stage 27 should not invent a conflicting operating or monetization model.
+> **Stage continuity note:** The current Stage 27 agent prompt defines **Validate with End-to-End Scenarios**, while this checklist previously named Stage 27 **Business / Cost Boundaries**. Stage 25 already resolved the business/cost requirements in `app/25-business-model-and-product-boundaries.md`. Stage 27 now preserves that completed continuity section and adds the prompt-defined system validation documented in `app/27-end-to-end-scenario-validation.md`.
+
+### End-to-end scenario validation
+
+- [x] Validate the A1 Day-1 scenario.
+- [x] Validate the A2 midpoint scenario.
+- [x] Validate the strong-Reading / weak-Speaking scenario.
+- [x] Validate the 30-day deadline scenario.
+- [x] Validate the return-after-break scenario.
+- [x] Validate the failed-mock scenario.
+- [x] Validate the Speaking coaching scenario.
+- [x] Validate the Writing-repair scenario.
+- [x] Validate the Ready-to-Book scenario.
+- [x] For every scenario, document learner state, coach decision, selected activities, evidence updates, readiness changes, and messaging.
+- [x] Identify contradictions, missing rules, and cross-stage composition issues.
+- [x] Define cross-stage precedence rules for validity, direct evidence, pass risk, uncertainty, repair/review, deadline urgency, progression, and learner preference.
+- [x] Assess whether earlier shaping documents require amendment; validation found no contradictory or missing single-stage rule requiring a reversal/amendment.
+- [x] Keep a cross-stage correction/change log.
+- [x] Validate technical/content/evaluator failure handling and pending evidence.
+- [x] Validate learner overrides without corrupting evidence semantics.
+- [x] Validate return-after-break behavior when deadline urgency also applies.
+- [x] Validate that all scenarios preserve the personal-project low-cost model and bounded premium-AI use.
+
+### Legacy business/cost continuity — resolved early by Stage 25
 
 - [x] Confirm personal-project assumptions.
 - [x] Define acceptable recurring-cost philosophy.
@@ -638,7 +661,7 @@
 - [x] Define whether free/paid product tiers matter initially.
 - [x] Avoid design choices that require enterprise-scale infrastructure.
 
-**Done when:** The shaped product can be operated affordably before scale.
+**Done when:** The complete shaped App survives representative journeys from A1 Day-1 through Ready to Book without inventing contradictory behavior, and it remains affordable before scale.
 
 ---
 
