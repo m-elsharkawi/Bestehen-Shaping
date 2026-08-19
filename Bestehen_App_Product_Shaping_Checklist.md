@@ -312,27 +312,27 @@
 
 ## 15. Design TELC Readiness
 
-- [ ] Define exactly what **Readiness** means.
-- [ ] Decide primary representation:
-  - [ ] pass probability,
-  - [ ] readiness index,
-  - [ ] predicted score,
-  - [ ] or a combination.
-- [ ] Define written readiness.
-- [ ] Define oral readiness separately.
-- [ ] Reflect TELC's separate written/oral pass constraints.
-- [ ] Define section weights.
-- [ ] Define skill weights within sections.
-- [ ] Define recency effects.
-- [ ] Distinguish assisted from unassisted evidence.
-- [ ] Distinguish timed from untimed evidence.
-- [ ] Represent uncertainty/confidence.
-- [ ] Set minimum evidence before strong predictions.
-- [ ] Define how mocks affect readiness.
-- [ ] Define initial calibration before real-user outcome data exists.
-- [ ] Define future recalibration using actual exam outcomes.
-- [ ] Define “not ready,” “borderline,” and “safe pass range.”
-- [ ] Explain score changes to the learner.
+- [x] Define exactly what **Readiness** means.
+- [x] Decide primary representation:
+  - [x] pass probability — future calibrated secondary output; intentionally withheld pre-calibration,
+  - [x] readiness index — launch primary numeric representation,
+  - [x] predicted score — launch written/oral supporting estimate and range,
+  - [x] or a combination — **selected launch approach**.
+- [x] Define written readiness.
+- [x] Define oral readiness separately.
+- [x] Reflect TELC's separate written/oral pass constraints.
+- [x] Define section weights.
+- [x] Define skill weights within sections.
+- [x] Define recency effects.
+- [x] Distinguish assisted from unassisted evidence.
+- [x] Distinguish timed from untimed evidence.
+- [x] Represent uncertainty/confidence.
+- [x] Set minimum evidence before strong predictions.
+- [x] Define how mocks affect readiness.
+- [x] Define initial calibration before real-user outcome data exists.
+- [x] Define future recalibration using actual exam outcomes.
+- [x] Define “not ready,” “borderline,” and “safe pass range.”
+- [x] Explain score changes to the learner.
 
 **Done when:** Readiness is defensible, not a decorative progress bar.
 
