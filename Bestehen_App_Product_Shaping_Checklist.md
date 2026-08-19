@@ -270,20 +270,20 @@
 - [x] Define AI partner behavior for interactive tasks.
 - [x] Define voice input requirements.
 - [x] Define transcript behavior.
-- [ ] Define evaluation dimensions:
-  - [ ] task completion,
-  - [ ] interaction,
-  - [ ] fluency,
-  - [ ] vocabulary,
-  - [ ] grammar,
-  - [ ] intelligibility/pronunciation.
-- [ ] Avoid over-penalizing accent.
-- [ ] Define useful phrase/structure recommendations.
+- [x] Define evaluation dimensions:
+  - [x] task completion,
+  - [x] interaction,
+  - [x] fluency,
+  - [x] vocabulary,
+  - [x] grammar,
+  - [x] intelligibility/pronunciation.
+- [x] Avoid over-penalizing accent.
+- [x] Define useful phrase/structure recommendations.
 - [x] Define turn-taking behavior.
 - [x] Define planning-together scenarios.
 - [x] Define exam-like preparation time.
 - [x] Define timed speaking simulation.
-- [ ] Feed speaking into the independent oral pass model.
+- [x] Feed speaking into the independent oral pass model.
 
 **Done when:** Speaking feels like rehearsal with an exam coach and partner, not generic chatbot conversation.
 
