@@ -216,23 +216,23 @@
 
 ## 11. Define Listening Coaching
 
-- [ ] Map TELC B1 listening task types.
-- [ ] Define audio source strategy.
-- [ ] Decide generated vs human/native-recorded audio policy.
-- [ ] Define speech-speed progression.
-- [ ] Define replay rules by stage.
-- [ ] Define transcript availability.
-- [ ] Define pre-listening vocabulary assistance.
-- [ ] Diagnose:
-  - [ ] unknown vocabulary,
-  - [ ] numbers/dates/times,
-  - [ ] speed,
-  - [ ] distractors,
-  - [ ] missed negation,
-  - [ ] inference.
-- [ ] Define targeted listening repair.
-- [ ] Define audio difficulty scoring.
-- [ ] Define exam-realistic listening mode.
+- [x] Map TELC B1 listening task types.
+- [x] Define audio source strategy.
+- [x] Decide generated vs human/native-recorded audio policy.
+- [x] Define speech-speed progression.
+- [x] Define replay rules by stage.
+- [x] Define transcript availability.
+- [x] Define pre-listening vocabulary assistance.
+- [x] Diagnose:
+  - [x] unknown vocabulary,
+  - [x] numbers/dates/times,
+  - [x] speed,
+  - [x] distractors,
+  - [x] missed negation,
+  - [x] inference.
+- [x] Define targeted listening repair.
+- [x] Define audio difficulty scoring.
+- [x] Define exam-realistic listening mode.
 
 **Done when:** Bestehen can diagnose *why* the learner failed to understand audio.
 
