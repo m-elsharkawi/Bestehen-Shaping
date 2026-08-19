@@ -199,13 +199,13 @@
   - [x] review,
   - [x] publish.
 - [x] Define partial-failure handling.
-- [ ] Define human-review checkpoints.
-- [ ] Define auto-accept vs review thresholds.
-- [ ] Define scanned-document handling.
-- [ ] Define audio transcription/alignment.
-- [ ] Define answer-key linking.
-- [ ] Make AI-generated metadata traceable.
-- [ ] Define reprocessing when models improve.
+- [x] Define human-review checkpoints.
+- [x] Define auto-accept vs review thresholds.
+- [x] Define scanned-document handling.
+- [x] Define audio transcription/alignment.
+- [x] Define answer-key linking.
+- [x] Make AI-generated metadata traceable.
+- [x] Define reprocessing when models improve.
 
 **Done when:** Every source has a predictable path from raw material to trusted structured data.
 
