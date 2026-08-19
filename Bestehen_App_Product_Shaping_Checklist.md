@@ -240,18 +240,18 @@
 
 ## 12. Define Writing Coaching
 
-- [ ] Map current TELC B1 writing format and scoring dimensions.
-- [ ] Define prompt categories.
-- [ ] Represent required content points explicitly.
-- [ ] Define evaluation dimensions:
-  - [ ] task completion,
-  - [ ] communicative success,
-  - [ ] structure,
-  - [ ] vocabulary,
-  - [ ] grammar,
-  - [ ] register,
-  - [ ] greeting/closing where relevant.
-- [ ] Evaluate against **B1 sufficiency**, not ideal/native German.
+- [x] Map current TELC B1 writing format and scoring dimensions.
+- [x] Define prompt categories.
+- [x] Represent required content points explicitly.
+- [x] Define evaluation dimensions:
+  - [x] task completion,
+  - [x] communicative success,
+  - [x] structure,
+  - [x] vocabulary,
+  - [x] grammar,
+  - [x] register,
+  - [x] greeting/closing where relevant.
+- [x] Evaluate against **B1 sufficiency**, not ideal/native German.
 - [ ] Decide correction presentation.
 - [ ] Limit the number of corrections emphasized at once.
 - [ ] Define repair-and-rewrite flow.
