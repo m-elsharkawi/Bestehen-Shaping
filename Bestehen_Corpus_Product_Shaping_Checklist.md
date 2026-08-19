@@ -8,19 +8,19 @@
 
 ## 1. Lock the Product Mission and Boundaries
 
-- [ ] Finalize the one-sentence mission for Bestehen / Corpus.
-- [ ] Confirm that its primary customer is **Bestehen / App**, not end learners.
-- [ ] Confirm the initial domain: German **A2–B1 exam material**.
-- [ ] Confirm that TELC B1 is the strongest target signal, while the corpus is broader than TELC.
-- [ ] Decide which exam families are explicitly in scope at launch:
-  - [ ] TELC B1
-  - [ ] TELC A2–B1
-  - [ ] Goethe B1
-  - [ ] Goethe A2
-  - [ ] ÖSD B1
-  - [ ] ÖSD A2
-  - [ ] DTZ A2–B1
-  - [ ] Other credible A2/B1 exam-style material
+- [x] Finalize the one-sentence mission for Bestehen / Corpus.
+- [x] Confirm that its primary customer is **Bestehen / App**, not end learners.
+- [x] Confirm the initial domain: German **A2–B1 exam material**.
+- [x] Confirm that TELC B1 is the strongest target signal, while the corpus is broader than TELC.
+- [x] Decide which exam families are explicitly in scope at launch:
+  - [x] TELC B1
+  - [x] TELC A2–B1
+  - [x] Goethe B1
+  - [x] Goethe A2
+  - [x] ÖSD B1
+  - [x] ÖSD A2
+  - [x] DTZ A2–B1
+  - [x] Other credible A2/B1 exam-style material
 - [ ] Define what is explicitly out of scope initially.
 - [ ] Decide whether Corpus is internal-only or intentionally designed as a reusable platform/API later.
 - [ ] Define success criteria for a **useful corpus**, not merely a large corpus.
