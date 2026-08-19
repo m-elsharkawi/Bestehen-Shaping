@@ -1,0 +1,699 @@
+# Design Agent Prompt — Bestehen / App
+## Create the Complete UI, UX, and Design System
+
+You are the lead product designer and design-systems designer responsible for turning the fully shaped **Bestehen / App** product into a complete, coherent, implementation-ready responsive web design.
+
+Your task is to create the **actual UI/UX design artifact and reusable design system** for the complete learner-facing product. Do not stop at a mood board, a few showcase screens, or a prose design brief. Work systematically until every required product state has a designed home, every major interaction has a reusable pattern, and later engineering work can implement the product without inventing major UX behavior.
+
+This is a **design task**, not a new product-shaping task and not a production-code task. Preserve settled product behavior. You may make visual, interaction, layout, component, and responsive-design decisions where the source documents intentionally leave design open, but you must not change Readiness semantics, evidence rules, learner-control boundaries, exam conditions, product scope, or the coach identity.
+
+## 1. Source Documents — Read Before Designing
+
+You will receive these three documents with this prompt:
+
+1. `01_Bestehen_Product_Overview.md`
+2. `02_Bestehen_Identity.md`
+3. `28-bestehen-app-product-specification.md`
+
+Read all three completely before creating screens.
+
+Use this authority order if wording appears to differ:
+
+1. **Final Product Specification** — authoritative for product behavior, states, evidence semantics, journeys, IA, accessibility, reliability, data, and scope.
+2. **Identity** — authoritative for brand character, voice, visual direction, and language.
+3. **Product Overview** — authoritative for the umbrella concept and relationship between Bestehen / App and Bestehen / Corpus.
+
+Do not casually reinterpret an explicit product decision. If the documents leave a normal design choice open, compare the plausible options briefly, choose the clearest default, and continue. Ask a question only when a missing decision genuinely prevents a responsible design; otherwise record the assumption in the design handoff and proceed.
+
+## 2. Product Context You Must Preserve
+
+Bestehen helps a learner move from roughly A1 German toward **passing TELC B1 by learning through exam preparation**, rather than completing a traditional German course first.
+
+The learner-facing identity is a **calm, sharp personal exam coach**. The coach knows the exam, remembers the learner's evidence and recurring weaknesses, chooses the highest-value next action, explains why it matters, and stays honest about uncertainty.
+
+The primary progress concept is **Readiness**, not lesson completion, XP, streaks, or generic proficiency. Readiness must visibly respect TELC's independent Written and Oral pass constraints. Strong performance in one component must not hide risk in the other.
+
+The core loop is:
+
+**Observe → Attempt → Diagnose → Repair → Retry → Remember**
+
+The App must feel:
+
+- competent, calm, focused, warm, and evidence-based;
+- closer to a modern coaching/productivity tool than a children's language game;
+- useful to an anxious A1 learner without becoming childish or overexplaining;
+- serious about the exam without feeling bureaucratic, punitive, or like an examiner portal;
+- information-rich when needed, but always translated into one practical next action.
+
+Bestehen / Corpus remains behind the scenes. It supplies intelligence and rights-aware metadata. Do not design a Corpus browser, raw-source explorer, or learner-facing provenance dashboard as part of the App.
+
+## 3. Design Objective
+
+Create one coherent design language and complete screen system that lets the learner answer, at any meaningful moment:
+
+1. **Where am I?**
+2. **What is holding me back?**
+3. **What should I do next?**
+
+The finished design must support:
+
+- a first-time A1 learner who has never used Bestehen;
+- daily phone-based coaching in short sessions;
+- focused exam practice across all five skills;
+- longer Writing and mock work on larger screens;
+- uncertainty, sparse evidence, pending AI evaluation, and technical failure;
+- improvement from assisted foundation work into independent target conditions;
+- current Readiness, mock recovery, Ready to Book, booked-exam countdown, and post-exam states;
+- learner autonomy without weakening the coach-led default;
+- WCAG 2.2 AA core-flow accessibility and honest evidence treatment.
+
+## 4. Non-Negotiable Product and Design Guardrails
+
+### 4.1 Preserve the primary navigation and ownership model
+
+Primary navigation is:
+
+1. **Coach** — default route and daily action.
+2. **Readiness** — current Written/Oral pass picture.
+3. **Train** — curated secondary choice, review, and mock entry.
+4. **Progress** — historical change and meaningful milestones.
+
+Goal/Exam Date and Settings are utilities. Review and Mocks remain reachable but do not become primary navigation destinations.
+
+Do not turn Home into a content catalog. The default should be one dominant **Start/Continue today's plan** action with a short evidence-based reason.
+
+### 4.2 Preserve Readiness truth
+
+The design must distinguish:
+
+- Evidence building / Not enough evidence;
+- Not ready;
+- Borderline;
+- Safe pass range;
+- Ready to Book;
+- current state versus historical milestone;
+- performance blocker versus evidence/confirmation gap;
+- estimated component result versus confidence/planning range;
+- learning progress versus target-condition Readiness.
+
+The overall Readiness Index is a bottleneck index derived from the weaker component. It is **not a pass probability**. Never label `62 / 100` as a `62% chance of passing`.
+
+The current official pass line is 60% independently in Written and Oral. Bestehen's initial Safe margin begins at 65 only with the required evidence breadth, confidence, and planning-range protection. The UI must not present 65 as an official TELC pass boundary.
+
+Show Written and Oral separately. Make the official pass line understandable without turning the UI into a stressful traffic-light dashboard. Show confidence and the most important blocker/gap near the Readiness summary. When evidence is insufficient, withhold false numerical precision.
+
+### 4.3 Preserve evidence and attempt conditions
+
+The UI must make meaningful distinctions visible without exposing raw internal jargon:
+
+- assisted versus unassisted;
+- open, practice-timed, target-probe, and target-condition attempts;
+- fresh task versus exposed/repeated content;
+- valid, partially valid, pending, interrupted, and invalid evidence;
+- immediate retry success versus delayed retained learning;
+- accessibility support versus answer-bearing help;
+- learner performance failure versus technical/content/evaluator failure.
+
+Technical or content failure must never look like a low learner score. A paused or resumed mock may remain useful practice but cannot silently retain a clean target-condition label.
+
+### 4.4 Preserve coach autonomy and learner control
+
+Support two clear paths:
+
+- **Coach me** — delegated prioritization and the default experience.
+- **Just practice X** — learner-selected useful practice.
+
+The learner may change time, request help in ordinary practice, choose easier/harder work, postpone, stop, select a skill, or start a mock early. The design may explain a material consequence, but it must not shame, punish, or imply that compliance is evidence.
+
+System-owned truth is not editable: target blueprint, pass rules, validity, assistance/timing labels, evidence strength, Readiness interpretation, and mock validity.
+
+Do not create a coach-control percentage, obedience score, or large advanced-settings surface that lets configuration dismantle the coaching model.
+
+### 4.5 Preserve the identity boundary
+
+Do not introduce:
+
+- a mascot or separate named coach character;
+- cartoon reward language, confetti for routine actions, gems, hearts, lives, currencies, leaderboards, or a dominant daily streak;
+- generic AI-chat framing as the primary product;
+- fake pass guarantees or official TELC affiliation;
+- raw Corpus analytics as learner-facing content;
+- manipulative urgency, shame, “we miss you,” or engagement-only prompts;
+- visually loud dashboards where every card competes for attention.
+
+TELC is the target exam, but Bestehen is its own independent product. Do not use TELC logos or styling in a way that implies endorsement.
+
+### 4.6 Stay within shaped launch scope
+
+Design the complete responsive web product. Do not make native apps, social/community features, human tutoring marketplaces, subscriptions/paywalls, advertising, classic gamification, verified-certificate uploads, permanent voice history, full offline packs, or full-duplex real-time voice appear as current core features.
+
+Future/deferred capabilities may be mentioned in handoff notes only where they affect extensibility. Do not spend core design effort on them.
+
+## 5. Required Design Artifact Structure
+
+Create the design work as an organized, inspectable system. Use pages/sections equivalent to:
+
+1. **00 — Cover, Source Summary, and Design Principles**
+2. **01 — Foundations and Tokens**
+3. **02 — Components and Variants**
+4. **03 — Product Patterns and State Models**
+5. **04 — Mobile Screens**
+6. **05 — Desktop / Large-Screen Screens**
+7. **06 — Responsive Behavior**
+8. **07 — Prototype Flows**
+9. **08 — Accessibility and Content Guidance**
+10. **09 — Coverage Matrix and Implementation Handoff**
+
+If your design environment uses different organizational primitives, create the closest equivalent. The result must remain easy for a product designer and engineer to navigate.
+
+Use reusable components, variables/tokens, auto-layout or equivalent responsive constraints, named variants, and consistent layer/component naming. Do not build dozens of visually similar disconnected frames.
+
+## 6. Design Foundations and Visual System
+
+Create a full design foundation, not only a color palette.
+
+### 6.1 Visual direction
+
+Start from the Identity's recommended direction:
+
+- Deep ink/navy for authority and focus;
+- clear green for meaningful progress and Safe status;
+- warm off-white study surfaces;
+- amber for uncertainty/attention;
+- restrained red only for genuine pass-critical risk or incorrect states;
+- simple cards, subtle rounding, thin dividers, restrained elevation;
+- modern, highly legible sans-serif typography;
+- minimal functional illustration and sparse purposeful motion.
+
+The working Identity palette is a starting point, not an excuse to skip accessibility validation:
+
+- Deep Ink `#14213D`
+- Bestehen Green `#2A9D6F`
+- Deep Green `#1D6F50`
+- Warm Paper `#F7F4EE`
+- Mist `#EDF0F4`
+- Risk Red `#B64B4B`
+
+Expand this into a coherent neutral scale and semantic token set. Adjust exact values where necessary for WCAG contrast while preserving the identity. Do not rely on red/amber/green alone to communicate status; pair color with wording, iconography, shape, or position.
+
+### 6.2 Required foundations
+
+Define and demonstrate:
+
+- brand and semantic color tokens, including surfaces, text, borders, focus, interactive states, data visualization, and dark/strong surfaces;
+- typography family, scale, weights, line heights, long-form reading behavior, numeric/data styles, and German-character support;
+- spacing scale, layout grid, breakpoints, page widths, gutters, safe areas, and density rules;
+- radii, borders, dividers, elevation, overlays, and focus rings;
+- icon style and an open-source/low-cost icon strategy;
+- illustration/empty-state rules without mascot drift;
+- motion durations/easing and reduced-motion alternatives;
+- chart and Readiness-visualization rules;
+- content hierarchy, truncation/wrapping, German compound-word handling, and 200% text reflow;
+- light-mode foundation. A dark mode is optional and must not displace complete core-flow design.
+
+Prefer open-source or system-safe typefaces and icons so the personal project is inexpensive to operate. Document licensing/availability assumptions in handoff notes.
+
+### 6.3 Responsive targets
+
+Use these working design targets unless your environment requires close equivalents:
+
+- **Primary mobile:** 390 × 844;
+- **Small mobile validation:** 360 × 800;
+- **Tablet/layout transition proof:** approximately 768–1024 px wide;
+- **Primary desktop:** 1440 × 1024.
+
+Daily coaching and core practice must feel excellent on phone. Long Writing, evidence-rich Readiness views, and mocks should gain useful structure and space on desktop rather than merely stretching mobile cards.
+
+Document responsive transformations: navigation, panel stacking, sticky actions, timers, long text, charts, dialogs/sheets, two-column layouts, and attempt focus mode.
+
+## 7. Required Component Library
+
+Create reusable components with documented anatomy, variants, states, accessibility behavior, and responsive rules.
+
+At minimum include:
+
+### 7.1 Navigation and structure
+
+- responsive App shell;
+- mobile bottom navigation and large-screen navigation treatment;
+- utility header, page title, breadcrumb/back pattern where needed;
+- focused attempt/mock shell with suppressed distractions;
+- section/page containers, cards, panels, dividers, sticky footer/action area;
+- progress stepper and compact journey/state indicators.
+
+### 7.2 Actions and inputs
+
+- primary, secondary, tertiary, destructive, and icon buttons;
+- links, segmented controls, tabs, chips, filters, toggle/checkbox/radio controls;
+- text fields, selects/comboboxes, date/date-range/target-month input, time/window and weekly schedule input;
+- answer choices, matching controls, cloze/gap inputs, reorder/selection patterns where required;
+- form validation, inline help, error summary, and confirmation patterns;
+- bottom sheet, modal/dialog, popover, tooltip, menu, toast, and persistent alert.
+
+### 7.3 Coaching and evidence
+
+- today's recommendation card and `Why this today?` disclosure;
+- session duration selector and Adjust plan pattern;
+- coach message pattern using **fact → meaning → next action**;
+- result/diagnosis card, decisive-evidence highlight, cause/confidence treatment;
+- repair card, hint/help disclosure, fresh-check banner, and Remember/what-changed summary;
+- assistance/timing/validity labels translated into learner-friendly language;
+- weakness/opportunity card and lifecycle summary;
+- due-review obligation and grouped-review summary;
+- pending-evaluation, evidence-gap, stale-evidence, contradiction, and invalidation patterns.
+
+### 7.4 Readiness, progress, and data display
+
+- overall Readiness band/index presentation;
+- separate Written and Oral component cards;
+- pass-line and planning-range visualization;
+- confidence/evidence-breadth display;
+- section/task-family breakdown without information overload;
+- blocker and evidence-gap treatment;
+- meaningful-change timeline/trend and milestone treatment;
+- mock result summary and comparison;
+- accessible text/table alternative for every chart or visual scale.
+
+### 7.5 Skill-specific interaction
+
+- Reading text and question shell;
+- Language Elements connected-text cloze shell;
+- Listening player with task-specific replay state, playback restriction, failure/recovery, and post-attempt transcript;
+- Writing prompt, explicit content-point checklist, editor, autosave/checkpoint, timer, submit, evaluation, correction, revision, and fresh-task patterns;
+- Speaking prompt, microphone permission, preflight, visible recording state, turn-taking, partner turn, transcript/evaluation, retry, and fixed-partner fallback;
+- accessible and invalid/unsupported-device variants.
+
+### 7.6 Mock and high-stakes states
+
+- mock type/scope card;
+- setup rules and estimated commitment;
+- equipment/media/checkpoint preflight;
+- timed continuous-block header/progress/timer;
+- pause/stop warning and consequence explanation;
+- technical-interruption recovery;
+- pending productive evaluation;
+- validity result and affected-scope explanation;
+- post-mock priorities and focused recovery plan.
+
+For every relevant component, show default, hover, focus-visible, pressed, selected, disabled, loading/skeleton, empty, error, offline, pending, success, and high-risk states. Use variants rather than duplicating disconnected components.
+
+## 8. Complete Screen Inventory
+
+Design all screens and state variants needed for the complete product. Use a coverage matrix to prove that nothing required by the Product Specification was silently omitted. When several states can share one screen template, create a strong template and explicit variants rather than unnecessary duplicate frames.
+
+### 8.1 Entry, onboarding, and setup
+
+- focused landing/value proposition;
+- begin without account;
+- target confirmation: TELC B1;
+- exam status: No date, Target month, Exact planned date, Booked exact date;
+- availability/session preference;
+- explanation-language preference;
+- accessibility/equipment context where useful;
+- notification/study-schedule opt-in without a seven-days-per-week assumption;
+- onboarding summary and Begin diagnostic;
+- resume incomplete onboarding/diagnostic;
+- local-only data/recovery explanation at the moment it becomes relevant, not as an account wall.
+
+### 8.2 Initial diagnostic
+
+- diagnostic introduction, approximate time, five-skill scope, and pause/resume promise;
+- objective task cluster template;
+- Listening task and audio state;
+- Writing sample;
+- Speaking permission/preflight/sample/interaction;
+- step-up, easier confirmation, and early-exit transitions without telling the learner they “failed”;
+- paused/incomplete/resume;
+- pending productive evaluation;
+- technical invalidation/replacement;
+- starting snapshot with separate Written/Oral status, five skill signals, confidence, blockers/gaps, and first plan;
+- provisional baseline when only the minimum useful evidence exists;
+- not-enough-evidence state when the learner must resume.
+
+### 8.3 Coach / Home and today's session
+
+- first personalized Home;
+- normal daily Home with one dominant Start/Continue action;
+- Quick 10, Standard 25, Extended 45, and bounded custom-time selection;
+- `Why this today?`;
+- Adjust plan and compact alternatives;
+- Coach me versus Just practice X entry;
+- session plan with one dominant and optional secondary commitment;
+- resume paused/partially completed session;
+- replanned session after time/context change;
+- pending evaluation that does not block unrelated work;
+- blocked session caused by technology/content;
+- session-end summary showing evidence gained, what changed, and what returns later—never a failed completion percentage.
+
+### 8.4 Train hub and learner-directed practice
+
+- curated Train hub;
+- skill selection for Reading, Language Elements, Listening, Writing, Speaking;
+- Review entry and Mock entry;
+- difficulty/realism choice: supported/easier, recommended, harder/more exam-like, target conditions;
+- support options for ordinary practice;
+- brief material-deviation explanation when a pass blocker is being postponed;
+- content unavailable/exhausted with a useful lower-claim alternative.
+
+### 8.5 Canonical learning loop
+
+Design reusable screens/patterns for:
+
+- Observe / Before you start;
+- Attempt / Try;
+- Diagnose / What happened;
+- Repair / Quick repair;
+- Retry / Fresh check;
+- Remember / What changed.
+
+Create high-fidelity representative flows for:
+
+1. Reading distractor/restriction mistake;
+2. Language Elements contextual grammar/lexis mistake;
+3. Listening numbers/dates or corrected-information mistake;
+4. Writing missing-content-point repair and learner revision;
+5. Speaking interaction/turn-taking repair.
+
+Also show compressed success, unresolved-cause, skipped repair, skipped retry, invalid attempt, pending productive evaluation, and fresh-content-unavailable branches.
+
+### 8.6 Skill experiences
+
+Cover all target families and the distinctive interactions they require:
+
+- Reading R1/R2/R3;
+- Language Elements SB1/SB2;
+- Listening H1/H2/H3;
+- Writing prompt, content points, B1-sufficient feedback, minimal corrections, revision, and fresh transfer;
+- Speaking S1/S2/S3, including actual interaction for S2/S3 and a fixed-partner fallback where it supports only a narrower claim.
+
+Show at least one P0/P1 supported experience, one P2 bridge experience, one P3 independent experience, and one P4 target-condition experience. The target mechanism should remain recognizable while support and constraints change.
+
+### 8.7 Review, Mistake Memory, and weakness detail
+
+- grouped due obligations rather than a deck/card-count metaphor;
+- compact review session;
+- known weakness detail with observed pattern, evidence confidence, affected exam value, current lifecycle, last repair, due transfer, and next action;
+- candidate/unconfirmed language that avoids “you always…”;
+- Repairing, Stabilizing, Repaired, Resolved, and Reopened states;
+- successful spontaneous productive use;
+- repeated delayed failure/re-diagnosis;
+- collapsed re-entry after a large overdue backlog.
+
+### 8.8 Readiness
+
+Design distinct high-fidelity variants for:
+
+- Evidence building / no overall index;
+- clear Not ready;
+- Borderline because the range crosses the pass line;
+- nominal estimate ≥65 but incomplete decision-grade evidence;
+- Safe Written but weak/unknown Oral;
+- Safe Oral but weak/unknown Written;
+- both components Safe;
+- contradictory new evidence;
+- stale evidence;
+- current Safe state with a remaining Ready-to-Book confirmation gap;
+- Readiness temporarily needing target-blueprint verification.
+
+Readiness must lead with the current decision, not a dense analytics dashboard. Provide progressive disclosure for section/task-family evidence and explain every meaningful movement.
+
+### 8.9 Mock exams
+
+- coach-recommended smallest useful mock;
+- mini-mock, section/component mock, and full mock selection/details;
+- mock not yet recommended but learner chooses to start;
+- setup, timing/playback rules, and commitment estimate;
+- preflight and capability failure;
+- focused measured shell for Reading + Language Elements, Listening, Writing, and Oral;
+- pause/stop/interruption behavior;
+- continued-as-practice state;
+- pending Writing/Speaking evaluation;
+- valid, partially valid, invalid-scope, failed, borderline, and passing results;
+- post-mock analysis with at most two immediate priorities;
+- failed-full-mock recovery plan: focused repair → delayed transfer → smaller retest;
+- mock history/consistency without encouraging unnecessary repeated full mocks.
+
+### 8.10 Ready to Book and exam urgency
+
+- performance gap versus evidence/confirmation gap;
+- exact booking blocker;
+- Ready-to-Book success state with measured, non-guaranteeing language;
+- learner books before recommendation;
+- more-than-21-day preparation;
+- Build & Confirm (21–8 days);
+- Taper & Execute (final 7 days);
+- final 48 hours and exam-day logistics;
+- unrealistic deadline warning and triaged plan;
+- Ready-to-Book status reopening while the historical milestone remains;
+- exam marked complete;
+- Outcome pending, Passed, and Not passed/rebased goal.
+
+### 8.11 Progress and motivation
+
+- meaningful weekly review;
+- monthly/history view;
+- capability/evidence change;
+- readiness history without celebrating tiny noise;
+- sparse milestones: starting picture, first section in target range, Oral Safe, Written Safe, first full-mock pass, repeated full-mock pass, Ready to Book;
+- plateau/coaching-strategy change;
+- neutral missed-week/return experience;
+- low-key weekly preparation consistency as tertiary information only.
+
+### 8.12 Goal, schedule, notifications, account, data, and settings
+
+- Goal/Exam Date view and all date modes;
+- study schedule, duration, reminder enablement, snooze/change-this-week;
+- quiet hours and capped-notification preferences;
+- repeated ignored-reminder in-app adjustment prompt;
+- explanation language, stable accessibility/equipment preferences, and reduced-motion setting where appropriate;
+- account-optional/local profile state;
+- future sign-in for recovery/sync presented as optional capability, not a first-use gate;
+- export request/status;
+- personal-data deletion confirmation and irreversible consequence;
+- raw-audio ephemeral-retention explanation near voice use;
+- offline/poor-connectivity state;
+- unsupported browser/capability state;
+- microphone denied/silent/wrong-device state;
+- AI/evaluator outage and delayed feedback.
+
+Do not create billing, subscription, social, Corpus-administration, content-authoring, or enterprise-admin screens.
+
+## 9. Required Prototype Flows
+
+Create connected, reviewable prototypes for at least these journeys:
+
+### Flow A — A1 Day 1
+
+Landing → minimal onboarding → adaptive diagnostic with supported productive samples → evidence-building starting snapshot → first coached loop → What changed → updated Home.
+
+### Flow B — Normal daily coaching
+
+Coach/Home → Why this today? → 25-minute plan → one objective or Listening loop → due delayed check → session summary → Readiness/Progress update.
+
+### Flow C — Strong Reading, weak Speaking
+
+Home shows Oral as the booking/pass blocker → learner reviews rationale → Speaking S2/S3 interaction practice → diagnosis/repair/fresh check → pending/complete evaluation → Readiness remains bottleneck-honest.
+
+### Flow D — Writing repair
+
+Writing prompt/content points → learner response → structured evaluation → missing content-point diagnosis → narrow repair → learner revision → fresh Writing transfer scheduled/attempted.
+
+### Flow E — Failed full mock recovery
+
+Full-mock result → validity and independent Written/Oral breakdown → at most two priorities → focused repair plan → delayed transfer → smaller component retest → revised Readiness.
+
+### Flow F — Ready to Book
+
+Both components Safe but one confirmation gap → smallest useful component check → Ready-to-Book gate passes → measured recommendation → learner marks exam booked → Build & Confirm / countdown preparation.
+
+### Flow G — Return after absence
+
+Neutral return → history preserved but some evidence stale → smallest decision-relevant recheck → rebuilt short plan → no backlog or shame.
+
+Include key error/recovery branches in the prototypes, not only ideal happy paths.
+
+## 10. Content and UX-Writing Requirements
+
+Use realistic product copy throughout. Do not use lorem ipsum, vague dashboard labels, or generic “AI-generated” placeholder text.
+
+Follow the coach voice:
+
+- short, specific, factual, practical;
+- fact → meaning → next action;
+- encouraging only when evidence supports it;
+- calm after poor performance;
+- transparent about uncertainty;
+- German for target tasks and increasingly for explanations as the learner progresses;
+- English clarification where it materially improves comprehension outside clean target conditions;
+- no duplicate bilingual paragraphs by default.
+
+Prefer product language such as:
+
+- Readiness;
+- Today's plan / Today's training;
+- opportunity / weakness;
+- repair;
+- fresh check / retry;
+- evidence;
+- pass range;
+- mock exam.
+
+Avoid XP, level points, boss level, win, gems, streak loss, “AI score,” “You will pass,” “Amazing, you're crushing it,” or shame-based language.
+
+Use real German characters, plausible TELC-style task content, realistic times/dates/names, and concise English/German support copy. Original sample exam content is sufficient; do not reproduce protected source material or imply that a sample is official TELC content.
+
+## 11. Accessibility Requirements
+
+Design and annotate to a WCAG 2.2 AA core-flow baseline.
+
+Required:
+
+- visible focus states and complete keyboard paths;
+- logical heading, landmark, label, error, and focus order assumptions;
+- screen-reader-friendly status changes and chart alternatives;
+- 200% text scaling/reflow without clipped actions or horizontal reading scroll in normal content;
+- non-color-only status and answer feedback;
+- minimum practical touch targets and spacing;
+- reduced-motion behavior;
+- accessible timer and urgency presentation that does not create unnecessary pressure;
+- text equivalents for instructional audio;
+- careful transcript/caption handling so access support does not silently alter a target-condition claim;
+- microphone denial/silent-input fallback without marking the learner weak;
+- accessible matching/cloze alternatives where drag-only interaction would exclude users;
+- error recovery that preserves entered Writing and completed work.
+
+Annotate where an accessibility adaptation preserves the measured skill and where it narrows the evidence claim. The learner's accessibility need itself must never be displayed as a failure.
+
+## 12. Interaction, Loading, Error, and Recovery States
+
+For each major flow, design behavior for:
+
+- initial loading and skeletons;
+- no data / not enough evidence;
+- pending productive evaluation;
+- slow evaluation while unrelated actions remain available;
+- empty review queue;
+- content unavailable or quarantined;
+- network loss before and during an activity;
+- local save/checkpoint success and recovery;
+- unsupported browser capability;
+- microphone/audio failure and device switch;
+- expired/stale target blueprint;
+- interrupted timer or backgrounded tab;
+- session partial completion, pause, replan, and block;
+- destructive confirmation for deleting data;
+- late-arriving evaluation after the learner leaves.
+
+Use deterministic, plain-language fallback states. Never leave the learner staring at an indefinite AI spinner when the product should show Pending and allow progress elsewhere.
+
+## 13. Design-System Documentation and Engineering Handoff
+
+For every foundation, component, and major pattern, document enough that implementation does not have to reverse-engineer the visual file.
+
+Include:
+
+- token names and values;
+- component names, anatomy, variants, states, and composition rules;
+- responsive behavior and breakpoint transformations;
+- interaction/keyboard/focus behavior;
+- validation, loading, empty, pending, error, offline, and recovery rules;
+- motion and reduced-motion behavior;
+- content constraints and sample copy;
+- accessibility annotations;
+- charts/Readiness semantics and accessible alternatives;
+- evidence/assistance/timing/validity state mapping;
+- launch-required versus deferred labels where relevant;
+- any visual decision that future designers must preserve.
+
+Do not prescribe backend architecture, API endpoints, storage schemas, model vendors, or implementation frameworks. You may specify the UI state and data the component needs, but not how the system must technically produce it.
+
+## 14. Coverage and Quality-Control Checklist
+
+Before declaring the design complete, create a coverage matrix mapping every major Product Specification area to:
+
+- screen(s);
+- component/pattern(s);
+- responsive coverage;
+- accessibility coverage;
+- prototype flow, where applicable;
+- status: complete, represented by reusable variant, or explicitly deferred by the Product Specification.
+
+Run these final checks:
+
+### Product truth
+
+- [ ] Coach is the default route and provides one clear next action.
+- [ ] Written and Oral pass risk remain independently visible.
+- [ ] Readiness is never presented as pass probability.
+- [ ] Missing/uncertain evidence is visible instead of guessed.
+- [ ] User overrides affect the plan, not evidence truth.
+- [ ] Technical/content/evaluator failure never looks like learner failure.
+- [ ] Immediate retry and delayed retention are visually distinct.
+- [ ] Mocks preserve validity, timing, interruption, and pending-evaluation semantics.
+- [ ] Ready to Book is distinct from Safe and never promises a pass.
+- [ ] Corpus remains behind the scenes.
+
+### Experience completeness
+
+- [ ] First launch through first coached session is fully designed.
+- [ ] All five skills and every target family have a designed interaction pattern.
+- [ ] P0–P4 progression is represented without turning rungs into course levels.
+- [ ] Review, Mistake Memory, Readiness, mocks, Ready to Book, countdown, and post-exam states are covered.
+- [ ] Goal, schedule, reminders, account-optional data, export/delete, offline, microphone, and evaluator states are covered.
+- [ ] Representative mobile and desktop layouts are complete.
+- [ ] Seven prototype flows include important recovery branches.
+
+### Design-system quality
+
+- [ ] Foundations are tokenized and contrast-checked.
+- [ ] Components are reusable, named, and have required variants/states.
+- [ ] No duplicated one-off component system was created per skill.
+- [ ] Responsive rules are documented rather than implied.
+- [ ] Realistic copy replaces lorem ipsum.
+- [ ] WCAG 2.2 AA core-flow requirements and reduced-motion behavior are annotated.
+- [ ] Charts and color statuses have accessible textual equivalents.
+
+### Identity and restraint
+
+- [ ] Visual tone feels calm, credible, warm, and modern.
+- [ ] No mascot, childish gamification, confetti-heavy celebration, or engagement manipulation was introduced.
+- [ ] Pass-critical risk is clear without making every screen red or alarming.
+- [ ] Coach copy is specific, evidence-based, and action-oriented.
+- [ ] TELC target context does not imply official affiliation.
+
+## 15. Working Method
+
+1. Read all three source documents in full.
+2. Summarize the non-negotiable design constraints and source hierarchy inside the design artifact.
+3. Build the sitemap, screen inventory, state matrix, and prototype-flow map before polishing individual screens.
+4. Establish foundations and core components.
+5. Design one end-to-end mobile flow to validate the system.
+6. Extend the component/pattern system across all required screens and edge states.
+7. Design large-screen adaptations for Writing, Readiness, Progress, and mocks.
+8. Connect the required prototypes.
+9. Run accessibility, product-truth, identity, responsiveness, and coverage checks.
+10. Finish the handoff and explicitly list any assumption made where the documents left visual behavior open.
+
+Do not ask the owner to choose between ordinary visual options. Use professional product-design judgment and the identity principles to choose a strong recommended default. Surface only a question that genuinely blocks a correct design.
+
+## 16. Final Deliverables
+
+Deliver all of the following:
+
+1. A complete, organized high-fidelity design artifact.
+2. A reusable token-based design system and component library.
+3. Mobile and desktop/large-screen designs for the complete required screen inventory.
+4. Responsive behavior documentation and representative tablet transition proofs.
+5. Connected prototypes for Flows A–G.
+6. Realistic exam-coach copy and representative German task content.
+7. Accessibility annotations and a WCAG 2.2 AA review for core flows.
+8. Screen/component/state coverage matrix against the Product Specification.
+9. Implementation handoff notes with component behavior, states, and open visual assumptions.
+10. A concise final summary stating:
+   - what was designed;
+   - which product areas and flows are covered;
+   - any explicit source-driven deferrals;
+   - any assumptions made;
+   - any genuine blocker that remains.
+
+The task is complete only when the result represents the **whole Bestehen / App experience**, not merely the dashboard or a visual concept. A later engineer should be able to identify the correct screen, component, state, hierarchy, and responsive behavior for every core product moment without inventing a second product design.
