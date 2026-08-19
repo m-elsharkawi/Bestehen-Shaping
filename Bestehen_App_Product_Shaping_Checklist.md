@@ -416,11 +416,11 @@
 
 ## 20. Define Progress and Motivation
 
-- [ ] Confirm Readiness as the primary progress concept.
-- [ ] Decide whether streaks are needed.
-- [ ] Decide whether XP is needed.
-- [ ] Decide whether achievements are needed.
-- [ ] Ensure any gamification stays secondary to exam readiness.
+- [x] Confirm Readiness as the primary progress concept.
+- [x] Decide whether streaks are needed.
+- [x] Decide whether XP is needed.
+- [x] Decide whether achievements are needed.
+- [x] Ensure any gamification stays secondary to exam readiness.
 - [ ] Define meaningful milestones:
   - [ ] initial diagnostic,
   - [ ] first section in pass range,
