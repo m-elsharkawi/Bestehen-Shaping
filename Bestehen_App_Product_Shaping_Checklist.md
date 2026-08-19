@@ -507,11 +507,11 @@
 - [x] Define due-review reminders.
 - [x] Define mock-exam reminders.
 - [x] Define exam-date urgency reminders.
-- [ ] Avoid shame-based missed-day messaging.
-- [ ] Define quiet hours.
-- [ ] Define notification frequency caps.
-- [ ] Define behavior when the learner ignores reminders.
-- [ ] Keep reminders tied to preparation value, not generic engagement.
+- [x] Avoid shame-based missed-day messaging.
+- [x] Define quiet hours.
+- [x] Define notification frequency caps.
+- [x] Define behavior when the learner ignores reminders.
+- [x] Keep reminders tied to preparation value, not generic engagement.
 
 **Done when:** Urgency changes the coaching plan without changing readiness truth, and habit support helps the learner prepare without becoming noisy or manipulative.
 
