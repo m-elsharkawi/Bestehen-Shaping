@@ -498,20 +498,22 @@
 
 ---
 
-## 23. Define Notifications, Scheduling, and Habit Support
+## 23. Define Exam-Date and Urgency Behavior + Notifications, Scheduling, and Habit Support
 
-- [ ] Define reminder types.
-- [ ] Define configurable study schedule.
-- [ ] Define due-review reminders.
-- [ ] Define mock-exam reminders.
-- [ ] Define exam-date urgency reminders.
+> **Stage continuity note:** The Stage 23 agent prompt defines **Exam-Date and Urgency Behavior**, while this checklist previously named Stage 23 **Notifications, Scheduling, and Habit Support**. Stage 23 now covers both; decisions are documented in `app/23-exam-date-and-urgency.md`.
+
+- [x] Define reminder types.
+- [x] Define configurable study schedule.
+- [x] Define due-review reminders.
+- [x] Define mock-exam reminders.
+- [x] Define exam-date urgency reminders.
 - [ ] Avoid shame-based missed-day messaging.
 - [ ] Define quiet hours.
 - [ ] Define notification frequency caps.
 - [ ] Define behavior when the learner ignores reminders.
 - [ ] Keep reminders tied to preparation value, not generic engagement.
 
-**Done when:** Habit support helps the learner prepare without becoming noisy or manipulative.
+**Done when:** Urgency changes the coaching plan without changing readiness truth, and habit support helps the learner prepare without becoming noisy or manipulative.
 
 ---
 
