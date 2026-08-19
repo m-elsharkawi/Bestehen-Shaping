@@ -166,12 +166,12 @@
 
 ## 7. Define Difficulty and TELC Relevance
 
-- [ ] Define linguistic difficulty.
-- [ ] Define task/reasoning difficulty.
-- [ ] Define time-pressure difficulty.
-- [ ] Define audio difficulty.
-- [ ] Define production difficulty for writing/speaking.
-- [ ] Separate CEFR level from numerical difficulty.
+- [x] Define linguistic difficulty.
+- [x] Define task/reasoning difficulty.
+- [x] Define time-pressure difficulty.
+- [x] Define audio difficulty.
+- [x] Define production difficulty for writing/speaking.
+- [x] Separate CEFR level from numerical difficulty.
 - [ ] Define TELC relevance separately from generic B1 relevance.
 - [ ] Define provider/source weighting principles.
 - [ ] Limit how strongly low-confidence material affects aggregate insights.
