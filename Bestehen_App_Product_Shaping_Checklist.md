@@ -199,16 +199,16 @@
 
 ## 10. Define Language Elements / Sprachbausteine Coaching
 
-- [ ] Map TELC task types.
-- [ ] Prioritize grammar concepts by exam relevance.
-- [ ] Define conjunction/connector training.
-- [ ] Define preposition/case training.
-- [ ] Define word-order training.
-- [ ] Define vocabulary-in-context training.
-- [ ] Keep grammar explanations short and exam-driven.
-- [ ] Feed recurring grammar weaknesses into daily review.
-- [ ] Define adaptive cloze difficulty.
-- [ ] Use Corpus frequency data to influence priority.
+- [x] Map TELC task types.
+- [x] Prioritize grammar concepts by exam relevance.
+- [x] Define conjunction/connector training.
+- [x] Define preposition/case training.
+- [x] Define word-order training.
+- [x] Define vocabulary-in-context training.
+- [x] Keep grammar explanations short and exam-driven.
+- [x] Feed recurring grammar weaknesses into daily review.
+- [x] Define adaptive cloze difficulty.
+- [x] Use Corpus frequency data to influence priority.
 
 **Done when:** Grammar is taught because it wins exam points, not because it belongs to a chapter.
 
