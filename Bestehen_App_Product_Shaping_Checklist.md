@@ -291,20 +291,20 @@
 
 ## 14. Define Review and Spaced Repetition
 
-- [ ] Decide what enters review:
-  - [ ] vocabulary,
-  - [ ] grammar patterns,
-  - [ ] useful phrases,
-  - [ ] listening distinctions,
-  - [ ] writing mistakes,
-  - [ ] speaking corrections,
-  - [ ] exam strategies.
-- [ ] Define scheduling principles.
-- [ ] Weight review priority by TELC relevance.
-- [ ] Define behavior after repeated failure.
-- [ ] Let successful productive use improve mastery more strongly where appropriate.
-- [ ] Define quick-review formats.
-- [ ] Blend review into daily coaching rather than building a separate flashcard product.
+- [x] Decide what enters review:
+  - [x] vocabulary,
+  - [x] grammar patterns,
+  - [x] useful phrases,
+  - [x] listening distinctions,
+  - [x] writing mistakes,
+  - [x] speaking corrections,
+  - [x] exam strategies.
+- [x] Define scheduling principles.
+- [x] Weight review priority by TELC relevance.
+- [x] Define behavior after repeated failure.
+- [x] Let successful productive use improve mastery more strongly where appropriate.
+- [x] Define quick-review formats.
+- [x] Blend review into daily coaching rather than building a separate flashcard product.
 
 **Done when:** Important mistakes reliably return until they are retained.
 
