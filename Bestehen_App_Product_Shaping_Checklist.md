@@ -456,24 +456,45 @@
 
 ---
 
-## 22. Define Corpus → App Product Contract
+## 22. Define User Controls vs Coach Autonomy + Corpus → App Product Contract
 
-- [ ] Define what the App requests from Corpus.
-- [ ] Define what Corpus returns.
-- [ ] Define how the App uses:
-  - [ ] task patterns,
-  - [ ] topic frequency,
-  - [ ] vocabulary frequency,
-  - [ ] grammar frequency,
-  - [ ] difficulty,
-  - [ ] TELC relevance,
-  - [ ] distractor patterns,
-  - [ ] skill relationships.
-- [ ] Decide whether App needs raw/reference source access.
-- [ ] Define behavior if Corpus lacks enough evidence.
-- [ ] Define version compatibility expectations.
+> **Stage continuity note:** The Stage 22 agent prompt defines **User Controls vs Coach Autonomy**, while this checklist previously named Stage 22 **Corpus → App Product Contract**. Stage 22 now covers both; decisions are documented in `app/22-user-controls-vs-coach-autonomy.md`.
 
-**Done when:** The two products can evolve independently without ambiguity about their responsibilities.
+### User controls vs coach autonomy
+
+- [x] List what the coach controls automatically.
+- [x] List what learners can override.
+- [x] Define learner controls for:
+  - [x] section / skill,
+  - [x] duration,
+  - [x] difficulty / realism,
+  - [x] mocks,
+  - [x] review,
+  - [x] assistance.
+- [x] Define **Coach me** versus **Just practice X** paths.
+- [x] Define how overrides affect personalization.
+- [x] Define how overrides affect evidence and Readiness.
+- [x] Define how the App explains deviations from its recommendation.
+- [x] Prevent excessive settings from weakening the coach identity.
+
+### Corpus → App product contract
+
+- [x] Define what the App requests from Corpus.
+- [x] Define what Corpus returns.
+- [x] Define how the App uses:
+  - [x] task patterns,
+  - [x] topic frequency,
+  - [x] vocabulary frequency,
+  - [x] grammar frequency,
+  - [x] difficulty,
+  - [x] TELC relevance,
+  - [x] distractor patterns,
+  - [x] skill relationships.
+- [x] Decide whether App needs raw/reference source access.
+- [x] Define behavior if Corpus lacks enough evidence.
+- [x] Define version compatibility expectations.
+
+**Done when:** The coach owns the strong default without trapping the learner, learner overrides preserve evidence truth, and Corpus/App responsibilities remain unambiguous.
 
 ---
 
