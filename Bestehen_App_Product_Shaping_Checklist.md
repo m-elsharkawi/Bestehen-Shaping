@@ -438,19 +438,19 @@
 
 ## 21. Define the Content Strategy
 
-- [ ] Define the relationship between Corpus and App content.
-- [ ] Define what can be shown verbatim.
-- [ ] Define when original exercises are generated.
-- [ ] Define generation patterns grounded in Corpus evidence.
-- [ ] Define generated-content QA.
-- [ ] Define answer validation.
-- [ ] Define difficulty controls.
-- [ ] Define anti-repetition rules.
-- [ ] Ensure generated reading passages remain natural German.
-- [ ] Define generated-audio requirements.
-- [ ] Define writing/speaking prompt generation requirements.
-- [ ] Define content refresh/rotation.
-- [ ] Define source attribution rules where needed.
+- [x] Define the relationship between Corpus and App content.
+- [x] Define what can be shown verbatim.
+- [x] Define when original exercises are generated.
+- [x] Define generation patterns grounded in Corpus evidence.
+- [x] Define generated-content QA.
+- [x] Define answer validation.
+- [x] Define difficulty controls.
+- [x] Define anti-repetition rules.
+- [x] Ensure generated reading passages remain natural German.
+- [x] Define generated-audio requirements.
+- [x] Define writing/speaking prompt generation requirements.
+- [x] Define content refresh/rotation.
+- [x] Define source attribution rules where needed.
 
 **Done when:** Bestehen has enough high-quality practice without depending on redistributing copyrighted exam material.
 
