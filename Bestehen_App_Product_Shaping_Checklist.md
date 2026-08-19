@@ -667,26 +667,26 @@
 
 ## 28. Produce the Final Bestehen / App Product Specification
 
-- [ ] Consolidate all shaping documents into a final PRD/spec.
-- [ ] Document the complete learner journey.
-- [ ] Document the learner model.
-- [ ] Document the coaching engine.
-- [ ] Document mistake memory.
-- [ ] Document A1→B1 progression.
-- [ ] Document every exam-skill experience.
-- [ ] Document review/spaced repetition.
-- [ ] Document TELC readiness.
-- [ ] Document mock exams and ready-to-book logic.
-- [ ] Document coach personality.
-- [ ] Document information architecture.
-- [ ] Document content strategy.
-- [ ] Document Corpus contract.
-- [ ] Document notifications/habit support.
-- [ ] Document account/data expectations.
-- [ ] Document accessibility/device expectations.
-- [ ] Document analytics and cost constraints.
-- [ ] Document explicitly deferred features.
-- [ ] Separate unresolved architecture questions from unresolved product questions.
+- [x] Consolidate all shaping documents into a final PRD/spec.
+- [x] Document the complete learner journey.
+- [x] Document the learner model.
+- [x] Document the coaching engine.
+- [x] Document mistake memory.
+- [x] Document A1→B1 progression.
+- [x] Document every exam-skill experience.
+- [x] Document review/spaced repetition.
+- [x] Document TELC readiness.
+- [x] Document mock exams and ready-to-book logic.
+- [x] Document coach personality.
+- [x] Document information architecture.
+- [x] Document content strategy.
+- [x] Document Corpus contract.
+- [x] Document notifications/habit support.
+- [x] Document account/data expectations.
+- [x] Document accessibility/device expectations.
+- [x] Document analytics and cost constraints.
+- [x] Document explicitly deferred features.
+- [x] Separate unresolved architecture questions from unresolved product questions.
 
 ### Bestehen / App is fully shaped when:
 
