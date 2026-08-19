@@ -1,0 +1,563 @@
+# Design Agent Prompt — Bestehen Brand
+## Create the Logo, Brand-Mark System, and Selectable Concept Variations
+
+You are the senior brand identity designer responsible for creating an original, distinctive, production-ready logo system for **Bestehen** and its two connected products:
+
+- **Bestehen / App** — the learner-facing German exam coach;
+- **Bestehen / Corpus** — the exam-data and intelligence product behind it.
+
+Your task is to create the **actual editable logo and brand-mark design artifact**, not only a written brand strategy, mood board, or one speculative logo. Explore multiple genuinely different directions, make the alternatives easy to compare, refine the strongest candidates, and preserve controlled variables so the owner can select a direction and ask for further enhancement without restarting the work.
+
+This is a brand-design task. Do not redesign the product, change the name, create application architecture, or produce production UI code. The output must be a vector-first logo family, a choice-ready concept set, and a concise usage system that can be applied consistently by the separate UI/design-system work.
+
+## 1. Source Documents — Read Before Designing
+
+You will receive these documents with this prompt:
+
+1. `01_Bestehen_Product_Overview.md`
+2. `02_Bestehen_Identity.md`
+3. `28-bestehen-app-product-specification.md`
+
+Read all three completely before creating concepts.
+
+Use this authority order:
+
+1. **Identity** — authoritative for brand personality, voice, visual direction, naming, and guardrails.
+2. **Product Overview** — authoritative for the umbrella brand and relationship between Corpus and App.
+3. **Final Product Specification** — authoritative for the complete learner experience, product boundaries, target context, accessibility, and current launch scope.
+
+If you are also given the complete UI/design-system prompt or artifact, use it only to test visual compatibility. The logo system should inform and fit that system; it must not reopen settled product decisions.
+
+Do not ask the owner to choose a direction before you have created a useful comparison set. Make professional design judgments, show the best alternatives, recommend one, and retain enough editable structure to refine another direction if the owner prefers it.
+
+## 2. Brand Context You Must Preserve
+
+**Bestehen** means “to pass” in German. The name deliberately focuses on the learner's intended outcome: becoming measurably ready to pass TELC B1.
+
+The core product idea is:
+
+> Learn German through exam preparation, not learn German first and prepare for the exam later.
+
+Bestehen / App should feel like a calm, sharp personal exam coach that:
+
+- knows the exam;
+- diagnoses why points are being lost;
+- remembers recurring weaknesses;
+- chooses the next highest-value move;
+- uses evidence rather than motivational theater;
+- communicates uncertainty honestly;
+- helps an A1 learner progress toward credible B1 readiness.
+
+Bestehen / Corpus is the intelligence foundation: structured, evidence-oriented, provenance-aware, and rights-aware. It supports the App without becoming the learner-facing identity.
+
+The umbrella brand therefore needs to balance:
+
+- **outcome** — passing and crossing a meaningful threshold;
+- **progress** — movement from supported learning toward independence;
+- **coaching** — direction, diagnosis, and the next move;
+- **evidence** — measured readiness rather than vague confidence;
+- **German-language context** — without national clichés;
+- **warm competence** — serious and credible, but not cold or bureaucratic.
+
+The desired feeling is:
+
+> “This is a focused, trustworthy coach that understands where I am and can guide me toward passing.”
+
+## 3. Naming and Brand Architecture
+
+The name is exactly:
+
+**Bestehen**
+
+Do not introduce an umlaut, alternate spelling, acronym, renamed product, or separate mascot/coach name.
+
+Create one coherent brand family with these lockups:
+
+- **Bestehen** — primary umbrella wordmark;
+- **Bestehen / App** — learner-product lockup;
+- **Bestehen / Corpus** — intelligence-product lockup.
+
+The umbrella name must remain visually dominant. `/ App` and `/ Corpus` are descriptors, not separate competing brands. The slash is part of the established naming language and may become a subtle structural device, but it must not make the logo resemble code tooling unless that direction genuinely fits the brand.
+
+The primary logo should work without a tagline. If you explore a tagline/campaign lockup, treat it as optional secondary material and never make it necessary for recognition.
+
+## 4. Identity and Visual Guardrails
+
+The logo should feel:
+
+- calm;
+- focused;
+- modern;
+- intelligent;
+- precise;
+- practical;
+- warm enough for daily learning;
+- serious enough to support exam-readiness decisions;
+- distinctive at small digital sizes.
+
+It should not feel:
+
+- childish, cartoonish, or toy-like;
+- like a school crest or government certificate;
+- like a generic AI chatbot;
+- like a loud gaming, crypto, fintech, or productivity-hustle brand;
+- punitive, militaristic, anxious, or obsessed with test scores;
+- visually affiliated with TELC or another exam provider;
+- dependent on trendy gradients/effects that fail in monochrome.
+
+### 4.1 Avoid obvious logo clichés
+
+Do not default to an unmodified:
+
+- graduation cap;
+- open book;
+- speech bubble;
+- checkmark inside a circle;
+- exam paper with a tick;
+- trophy, medal, star, rocket, target/bullseye, or upward arrow;
+- German flag, map outline, Brandenburg Gate, or black-red-gold palette;
+- brain, robot head, sparkles, or generic AI nodes;
+- shield/seal that implies accreditation;
+- plain letter `B` inside a rounded square with no distinctive construction.
+
+A familiar motif may be used only if transformed into an ownable, conceptually specific construction rather than presented as stock iconography. Favor abstract or typographic meaning over literal education clip art.
+
+### 4.2 TELC independence
+
+TELC is the target exam, not the brand owner or partner.
+
+- Do not use TELC's logo, type treatment, signature colors, geometry, or certification marks.
+- Do not write “official,” “certified,” “approved,” or anything implying endorsement.
+- Do not let the mark resemble an exam-provider seal.
+- The logo must remain valid if Bestehen supports other exam targets in the future.
+
+## 5. Exploration Requirement — Provide Real Choices
+
+Do not produce one idea with superficial color variations. Create a broad exploration, then refine the strongest options.
+
+### 5.1 Concept territories
+
+Develop at least **six genuinely different concept territories**. Each territory should use a different core idea or construction logic. Possible territories may include, but are not limited to:
+
+- crossing a threshold or pass line;
+- a guided path with a clear next move;
+- evidence markers converging into readiness;
+- progress from assistance to independence;
+- a distinctive typographic transformation of `Bestehen` or `B`;
+- negative space expressing movement, completion, or a safe range;
+- a modular structure that naturally supports `/ App` and `/ Corpus`;
+- a calm signal of diagnosis, alignment, or calibration.
+
+These are prompts, not mandatory symbols. Avoid forcing every product concept into one overloaded mark.
+
+For each territory, provide:
+
+1. concept name;
+2. one-sentence idea;
+3. visual construction logic;
+4. connection to the brand/product;
+5. what makes it distinctive;
+6. strongest use case;
+7. possible weakness or risk;
+8. black-and-white symbol and wordmark study;
+9. one-color small-size test;
+10. umbrella, `/ App`, and `/ Corpus` lockup preview.
+
+### 5.2 Concept screening
+
+Evaluate all concepts in a comparison matrix using a consistent 1–5 scale:
+
+| Criterion | What to assess |
+|---|---|
+| Brand fit | Calm coach, exam focus, evidence, progress, warmth |
+| Distinctiveness | Recognizable construction rather than generic education icon |
+| Memorability | Can it be recalled after a short exposure? |
+| Small-size performance | Clear at favicon/app-icon/navigation sizes |
+| Wordmark quality | `Bestehen` remains readable and confident |
+| Brand architecture | Supports umbrella, `/ App`, and `/ Corpus` cleanly |
+| Monochrome resilience | Works without color, gradient, shadow, or animation |
+| Accessibility | Sufficient contrast and non-color recognition |
+| Digital flexibility | Works in web header, app icon, avatar, loading, document, and social crop |
+| Originality risk | Low similarity to common EdTech/exam/AI marks |
+| Production simplicity | Reproducible as clean vector geometry |
+
+Do not use the scores as false mathematical certainty. Use them to expose trade-offs and justify refinement.
+
+### 5.3 Refined candidate set
+
+Select the strongest **three** territories and develop each into a polished, choice-ready candidate. Preserve all three in the final artifact even when recommending one.
+
+For each finalist, create:
+
+- primary symbol + wordmark lockup;
+- wordmark-only form;
+- symbol-only form;
+- horizontal and compact/stacked lockups;
+- `Bestehen / App` and `Bestehen / Corpus` lockups;
+- light-background and dark-background versions;
+- one-color black, one-color white, and grayscale versions;
+- app icon, favicon, browser-header/nav, avatar, and document-header tests;
+- 16 px, 24 px, 32 px, 48 px, and large-display tests where applicable;
+- clear-space and minimum-size proposal;
+- a short rationale and identified trade-off.
+
+Then recommend one candidate as the strongest default, explaining why it best balances identity, distinctiveness, usability, and long-term brand architecture. The recommendation must not delete or conceal the alternatives.
+
+## 6. Controlled Variables for Selection and Enhancement
+
+The artifact must make the logo directions easy to select, compare, and enhance later.
+
+### 6.1 Variation axes
+
+For every finalist, define controlled variation axes instead of producing random variants. At minimum explore and label:
+
+- **symbol abstraction:** more literal ↔ more abstract;
+- **geometry:** soft/rounded ↔ precise/angular;
+- **energy:** static/stable ↔ subtly forward-moving;
+- **weight:** light ↔ regular ↔ strong;
+- **compactness:** open ↔ balanced ↔ compact;
+- **negative space:** subtle ↔ pronounced;
+- **wordmark relationship:** symbol-led ↔ balanced ↔ wordmark-led;
+- **slash treatment:** neutral descriptor ↔ structural accent;
+- **green use:** monochrome ↔ restrained accent ↔ stronger brand presence;
+- **corner behavior:** square ↔ softened ↔ rounded where the concept supports it;
+- **letterform customization:** minimal ↔ moderate ↔ signature custom detail.
+
+Do not show every possible combination. Create a small, deliberate matrix that demonstrates which variables materially improve or weaken the concept.
+
+### 6.2 Editable design variables
+
+Where the design environment supports variables/components, create named editable values for:
+
+- primary ink color;
+- primary green/accent color;
+- light and dark background colors;
+- monochrome foreground/background;
+- symbol-to-wordmark gap;
+- descriptor `/ App` and `/ Corpus` gap;
+- clear-space unit;
+- lockup scale ratios;
+- optical alignment offsets;
+- app-icon safe-area ratio;
+- responsive logo breakpoint/compact-mode threshold.
+
+Keep logo geometry intentional; do not expose destructive variables that let a valid mark become distorted. Width/height proportions, curves, and custom letterforms should remain constrained.
+
+### 6.3 Enhancement-ready alternatives
+
+For each finalist, preserve:
+
+- the baseline approved construction;
+- two or three controlled enhancements worth testing;
+- rejected variants with a one-line reason when they illustrate an important boundary;
+- a clear identifier such as `Concept A / Variant A1`, `A2`, `A3`;
+- a note explaining what could be enhanced next without changing the core idea.
+
+The owner should be able to say “refine Concept B, use B2 geometry, reduce slash emphasis, and test the stronger wordmark” and have those references remain unambiguous.
+
+## 7. Symbol and Wordmark Requirements
+
+### 7.1 Symbol
+
+The symbol must:
+
+- communicate a focused idea rather than several literal features;
+- remain recognizable in one color;
+- work inside square and circular crops;
+- survive 16–24 px simplification;
+- avoid tiny gaps, fragile strokes, and details that disappear;
+- have balanced positive/negative space;
+- avoid looking like an exam-provider seal or generic checkbox;
+- remain meaningful for both App and Corpus.
+
+If a detailed master mark needs a simplified micro-mark for very small sizes, create both and define when the optical version replaces the master.
+
+### 7.2 Wordmark
+
+The word `Bestehen` must remain immediately readable.
+
+- Explore a custom or carefully modified wordmark rather than relying only on default typed text.
+- Preserve correct capitalization: `Bestehen`.
+- Support German characters in the wider typography system even though the name itself has no umlaut.
+- Avoid excessive letter manipulation that harms recognition.
+- Check kerning at small and large sizes.
+- If an open-source typeface is modified, document the base typeface, license assumptions, and the modifications.
+- If the wordmark is fully custom, provide outlined vector artwork and spacing guidance.
+
+Do not make `/ App` or `/ Corpus` visually louder than `Bestehen`.
+
+### 7.3 Responsive logo behavior
+
+Define a responsive set rather than scaling one lockup indefinitely:
+
+- full symbol + wordmark + descriptor;
+- symbol + `Bestehen` without descriptor;
+- wordmark-only where appropriate;
+- symbol-only for compact navigation/avatar/app icon;
+- simplified micro-mark for favicon if needed.
+
+Specify the recommended use range and fallback for each form.
+
+## 8. Color System
+
+Start from the Identity's working direction:
+
+- Deep Ink `#14213D`;
+- Bestehen Green `#2A9D6F`;
+- Deep Green `#1D6F50`;
+- Warm Paper `#F7F4EE`;
+- Mist `#EDF0F4`;
+- Risk Red `#B64B4B`.
+
+The logo should normally use one or two brand colors, not the full semantic product palette. Risk Red is a product status color, not a default logo color.
+
+Required logo colorways:
+
+- primary on Warm Paper/light neutral;
+- primary/reversed on Deep Ink/dark surface;
+- one-color Deep Ink;
+- one-color black;
+- one-color white;
+- grayscale;
+- transparent-background assets.
+
+Validate WCAG contrast wherever the logo communicates brand/name in the UI. The mark must remain recognizable without color. Avoid gradient dependence; an optional subtle gradient may be explored only as a secondary digital expression after the flat mark works perfectly.
+
+## 9. App Icon, Favicon, and Digital Marks
+
+Create a coherent icon family derived from the chosen symbol, not a separate unrelated badge.
+
+Required:
+
+- browser favicon at 16 × 16 and 32 × 32;
+- web-app icon at 192 × 192 and 512 × 512;
+- Apple-touch-style icon at 180 × 180;
+- generic avatar/social square;
+- compact mobile navigation/header mark;
+- mask-safe/adaptive-icon preview with appropriate safe area;
+- light and dark browser/tab tests where feasible.
+
+Test:
+
+- flat color and monochrome;
+- square, rounded-square, and circular crops;
+- very small low-resolution rendering;
+- busy versus calm surrounding UI;
+- no letter or detail touching unsafe edges.
+
+Do not simply shrink the full wordmark into the app icon.
+
+## 10. Brand-System Integration Tests
+
+Demonstrate each finalist—and the recommended direction in greater depth—in realistic contexts:
+
+- Bestehen / App mobile header;
+- desktop sidebar/header;
+- onboarding/first-launch hero;
+- Readiness screen with restrained brand presence;
+- focused exam-attempt shell where branding should recede;
+- favicon/browser tab;
+- app/home-screen icon;
+- splash/loading state with reduced-motion-safe behavior;
+- PDF/report/document header;
+- Bestehen / Corpus internal report or data-product header;
+- monochrome print/export;
+- small social/avatar crop.
+
+These are logo-in-context tests, not a request to redesign the full UI. Reuse the established visual direction and keep the product action/data hierarchy stronger than decorative branding.
+
+## 11. Originality and Similarity Review
+
+The final logo must be original. Do not imitate or closely adapt a known education, language-learning, AI, productivity, exam, or certification brand.
+
+For each finalist:
+
+- identify obvious category similarities or cliché risks;
+- compare the construction conceptually with common Duolingo/Babbel/Busuu/Goethe/TELC/education/checkmark/AI visual territories without copying their marks into the final system;
+- revise concepts that look generic or confusingly familiar;
+- document why the proposed construction is distinct;
+- avoid claiming legal trademark clearance.
+
+State clearly that a professional trademark and legal clearance search remains a separate step before public commercial use. The design task should reduce obvious collision risk, not pretend to replace legal review.
+
+## 12. Accessibility and Production Quality
+
+Required checks:
+
+- sufficient foreground/background contrast for primary digital lockups;
+- recognition without color;
+- no meaning dependent on animation;
+- legibility at minimum stated sizes;
+- optical rather than purely mathematical alignment;
+- clean paths, no accidental overlaps, open contours where appropriate;
+- consistent winding/fills and no unnecessary anchor-point complexity;
+- no raster effects in the master vector;
+- correct transparent-background exports;
+- accurate light/dark and monochrome variants;
+- reusable assets that do not require paid proprietary effects or fonts without disclosure.
+
+The master logo must remain vector-first and editable. Avoid mockup-only designs that cannot be reconstructed as clean geometry.
+
+## 13. Required Logo Guidelines
+
+Create a concise but complete mini brand guide covering:
+
+1. brand idea and selected logo rationale;
+2. logo anatomy/construction;
+3. master logo and responsive forms;
+4. umbrella, `/ App`, and `/ Corpus` lockups;
+5. clear space;
+6. minimum digital and print sizes;
+7. colorways and approved backgrounds;
+8. monochrome and reversed use;
+9. app icon/favicon use;
+10. alignment with text and UI headers;
+11. optional motion principles without requiring animation;
+12. co-branding/target-exam independence note;
+13. prohibited uses.
+
+Prohibited-use examples should include:
+
+- stretching or changing proportions;
+- unapproved recoloring;
+- adding shadows, outlines, bevels, or gradients to the master;
+- rotating or rearranging symbol elements;
+- placing on low-contrast/busy backgrounds without protection;
+- changing `Bestehen` capitalization/spelling;
+- enlarging `/ App` or `/ Corpus` above the umbrella name;
+- pairing the logo with TELC marks in a way that implies affiliation;
+- using the symbol as a pass guarantee, certification seal, or score badge.
+
+## 14. File and Export Deliverables
+
+Create an organized editable source with clearly named pages/sections equivalent to:
+
+1. `00_Brief_and_Constraints`
+2. `01_Exploration_Six_Concepts`
+3. `02_Concept_Comparison`
+4. `03_Finalist_A`
+5. `04_Finalist_B`
+6. `05_Finalist_C`
+7. `06_Recommended_System`
+8. `07_Brand_Architecture`
+9. `08_App_Icons_and_Favicons`
+10. `09_Usage_Guidelines`
+11. `10_Exports_and_Handoff`
+
+Provide/export, where the environment supports it:
+
+- editable vector master;
+- SVG for every approved lockup and icon;
+- PDF vector brand sheet;
+- PNG transparent exports at practical 1×, 2×, and 3× sizes;
+- favicon assets;
+- app/web-icon size set;
+- black, white, monochrome, light-background, and dark-background variants;
+- outlined-wordmark master plus an editable/live-type development version when licensing permits;
+- a text file or handoff table listing asset names, intended use, dimensions, colorway, and minimum size.
+
+Use systematic filenames, for example:
+
+- `bestehen-logo-primary-light.svg`
+- `bestehen-logo-primary-dark.svg`
+- `bestehen-wordmark-ink.svg`
+- `bestehen-symbol-green.svg`
+- `bestehen-app-lockup-horizontal.svg`
+- `bestehen-corpus-lockup-horizontal.svg`
+- `bestehen-app-icon-512.png`
+- `bestehen-favicon-32.png`
+
+Do not flatten the only editable source into raster imagery.
+
+## 15. Working Method
+
+1. Read all source documents completely.
+2. Extract the brand promise, personality, visual constraints, product architecture, and anti-goals.
+3. Define the comparison criteria before drawing.
+4. Explore at least six territories in black and white first.
+5. Test every territory at small size and with `/ App` and `/ Corpus`.
+6. Screen concepts for genericness, category collision, accessibility, and production weakness.
+7. Select and refine the strongest three.
+8. Build controlled variation matrices and editable variables for those finalists.
+9. Recommend one direction while preserving all three choice-ready candidates.
+10. Develop the recommended full logo family, icons, colorways, and usage system.
+11. Test in realistic App/Corpus contexts.
+12. Clean vector geometry, prepare exports, and complete the handoff.
+13. Run the final quality checklist before declaring completion.
+
+Do not jump straight to color or glossy mockups. A strong idea must work in black and white, at 16–24 px, and as a clean vector before presentation effects are added.
+
+## 16. Quality-Control Checklist
+
+### Source and identity
+
+- [ ] All three source documents were read completely.
+- [ ] The design expresses calm coaching, progress, evidence, and the outcome of passing.
+- [ ] The logo is neither childish nor bureaucratic.
+- [ ] The design does not imply official TELC affiliation.
+- [ ] The umbrella identity works for both App and Corpus.
+
+### Choice and enhancement
+
+- [ ] At least six genuinely distinct concept territories are included.
+- [ ] Every territory has a rationale, risk, small-size test, and brand-architecture preview.
+- [ ] A consistent comparison matrix makes trade-offs visible.
+- [ ] Three finalists are refined to a genuinely usable level.
+- [ ] Each finalist has controlled, labeled variation axes.
+- [ ] Editable variables are created where the design tool supports them.
+- [ ] Variants have stable identifiers that make later enhancement requests unambiguous.
+- [ ] One direction is recommended without deleting the alternatives.
+
+### Logo-system completeness
+
+- [ ] Primary umbrella logo, wordmark, symbol, and compact forms exist.
+- [ ] `/ App` and `/ Corpus` lockups are consistent and subordinate.
+- [ ] Horizontal, stacked/compact, light, dark, black, white, and grayscale variants exist.
+- [ ] App icon, favicon, avatar, mobile header, desktop header, and document contexts are tested.
+- [ ] Clear space, minimum size, background, and prohibited-use rules are documented.
+- [ ] The mark works in one color and at the stated smallest size.
+
+### Originality and quality
+
+- [ ] The concepts avoid unmodified education, exam, German, and AI clichés.
+- [ ] The finalists were reviewed for obvious category similarity/collision.
+- [ ] No legal trademark-clearance claim is made.
+- [ ] Vector paths are clean and production-ready.
+- [ ] Typography/font licensing assumptions are documented.
+- [ ] Color contrast and recognition without color are validated.
+- [ ] The master design does not depend on gradient, shadow, texture, or animation.
+
+### Handoff
+
+- [ ] Editable master source is organized and named.
+- [ ] SVG/vector and practical raster exports are prepared where supported.
+- [ ] Asset naming and intended usage are documented.
+- [ ] The logo can be integrated into the separate UI design system without visual conflict.
+- [ ] Open enhancement opportunities and any assumptions are clearly listed.
+
+## 17. Final Deliverables
+
+Deliver all of the following:
+
+1. An editable, organized logo exploration and final brand-system artifact.
+2. At least six distinct initial concept territories.
+3. A scored comparison/decision matrix with honest trade-offs.
+4. Three refined, choice-ready finalists.
+5. Controlled variation matrices and named editable variables for each finalist.
+6. One clearly recommended default direction with rationale.
+7. Complete umbrella, Bestehen / App, and Bestehen / Corpus logo families for the recommended direction.
+8. Wordmark-only, symbol-only, horizontal, compact/stacked, responsive, monochrome, reversed, and grayscale forms.
+9. App icon, favicon, avatar, and small-size optical variants.
+10. Context previews for learner App, Corpus, documents, and digital surfaces.
+11. Mini brand/usage guide.
+12. Clean vector masters and practical export package where supported.
+13. A concise final summary stating:
+    - the six explored territories;
+    - the three finalists;
+    - the recommended direction and why;
+    - the available variables/variants for selection and enhancement;
+    - file/export locations;
+    - assumptions, known risks, and the need for later trademark clearance;
+    - any genuine blocker that remains.
+
+The task is complete only when the owner has **real, comparable choices**, the strongest options can be enhanced through clearly named variables, and the recommended system can function as a distinctive Bestehen umbrella logo, learner-facing App identity, Corpus identity, favicon, and app icon without relying on mockup effects or implying TELC endorsement.
