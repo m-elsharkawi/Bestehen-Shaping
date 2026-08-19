@@ -112,25 +112,25 @@
 
 ## 5. Define the Canonical Exam Model
 
-- [ ] Define the hierarchy from source to item, e.g.:
-  - [ ] Source
-  - [ ] Document
-  - [ ] Exam/Test Set
-  - [ ] Section
-  - [ ] Part
-  - [ ] Task
-  - [ ] Question/Item
-  - [ ] Answer
-  - [ ] Explanation
-  - [ ] Asset
-- [ ] Define multi-part questions.
-- [ ] Define shared reading/listening passages.
-- [ ] Define audio-to-question mapping.
-- [ ] Define images, tables, forms, notices, and advertisements.
-- [ ] Define matching and multiple-correct-answer tasks.
-- [ ] Separate instructions from tested content.
-- [ ] Represent answer keys and scoring rules.
-- [ ] Represent incomplete exams honestly.
+- [x] Define the hierarchy from source to item, e.g.:
+  - [x] Source
+  - [x] Document
+  - [x] Exam/Test Set
+  - [x] Section
+  - [x] Part
+  - [x] Task
+  - [x] Question/Item
+  - [x] Answer
+  - [x] Explanation
+  - [x] Asset
+- [x] Define multi-part questions.
+- [x] Define shared reading/listening passages.
+- [x] Define audio-to-question mapping.
+- [x] Define images, tables, forms, notices, and advertisements.
+- [x] Define matching and multiple-correct-answer tasks.
+- [x] Separate instructions from tested content.
+- [x] Represent answer keys and scoring rules.
+- [x] Represent incomplete exams honestly.
 
 **Done when:** Any supported A2/B1 exam can be represented without forcing it into a TELC-only schema.
 
