@@ -378,16 +378,16 @@
 
 ## 18. Define the Coach Personality and Behavior
 
-- [ ] Apply the Bestehen identity consistently.
-- [ ] Define how the coach recommends, corrects, warns, encourages, and explains uncertainty.
-- [ ] Define phrases and styles to avoid.
-- [ ] Decide German vs English usage by learner stage.
-- [ ] Define gradual increase of German in explanations.
-- [ ] Define tone after poor performance.
-- [ ] Define tone after improvement.
-- [ ] Define tone when the learner is ready.
-- [ ] Define how personalized the coach feels.
-- [ ] Decide whether the coach has a separate character/name or remains “Bestehen.”
+- [x] Apply the Bestehen identity consistently.
+- [x] Define how the coach recommends, corrects, warns, encourages, and explains uncertainty.
+- [x] Define phrases and styles to avoid.
+- [x] Decide German vs English usage by learner stage.
+- [x] Define gradual increase of German in explanations.
+- [x] Define tone after poor performance.
+- [x] Define tone after improvement.
+- [x] Define tone when the learner is ready.
+- [x] Define how personalized the coach feels.
+- [x] Decide whether the coach has a separate character/name or remains “Bestehen.”
 
 **Done when:** UI copy and AI behavior feel like one coherent exam coach.
 
