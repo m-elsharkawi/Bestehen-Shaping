@@ -252,12 +252,12 @@
   - [x] register,
   - [x] greeting/closing where relevant.
 - [x] Evaluate against **B1 sufficiency**, not ideal/native German.
-- [ ] Decide correction presentation.
-- [ ] Limit the number of corrections emphasized at once.
-- [ ] Define repair-and-rewrite flow.
-- [ ] Define reusable patterns/templates responsibly.
-- [ ] Define timed writing mode.
-- [ ] Define how writing affects readiness.
+- [x] Decide correction presentation.
+- [x] Limit the number of corrections emphasized at once.
+- [x] Define repair-and-rewrite flow.
+- [x] Define reusable patterns/templates responsibly.
+- [x] Define timed writing mode.
+- [x] Define how writing affects readiness.
 
 **Done when:** The coach can answer: “Would this likely be good enough for B1?”
 
