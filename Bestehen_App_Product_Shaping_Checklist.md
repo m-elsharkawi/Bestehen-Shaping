@@ -144,12 +144,12 @@
 - [x] Define expected repair duration.
 - [x] Ensure retry uses fresh equivalent content.
 - [x] Define success criteria for a repaired weakness.
-- [ ] Define the loop for:
-  - [ ] objective questions,
-  - [ ] listening,
-  - [ ] writing,
-  - [ ] speaking.
-- [ ] Define how assistance is offered without turning every activity into a full lesson.
+- [x] Define the loop for:
+  - [x] objective questions,
+  - [x] listening,
+  - [x] writing,
+  - [x] speaking.
+- [x] Define how assistance is offered without turning every activity into a full lesson.
 
 **Done when:** Every activity follows one consistent coaching philosophy.
 
