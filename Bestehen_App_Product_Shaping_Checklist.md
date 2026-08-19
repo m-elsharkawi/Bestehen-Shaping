@@ -517,20 +517,40 @@
 
 ---
 
-## 24. Define Account, Data, and Portability Expectations
+## 24. Define Analytics and Product Success Metrics + Account, Data, and Portability Expectations
 
-- [ ] Decide whether sign-in is required initially.
-- [ ] Define learner profile data.
-- [ ] Define progress/evidence history retention.
-- [ ] Define audio retention expectations.
-- [ ] Define generated-content retention.
-- [ ] Define export needs.
-- [ ] Define deletion expectations.
-- [ ] Define device sync expectations.
-- [ ] Define offline expectations.
-- [ ] Define privacy-sensitive AI data handling requirements at product level.
+> **Stage continuity note:** The Stage 24 agent prompt defines **Analytics and Product Success Metrics**, while this checklist previously named Stage 24 **Account, Data, and Portability Expectations**. Stage 24 now covers both; decisions are documented in `app/24-analytics-and-success-metrics.md`.
 
-**Done when:** Architecture can later make storage/auth choices without inventing the user contract.
+### Analytics and product success metrics
+
+- [x] Define the north-star metric.
+- [x] Define learner-outcome metrics.
+- [x] Define readiness-accuracy and calibration metrics.
+- [x] Define skill-improvement and repair/retention metrics.
+- [x] Define session-value metrics without optimizing time-on-screen.
+- [x] Define content-quality metrics.
+- [x] Define Writing/Speaking evaluation-consistency monitoring.
+- [x] Define future mock-to-real-exam comparison.
+- [x] Define optional actual exam-result collection and calibration use.
+- [x] Separate retention/engagement metrics from learning metrics.
+- [x] Define minimum analytics suitable for a personal project and what can wait.
+- [x] Define cost-per-active-learner / cost-per-session monitoring.
+- [x] Keep observability/privacy/cost proportional and avoid optimizing only for engagement.
+
+### Account, data, and portability expectations
+
+- [x] Decide whether sign-in is required initially.
+- [x] Define learner profile data.
+- [x] Define progress/evidence history retention.
+- [x] Define audio retention expectations.
+- [x] Define generated-content retention.
+- [x] Define export needs.
+- [x] Define deletion expectations.
+- [x] Define device sync expectations.
+- [x] Define offline expectations.
+- [x] Define privacy-sensitive AI data handling requirements at product level.
+
+**Done when:** Bestehen can be measured against learner readiness and eventual exam outcomes, while architecture can later make analytics/storage/auth choices without inventing the success model or user-data contract.
 
 ---
 
