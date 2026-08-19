@@ -182,11 +182,11 @@
 
 ## 9. Define Reading Coaching
 
-- [ ] Map TELC B1 reading task types.
-- [ ] Define lower-difficulty variants.
-- [ ] Map each task to specific reading skills.
-- [ ] Define vocabulary assistance.
-- [ ] Define synonym-recognition training.
+- [x] Map TELC B1 reading task types.
+- [x] Define lower-difficulty variants.
+- [x] Map each task to specific reading skills.
+- [x] Define vocabulary assistance.
+- [x] Define synonym-recognition training.
 - [ ] Define scanning vs detailed-comprehension practice.
 - [ ] Define distractor explanations.
 - [ ] Define timed and untimed modes.
