@@ -361,12 +361,12 @@
 
 ## 17. Define “Ready to Book” Logic
 
-- [ ] Define the readiness threshold.
-- [ ] Require adequate written evidence.
-- [ ] Require adequate oral evidence.
-- [ ] Require recent performance.
-- [ ] Require enough unassisted/timed evidence.
-- [ ] Decide whether consistency across several mocks is required.
+- [x] Define the readiness threshold.
+- [x] Require adequate written evidence.
+- [x] Require adequate oral evidence.
+- [x] Require recent performance.
+- [x] Require enough unassisted/timed evidence.
+- [x] Decide whether consistency across several mocks is required.
 - [ ] Define confidence language.
 - [ ] Define coaching when the learner is close but not ready.
 - [ ] Define final preparation once the exam is booked.
