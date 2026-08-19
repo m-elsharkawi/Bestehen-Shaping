@@ -157,17 +157,17 @@
 
 ## 8. Design the A1 → B1 Progression Model
 
-- [ ] Define difficulty stages without traditional course chapters.
-- [ ] Define the assisted A1/early-A2 experience.
-- [ ] Decide assistance types:
-  - [ ] word translation,
-  - [ ] sentence explanation,
-  - [ ] grammar hints,
-  - [ ] vocabulary preview,
-  - [ ] slowed audio,
-  - [ ] replay,
-  - [ ] answer hints.
-- [ ] Define how assistance is gradually removed.
+- [x] Define difficulty stages without traditional course chapters.
+- [x] Define the assisted A1/early-A2 experience.
+- [x] Decide assistance types:
+  - [x] word translation,
+  - [x] sentence explanation,
+  - [x] grammar hints,
+  - [x] vocabulary preview,
+  - [x] slowed audio,
+  - [x] replay,
+  - [x] answer hints.
+- [x] Define how assistance is gradually removed.
 - [ ] Define transition into genuine A2 complexity.
 - [ ] Define transition into A2/B1 material.
 - [ ] Define transition into genuine B1 complexity.
