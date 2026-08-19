@@ -395,13 +395,13 @@
 
 ## 19. Define Information Architecture and Core Screens
 
-- [ ] Define primary navigation.
-- [ ] Define Home / Coach screen.
-- [ ] Define Readiness dashboard.
-- [ ] Define Today's Session.
-- [ ] Define Attempt experience.
-- [ ] Define Diagnosis/Repair experience.
-- [ ] Define Review area.
+- [x] Define primary navigation.
+- [x] Define Home / Coach screen.
+- [x] Define Readiness dashboard.
+- [x] Define Today's Session.
+- [x] Define Attempt experience.
+- [x] Define Diagnosis/Repair experience.
+- [x] Define Review area.
 - [ ] Define Skill/Weakness detail.
 - [ ] Define Mock Exam area.
 - [ ] Define Exam Date/Goal.
