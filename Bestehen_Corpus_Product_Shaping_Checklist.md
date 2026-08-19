@@ -236,12 +236,12 @@
 - [x] Define metadata completeness checks.
 - [x] Define broken-asset checks.
 - [x] Define audio-question alignment checks.
-- [ ] Define cross-checking for AI extraction.
-- [ ] Define manual QA sampling.
-- [ ] Define corpus quality metrics.
-- [ ] Define “production-ready corpus data.”
-- [ ] Build a manually annotated gold-standard dataset.
-- [ ] Define regression tests against it.
+- [x] Define cross-checking for AI extraction.
+- [x] Define manual QA sampling.
+- [x] Define corpus quality metrics.
+- [x] Define “production-ready corpus data.”
+- [x] Build a manually annotated gold-standard dataset.
+- [x] Define regression tests against it.
 
 **Done when:** Corpus growth is measured by both quantity and quality.
 
