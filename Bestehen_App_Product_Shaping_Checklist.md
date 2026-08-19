@@ -605,15 +605,17 @@
 
 ## 27. Define Business / Cost Boundaries
 
-- [ ] Confirm personal-project assumptions.
-- [ ] Define acceptable recurring-cost philosophy.
-- [ ] Decide where premium AI is justified.
-- [ ] Define cheap/deterministic fallbacks.
-- [ ] Define caching/batching expectations.
-- [ ] Define acceptable generated-audio cost strategy.
-- [ ] Define storage-cost expectations.
-- [ ] Define whether free/paid product tiers matter initially.
-- [ ] Avoid design choices that require enterprise-scale infrastructure.
+> **Resolved early by Stage 25:** The Stage 25 agent prompt covered **Business Model and Product Boundaries**, including all business/cost requirements in this section. The authoritative decisions are documented in `app/25-business-model-and-product-boundaries.md`; Stage 27 should not invent a conflicting operating or monetization model.
+
+- [x] Confirm personal-project assumptions.
+- [x] Define acceptable recurring-cost philosophy.
+- [x] Decide where premium AI is justified.
+- [x] Define cheap/deterministic fallbacks.
+- [x] Define caching/batching expectations.
+- [x] Define acceptable generated-audio cost strategy.
+- [x] Define storage-cost expectations.
+- [x] Define whether free/paid product tiers matter initially.
+- [x] Avoid design choices that require enterprise-scale infrastructure.
 
 **Done when:** The shaped product can be operated affordably before scale.
 
