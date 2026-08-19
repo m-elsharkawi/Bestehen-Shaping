@@ -421,16 +421,16 @@
 - [x] Decide whether XP is needed.
 - [x] Decide whether achievements are needed.
 - [x] Ensure any gamification stays secondary to exam readiness.
-- [ ] Define meaningful milestones:
-  - [ ] initial diagnostic,
-  - [ ] first section in pass range,
-  - [ ] oral pass range,
-  - [ ] written pass range,
-  - [ ] first passing mock,
-  - [ ] consistent passing mocks,
-  - [ ] ready to book.
-- [ ] Define weekly progress summaries.
-- [ ] Define how regressions are communicated.
+- [x] Define meaningful milestones:
+  - [x] initial diagnostic,
+  - [x] first section in pass range,
+  - [x] oral pass range,
+  - [x] written pass range,
+  - [x] first passing mock,
+  - [x] consistent passing mocks,
+  - [x] ready to book.
+- [x] Define weekly progress summaries.
+- [x] Define how regressions are communicated.
 
 **Done when:** Motivation reinforces preparation rather than replacing it with arbitrary game mechanics.
 
