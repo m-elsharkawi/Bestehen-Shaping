@@ -138,12 +138,12 @@
 
 ## 7. Lock the Core Learning Loop
 
-- [ ] Finalize: **Observe → Attempt → Diagnose → Repair → Retry → Remember**.
-- [ ] Define each step in the UI.
-- [ ] Define when steps may be skipped.
-- [ ] Define expected repair duration.
-- [ ] Ensure retry uses fresh equivalent content.
-- [ ] Define success criteria for a repaired weakness.
+- [x] Finalize: **Observe → Attempt → Diagnose → Repair → Retry → Remember**.
+- [x] Define each step in the UI.
+- [x] Define when steps may be skipped.
+- [x] Define expected repair duration.
+- [x] Ensure retry uses fresh equivalent content.
+- [x] Define success criteria for a repaired weakness.
 - [ ] Define the loop for:
   - [ ] objective questions,
   - [ ] listening,
