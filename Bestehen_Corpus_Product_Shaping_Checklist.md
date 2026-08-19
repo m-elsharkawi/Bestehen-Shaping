@@ -230,12 +230,12 @@
 
 ## 10. Define Validation and QA
 
-- [ ] Define exam-structure validation.
-- [ ] Define answer-key validation.
-- [ ] Define language-quality checks.
-- [ ] Define metadata completeness checks.
-- [ ] Define broken-asset checks.
-- [ ] Define audio-question alignment checks.
+- [x] Define exam-structure validation.
+- [x] Define answer-key validation.
+- [x] Define language-quality checks.
+- [x] Define metadata completeness checks.
+- [x] Define broken-asset checks.
+- [x] Define audio-question alignment checks.
 - [ ] Define cross-checking for AI extraction.
 - [ ] Define manual QA sampling.
 - [ ] Define corpus quality metrics.
