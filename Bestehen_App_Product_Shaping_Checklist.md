@@ -168,13 +168,13 @@
   - [x] replay,
   - [x] answer hints.
 - [x] Define how assistance is gradually removed.
-- [ ] Define transition into genuine A2 complexity.
-- [ ] Define transition into A2/B1 material.
-- [ ] Define transition into genuine B1 complexity.
-- [ ] Define when timing is introduced.
-- [ ] Define when replays/retries become exam-realistic.
-- [ ] Make progression skill-specific rather than one global level.
-- [ ] Define fallback behavior when a learner hits a difficulty wall.
+- [x] Define transition into genuine A2 complexity.
+- [x] Define transition into A2/B1 material.
+- [x] Define transition into genuine B1 complexity.
+- [x] Define when timing is introduced.
+- [x] Define when replays/retries become exam-realistic.
+- [x] Make progression skill-specific rather than one global level.
+- [x] Define fallback behavior when a learner hits a difficulty wall.
 
 **Done when:** An A1 learner can start immediately while the destination remains authentic B1 exam performance.
 
