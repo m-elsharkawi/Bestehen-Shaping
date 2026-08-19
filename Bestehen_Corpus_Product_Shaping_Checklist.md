@@ -60,26 +60,26 @@
 
 ## 3. Define Authenticity and Confidence
 
-- [ ] Create a confidence model independent of usage rights.
-- [ ] Define confidence dimensions:
-  - [ ] provider reputation,
-  - [ ] similarity to known exam structure,
-  - [ ] language quality,
-  - [ ] answer-key presence,
-  - [ ] answer-key consistency,
-  - [ ] similarity to trusted material,
-  - [ ] internal structural consistency,
-  - [ ] corroboration across independent sources.
-- [ ] Define source tiers, e.g. A/B/C/D.
-- [ ] Decide whether confidence exists at source, document, exam, task, and/or item level.
-- [ ] Define thresholds for:
-  - [ ] inclusion in corpus analytics,
-  - [ ] influence on difficulty models,
-  - [ ] influence on learning priorities,
-  - [ ] direct surfacing in Bestehen / App.
-- [ ] Define manual-review flow for uncertain but valuable material.
-- [ ] Define handling of conflicting answer keys.
-- [ ] Define quarantine behavior for likely fake or malformed exams.
+- [x] Create a confidence model independent of usage rights.
+- [x] Define confidence dimensions:
+  - [x] provider reputation,
+  - [x] similarity to known exam structure,
+  - [x] language quality,
+  - [x] answer-key presence,
+  - [x] answer-key consistency,
+  - [x] similarity to trusted material,
+  - [x] internal structural consistency,
+  - [x] corroboration across independent sources.
+- [x] Define source tiers, e.g. A/B/C/D.
+- [x] Decide whether confidence exists at source, document, exam, task, and/or item level.
+- [x] Define thresholds for:
+  - [x] inclusion in corpus analytics,
+  - [x] influence on difficulty models,
+  - [x] influence on learning priorities,
+  - [x] direct surfacing in Bestehen / App.
+- [x] Define manual-review flow for uncertain but valuable material.
+- [x] Define handling of conflicting answer keys.
+- [x] Define quarantine behavior for likely fake or malformed exams.
 
 **Done when:** Unofficial material can add breadth without being treated as equally trustworthy as official material.
 
