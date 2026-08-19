@@ -213,16 +213,16 @@
 
 ## 9. Define Duplicate and Near-Duplicate Detection
 
-- [ ] Define document fingerprinting.
-- [ ] Define question/item similarity detection.
-- [ ] Define text normalization before comparison.
-- [ ] Define duplicate image/scan handling.
-- [ ] Define duplicate audio handling.
-- [ ] Detect reformatted/mirrored copies.
-- [ ] Define canonical-record selection.
-- [ ] Preserve all known source references after deduplication.
-- [ ] Ensure frequency analytics count independent evidence, not mirrors.
-- [ ] Define exact-duplicate vs derivative thresholds.
+- [x] Define document fingerprinting.
+- [x] Define question/item similarity detection.
+- [x] Define text normalization before comparison.
+- [x] Define duplicate image/scan handling.
+- [x] Define duplicate audio handling.
+- [x] Detect reformatted/mirrored copies.
+- [x] Define canonical-record selection.
+- [x] Preserve all known source references after deduplication.
+- [x] Ensure frequency analytics count independent evidence, not mirrors.
+- [x] Define exact-duplicate vs derivative thresholds.
 
 **Done when:** “Seen 20 times online” cannot be mistaken for “seen in 20 independent exams.”
 
