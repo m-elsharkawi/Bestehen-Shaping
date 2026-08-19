@@ -172,11 +172,11 @@
 - [x] Define audio difficulty.
 - [x] Define production difficulty for writing/speaking.
 - [x] Separate CEFR level from numerical difficulty.
-- [ ] Define TELC relevance separately from generic B1 relevance.
-- [ ] Define provider/source weighting principles.
-- [ ] Limit how strongly low-confidence material affects aggregate insights.
-- [ ] Represent uncertainty in AI-estimated difficulty.
-- [ ] Plan for future recalibration using real learner performance.
+- [x] Define TELC relevance separately from generic B1 relevance.
+- [x] Define provider/source weighting principles.
+- [x] Limit how strongly low-confidence material affects aggregate insights.
+- [x] Represent uncertainty in AI-estimated difficulty.
+- [x] Plan for future recalibration using real learner performance.
 
 **Done when:** The corpus can say not only “this is B1,” but how hard it is, why, and how relevant it is to TELC B1.
 
