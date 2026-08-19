@@ -255,12 +255,12 @@
 - [x] Define task-type frequency.
 - [x] Define skill-frequency analysis.
 - [x] Define provider comparisons.
-- [ ] Define A2 → B1 progression analysis.
-- [ ] Define TELC-vs-generic-B1 comparisons.
-- [ ] Define distractor/reasoning-pattern analysis.
-- [ ] Define co-occurrence analysis across skills, topics, grammar, and tasks.
-- [ ] Decide which outputs directly influence Bestehen / App.
-- [ ] Protect aggregate results from low-quality-source distortion.
+- [x] Define A2 → B1 progression analysis.
+- [x] Define TELC-vs-generic-B1 comparisons.
+- [x] Define distractor/reasoning-pattern analysis.
+- [x] Define co-occurrence analysis across skills, topics, grammar, and tasks.
+- [x] Decide which outputs directly influence Bestehen / App.
+- [x] Protect aggregate results from low-quality-source distortion.
 
 **Done when:** The corpus produces actionable learning intelligence, not merely a searchable archive.
 
