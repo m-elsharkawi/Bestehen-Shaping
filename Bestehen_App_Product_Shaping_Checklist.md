@@ -265,11 +265,11 @@
 
 ## 13. Define Speaking Coaching
 
-- [ ] Map all TELC B1 speaking parts.
-- [ ] Define solo practice for each part.
-- [ ] Define AI partner behavior for interactive tasks.
-- [ ] Define voice input requirements.
-- [ ] Define transcript behavior.
+- [x] Map all TELC B1 speaking parts.
+- [x] Define solo practice for each part.
+- [x] Define AI partner behavior for interactive tasks.
+- [x] Define voice input requirements.
+- [x] Define transcript behavior.
 - [ ] Define evaluation dimensions:
   - [ ] task completion,
   - [ ] interaction,
@@ -279,10 +279,10 @@
   - [ ] intelligibility/pronunciation.
 - [ ] Avoid over-penalizing accent.
 - [ ] Define useful phrase/structure recommendations.
-- [ ] Define turn-taking behavior.
-- [ ] Define planning-together scenarios.
-- [ ] Define exam-like preparation time.
-- [ ] Define timed speaking simulation.
+- [x] Define turn-taking behavior.
+- [x] Define planning-together scenarios.
+- [x] Define exam-like preparation time.
+- [x] Define timed speaking simulation.
 - [ ] Feed speaking into the independent oral pass model.
 
 **Done when:** Speaking feels like rehearsal with an exam coach and partner, not generic chatbot conversation.
