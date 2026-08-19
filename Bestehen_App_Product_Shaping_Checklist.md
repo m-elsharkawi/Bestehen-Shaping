@@ -585,21 +585,42 @@
 
 ---
 
-## 26. Define Product Analytics and Evaluation
+## 26. Define Accessibility, Platform, and Non-Functional Expectations
 
-- [ ] Define core product metrics.
-- [ ] Define readiness-calibration metrics.
-- [ ] Define learning-outcome metrics.
-- [ ] Define repair-success metrics.
-- [ ] Define retention metrics separately from learning metrics.
-- [ ] Define mock-to-real-exam comparison when outcome data exists.
-- [ ] Define feedback/quality sampling.
-- [ ] Define AI evaluation quality monitoring.
-- [ ] Define content-quality metrics.
-- [ ] Define cost-per-active-learner / cost-per-session monitoring.
-- [ ] Avoid optimizing only for engagement.
+> **Stage continuity note:** The current Stage 26 agent prompt defines **Accessibility, Platform, and Non-Functional Expectations**, while this checklist previously named Stage 26 **Product Analytics and Evaluation**. The analytics/evaluation decisions were already completed by Stage 24 and remain authoritative in `app/24-analytics-and-success-metrics.md`. The deeper platform/non-functional decisions are documented in `app/26-platform-accessibility-nonfunctional.md`.
 
-**Done when:** We can later tell whether Bestehen works, not merely whether people use it.
+### Accessibility, platform, and non-functional expectations
+
+- [x] Confirm responsive web as the launch platform and define mobile-browser priorities.
+- [x] Define phone, tablet, and desktop/laptop experience expectations.
+- [x] Define supported modern browser families and unsupported-browser degradation.
+- [x] Define microphone permission, recording, audio-output, preflight, and fallback behavior.
+- [x] Define keyboard navigation and screen-reader behavior.
+- [x] Preserve WCAG 2.2 AA contrast, text-scaling/reflow, reduced-motion, caption/transcript, and timed-accessibility expectations.
+- [x] Define acceptable deterministic-feedback latency.
+- [x] Define acceptable AI-evaluation and adaptive-speaking latency plus pending/fallback behavior.
+- [x] Define offline and low-connectivity expectations.
+- [x] Define voice/audio privacy and raw-recording retention behavior.
+- [x] Define reliability expectations for ordinary practice and timed P4/mock work.
+- [x] Define measured-block preflight, response checkpointing, timer, crash/reload, media, network, partner, and evaluator failure behavior.
+- [x] Separate launch requirements, acceptable degradations, and later enhancements.
+- [x] Balance quality/reliability against personal-project cost and implementation complexity.
+
+### Legacy Product Analytics and Evaluation continuity — resolved by Stage 24
+
+- [x] Define core product metrics — `app/24-analytics-and-success-metrics.md`.
+- [x] Define readiness-calibration metrics — `app/24-analytics-and-success-metrics.md`.
+- [x] Define learning-outcome metrics — `app/24-analytics-and-success-metrics.md`.
+- [x] Define repair-success metrics — `app/24-analytics-and-success-metrics.md`.
+- [x] Define retention metrics separately from learning metrics — `app/24-analytics-and-success-metrics.md`.
+- [x] Define mock-to-real-exam comparison when outcome data exists — `app/24-analytics-and-success-metrics.md`.
+- [x] Define feedback/quality sampling — learner reports, benchmark QA, and selective stronger/human review are defined in `app/24-analytics-and-success-metrics.md`.
+- [x] Define AI evaluation quality monitoring — `app/24-analytics-and-success-metrics.md`.
+- [x] Define content-quality metrics — `app/24-analytics-and-success-metrics.md`.
+- [x] Define cost-per-active-learner / cost-per-session monitoring — `app/24-analytics-and-success-metrics.md`.
+- [x] Avoid optimizing only for engagement — `app/24-analytics-and-success-metrics.md`.
+
+**Done when:** Architecture can later choose technical mechanisms without inventing browser, accessibility, microphone/audio, latency, offline, voice-privacy, or timed-mock reliability behavior, and the repository retains one authoritative analytics model rather than duplicating Stage 24.
 
 ---
 
