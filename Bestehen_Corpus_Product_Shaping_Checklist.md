@@ -184,21 +184,21 @@
 
 ## 8. Define the Ingestion Pipeline
 
-- [ ] Define the conceptual pipeline:
-  - [ ] discover,
-  - [ ] fetch,
-  - [ ] normalize,
-  - [ ] parse,
-  - [ ] segment,
-  - [ ] classify,
-  - [ ] extract answers,
-  - [ ] extract assets,
-  - [ ] enrich,
-  - [ ] validate,
-  - [ ] deduplicate,
-  - [ ] review,
-  - [ ] publish.
-- [ ] Define partial-failure handling.
+- [x] Define the conceptual pipeline:
+  - [x] discover,
+  - [x] fetch,
+  - [x] normalize,
+  - [x] parse,
+  - [x] segment,
+  - [x] classify,
+  - [x] extract answers,
+  - [x] extract assets,
+  - [x] enrich,
+  - [x] validate,
+  - [x] deduplicate,
+  - [x] review,
+  - [x] publish.
+- [x] Define partial-failure handling.
 - [ ] Define human-review checkpoints.
 - [ ] Define auto-accept vs review thresholds.
 - [ ] Define scanned-document handling.
