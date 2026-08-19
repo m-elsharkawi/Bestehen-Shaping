@@ -402,13 +402,13 @@
 - [x] Define Attempt experience.
 - [x] Define Diagnosis/Repair experience.
 - [x] Define Review area.
-- [ ] Define Skill/Weakness detail.
-- [ ] Define Mock Exam area.
-- [ ] Define Exam Date/Goal.
-- [ ] Define Progress/history.
-- [ ] Define Settings.
-- [ ] Decide how much source/Corpus information learners see.
-- [ ] Keep “What should I do today?” as the dominant journey.
+- [x] Define Skill/Weakness detail.
+- [x] Define Mock Exam area.
+- [x] Define Exam Date/Goal.
+- [x] Define Progress/history.
+- [x] Define Settings.
+- [x] Decide how much source/Corpus information learners see.
+- [x] Keep “What should I do today?” as the dominant journey.
 
 **Done when:** Every core capability has a clear home without becoming a dense LMS.
 
