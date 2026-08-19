@@ -554,20 +554,34 @@
 
 ---
 
-## 25. Define Accessibility and Device Experience
+## 25. Define Business Model and Product Boundaries + Accessibility and Device Experience
 
-- [ ] Define launch platforms.
-- [ ] Define phone-first vs tablet/desktop expectations.
-- [ ] Define keyboard navigation expectations where relevant.
-- [ ] Define screen-reader expectations.
-- [ ] Define color/contrast requirements.
-- [ ] Define text scaling.
-- [ ] Define caption/transcript expectations.
-- [ ] Define microphone-permission fallback.
-- [ ] Define accessibility for timed experiences.
-- [ ] Define low-connectivity behavior.
+> **Stage continuity note:** The Stage 25 agent prompt defines **Business Model and Product Boundaries**, while this checklist previously named Stage 25 **Accessibility and Device Experience** and placed overlapping business/cost work at Stage 27. Stage 25 now covers both; decisions are documented in `app/25-business-model-and-product-boundaries.md`.
 
-**Done when:** Core exam preparation is usable without architecture later deciding whether accessibility matters.
+### Business model and product boundaries
+
+- [x] Confirm the private/free initial state.
+- [x] Define optional future free/paid principles without prematurely choosing a subscription model.
+- [x] Identify expensive AI capabilities that may require quotas/limits later.
+- [x] Define non-negotiable core coaching features that monetization must not cripple.
+- [x] Define future quota/fallback behavior without changing evidence truth.
+- [x] Preserve account/data portability and learner-data retention/deletion expectations across commercial states.
+- [x] Define product boundaries and explicitly deferred commercial features.
+
+### Accessibility and device experience
+
+- [x] Define launch platforms.
+- [x] Define phone-first vs tablet/desktop expectations.
+- [x] Define keyboard navigation expectations where relevant.
+- [x] Define screen-reader expectations.
+- [x] Define color/contrast requirements.
+- [x] Define text scaling.
+- [x] Define caption/transcript expectations.
+- [x] Define microphone-permission fallback.
+- [x] Define accessibility for timed experiences.
+- [x] Define low-connectivity behavior.
+
+**Done when:** Core exam preparation is accessible across the launch device model, and public monetization could be added without changing readiness truth or crippling pass-critical coaching.
 
 ---
 
