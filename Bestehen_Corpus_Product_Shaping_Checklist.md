@@ -87,24 +87,24 @@
 
 ## 4. Define Rights and Usage Metadata
 
-- [ ] Create a rights/usage classification separate from authenticity.
-- [ ] Track:
-  - [ ] public accessibility,
-  - [ ] known license,
-  - [ ] redistribution permission,
-  - [ ] derivative-use permission,
-  - [ ] attribution requirements,
-  - [ ] commercial-use restrictions,
-  - [ ] review status,
-  - [ ] source terms/notes.
-- [ ] Define operational statuses such as:
-  - [ ] reusable,
-  - [ ] analysis/reference only,
-  - [ ] unknown/review required,
-  - [ ] prohibited.
-- [ ] Define what downstream systems may do with each status.
-- [ ] Define takedown/removal behavior.
-- [ ] Decide what happens to already-derived metadata when a source is removed.
+- [x] Create a rights/usage classification separate from authenticity.
+- [x] Track:
+  - [x] public accessibility,
+  - [x] known license,
+  - [x] redistribution permission,
+  - [x] derivative-use permission,
+  - [x] attribution requirements,
+  - [x] commercial-use restrictions,
+  - [x] review status,
+  - [x] source terms/notes.
+- [x] Define operational statuses such as:
+  - [x] reusable,
+  - [x] analysis/reference only,
+  - [x] unknown/review required,
+  - [x] prohibited.
+- [x] Define what downstream systems may do with each status.
+- [x] Define takedown/removal behavior.
+- [x] Decide what happens to already-derived metadata when a source is removed.
 
 **Done when:** The system can learn from broad material without assuming that publicly accessible means freely redistributable.
 
