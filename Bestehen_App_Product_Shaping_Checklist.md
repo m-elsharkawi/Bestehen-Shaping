@@ -187,11 +187,11 @@
 - [x] Map each task to specific reading skills.
 - [x] Define vocabulary assistance.
 - [x] Define synonym-recognition training.
-- [ ] Define scanning vs detailed-comprehension practice.
-- [ ] Define distractor explanations.
-- [ ] Define timed and untimed modes.
-- [ ] Define repair after reading mistakes.
-- [ ] Define reference-material vs generated-content use.
+- [x] Define scanning vs detailed-comprehension practice.
+- [x] Define distractor explanations.
+- [x] Define timed and untimed modes.
+- [x] Define repair after reading mistakes.
+- [x] Define reference-material vs generated-content use.
 
 **Done when:** Reading develops both German comprehension and TELC solving strategy.
 
