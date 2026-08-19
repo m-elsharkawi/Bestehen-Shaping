@@ -31,28 +31,28 @@
 
 ## 2. Define the Source Strategy
 
-- [ ] Define source categories:
-  - [ ] official exam providers,
-  - [ ] established educational publishers,
-  - [ ] language schools and teachers,
-  - [ ] public repositories and archives,
-  - [ ] unofficial exam collections,
-  - [ ] forums/shared documents,
-  - [ ] individual exam-style exercises.
-- [ ] Define how sources are discovered for each category.
-- [ ] Decide which input formats are supported:
-  - [ ] HTML
-  - [ ] PDF
-  - [ ] DOC/DOCX
-  - [ ] images/scans
-  - [ ] audio
-  - [ ] video
-  - [ ] ZIP/archive files
-- [ ] Support both automated discovery/crawling and manual URL/file submission.
-- [ ] Define source revisit/freshness rules.
-- [ ] Define handling for mirrors and alternate URLs.
-- [ ] Define handling for dead or removed URLs.
-- [ ] Preserve source provenance permanently.
+- [x] Define source categories:
+  - [x] official exam providers,
+  - [x] established educational publishers,
+  - [x] language schools and teachers,
+  - [x] public repositories and archives,
+  - [x] unofficial exam collections,
+  - [x] forums/shared documents,
+  - [x] individual exam-style exercises.
+- [x] Define how sources are discovered for each category.
+- [x] Decide which input formats are supported:
+  - [x] HTML
+  - [x] PDF
+  - [x] DOC/DOCX
+  - [x] images/scans
+  - [x] audio
+  - [x] video
+  - [x] ZIP/archive files
+- [x] Support both automated discovery/crawling and manual URL/file submission.
+- [x] Define source revisit/freshness rules.
+- [x] Define handling for mirrors and alternate URLs.
+- [x] Define handling for dead or removed URLs.
+- [x] Preserve source provenance permanently.
 
 **Done when:** We can explain where content comes from, how it enters the system, and how its origin remains traceable.
 
