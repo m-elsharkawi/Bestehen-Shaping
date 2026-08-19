@@ -150,15 +150,15 @@
 - [x] Define topic taxonomy.
 - [x] Define grammar taxonomy.
 - [x] Define vocabulary/domain taxonomy.
-- [ ] Define reading skill taxonomy.
-- [ ] Define listening skill taxonomy.
-- [ ] Define writing competency taxonomy.
-- [ ] Define speaking competency taxonomy.
-- [ ] Define exam-strategy/reasoning-pattern taxonomy.
-- [ ] Define distractor-pattern taxonomy.
-- [ ] Define relationships between taxonomy nodes.
-- [ ] Decide what is curated vs AI-discovered.
-- [ ] Define taxonomy versioning.
+- [x] Define reading skill taxonomy.
+- [x] Define listening skill taxonomy.
+- [x] Define writing competency taxonomy.
+- [x] Define speaking competency taxonomy.
+- [x] Define exam-strategy/reasoning-pattern taxonomy.
+- [x] Define distractor-pattern taxonomy.
+- [x] Define relationships between taxonomy nodes.
+- [x] Decide what is curated vs AI-discovered.
+- [x] Define taxonomy versioning.
 
 **Done when:** Corpus items can connect to the same skill graph Bestehen / App will use for learner modeling.
 
