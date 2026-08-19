@@ -340,14 +340,14 @@
 
 ## 16. Define Mock Exams
 
-- [ ] Define full mocks.
-- [ ] Define section-only mocks.
-- [ ] Define mini-mocks.
-- [ ] Define exam-realistic timing.
-- [ ] Define pause/resume behavior.
-- [ ] Define listening playback restrictions.
-- [ ] Define speaking simulation.
-- [ ] Define scoring.
+- [x] Define full mocks.
+- [x] Define section-only mocks.
+- [x] Define mini-mocks.
+- [x] Define exam-realistic timing.
+- [x] Define pause/resume behavior.
+- [x] Define listening playback restrictions.
+- [x] Define speaking simulation.
+- [x] Define scoring.
 - [ ] Define post-exam analysis.
 - [ ] Feed mock mistakes into the learner model.
 - [ ] Define when the coach recommends another mock.
