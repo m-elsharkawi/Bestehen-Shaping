@@ -690,12 +690,12 @@
 
 ### Bestehen / App is fully shaped when:
 
-- [ ] An A1 learner can be described from first launch to exam booking without inventing new major product behavior.
-- [ ] Every major skill has a defined coaching experience.
-- [ ] Every mistake has a path into future coaching.
-- [ ] Readiness is defensible and respects TELC's pass constraints.
-- [ ] The coach can explain what to do today and why.
-- [ ] Corpus intelligence has a clear role without becoming the learner product.
-- [ ] Product success is measurable beyond engagement.
-- [ ] Recurring-cost assumptions are explicit and sustainable.
-- [ ] No major product decision needs to be invented by the architecture agent.
+- [x] An A1 learner can be described from first launch to exam booking without inventing new major product behavior.
+- [x] Every major skill has a defined coaching experience.
+- [x] Every mistake has a path into future coaching.
+- [x] Readiness is defensible and respects TELC's pass constraints.
+- [x] The coach can explain what to do today and why.
+- [x] Corpus intelligence has a clear role without becoming the learner product.
+- [x] Product success is measurable beyond engagement.
+- [x] Recurring-cost assumptions are explicit and sustainable.
+- [x] No major product decision needs to be invented by the architecture agent.
