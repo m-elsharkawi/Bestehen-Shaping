@@ -367,10 +367,10 @@
 - [x] Require recent performance.
 - [x] Require enough unassisted/timed evidence.
 - [x] Decide whether consistency across several mocks is required.
-- [ ] Define confidence language.
-- [ ] Define coaching when the learner is close but not ready.
-- [ ] Define final preparation once the exam is booked.
-- [ ] Define 21-day and 7-day preparation modes.
+- [x] Define confidence language.
+- [x] Define coaching when the learner is close but not ready.
+- [x] Define final preparation once the exam is booked.
+- [x] Define 21-day and 7-day preparation modes.
 
 **Done when:** “Book your exam” is earned from evidence, not motivational copy.
 
