@@ -249,12 +249,12 @@
 
 ## 11. Define Corpus Analytics
 
-- [ ] Define vocabulary-frequency analysis.
-- [ ] Define grammar-frequency analysis.
-- [ ] Define topic-frequency analysis.
-- [ ] Define task-type frequency.
-- [ ] Define skill-frequency analysis.
-- [ ] Define provider comparisons.
+- [x] Define vocabulary-frequency analysis.
+- [x] Define grammar-frequency analysis.
+- [x] Define topic-frequency analysis.
+- [x] Define task-type frequency.
+- [x] Define skill-frequency analysis.
+- [x] Define provider comparisons.
 - [ ] Define A2 → B1 progression analysis.
 - [ ] Define TELC-vs-generic-B1 comparisons.
 - [ ] Define distractor/reasoning-pattern analysis.
