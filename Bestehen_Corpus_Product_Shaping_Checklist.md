@@ -343,16 +343,16 @@
 
 ## 16. Establish the Initial Benchmark Corpus
 
-- [ ] Select a representative seed set across providers and source tiers.
-- [ ] Include both A2 and B1.
-- [ ] Include all major exam sections.
-- [ ] Include HTML, PDF, audio, and at least one imperfect unofficial source.
-- [ ] Manually annotate a benchmark subset.
-- [ ] Define target extraction accuracy.
-- [ ] Define target taxonomy accuracy.
-- [ ] Define target deduplication accuracy.
-- [ ] Define expected authenticity classification.
-- [ ] Define expected rights classification.
+- [x] Select a representative seed set across providers and source tiers.
+- [x] Include both A2 and B1.
+- [x] Include all major exam sections.
+- [x] Include HTML, PDF, audio, and at least one imperfect unofficial source.
+- [x] Manually annotate a benchmark subset.
+- [x] Define target extraction accuracy.
+- [x] Define target taxonomy accuracy.
+- [x] Define target deduplication accuracy.
+- [x] Define expected authenticity classification.
+- [x] Define expected rights classification.
 
 **Done when:** Architecture and implementation can later be tested against a concrete gold-standard dataset.
 
