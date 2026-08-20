@@ -328,14 +328,14 @@
 
 ## 15. Define Security and Abuse Boundaries
 
-- [ ] Confirm whether Corpus stores any learner/personal data.
-- [ ] Define safe handling of untrusted files.
-- [ ] Define URL/content sanitization.
-- [ ] Define domain blocking rules.
-- [ ] Define secret/access requirements.
-- [ ] Define permissions for internal tooling.
-- [ ] Define raw-file retention rules.
-- [ ] Define abuse handling for manually submitted sources.
+- [x] Confirm whether Corpus stores any learner/personal data.
+- [x] Define safe handling of untrusted files.
+- [x] Define URL/content sanitization.
+- [x] Define domain blocking rules.
+- [x] Define secret/access requirements.
+- [x] Define permissions for internal tooling.
+- [x] Define raw-file retention rules.
+- [x] Define abuse handling for manually submitted sources.
 
 **Done when:** Non-functional boundaries are clear before architecture begins.
 
