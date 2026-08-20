@@ -316,11 +316,11 @@
 - [x] Decide which steps require higher-quality models.
 - [x] Decide which steps should use deterministic/cheap processing.
 - [x] Define batching and caching principles.
-- [ ] Define retry/failure limits.
-- [ ] Define crawling etiquette and rate-limit principles.
-- [ ] Define raw-file/media storage expectations.
-- [ ] Set a target processing cost per 1,000 items.
-- [ ] Define where human review is worth the cost.
+- [x] Define retry/failure limits.
+- [x] Define crawling etiquette and rate-limit principles.
+- [x] Define raw-file/media storage expectations.
+- [x] Set a target processing cost per 1,000 items.
+- [x] Define where human review is worth the cost.
 
 **Done when:** The concept is economically viable at the desired corpus size.
 
