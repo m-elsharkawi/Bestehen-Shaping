@@ -360,18 +360,18 @@
 
 ## 17. Produce the Final Product Specification
 
-- [ ] Write the final Bestehen / Corpus PRD.
+- [x] Write the final Bestehen / Corpus PRD.
 - [x] Document the canonical data model conceptually.
 - [x] Document source tiers and confidence rules.
 - [x] Document rights/usage classifications.
 - [x] Document taxonomy and versioning.
-- [ ] Document ingestion and review states.
-- [ ] Document deduplication behavior.
-- [ ] Document Corpus → App responsibilities.
-- [ ] Document analytics outputs.
-- [ ] Document quality metrics.
-- [ ] Document explicitly deferred features.
-- [ ] Separate unresolved architecture questions from unresolved product questions.
+- [x] Document ingestion and review states.
+- [x] Document deduplication behavior.
+- [x] Document Corpus → App responsibilities.
+- [x] Document analytics outputs.
+- [x] Document quality metrics.
+- [x] Document explicitly deferred features.
+- [x] Separate unresolved architecture questions from unresolved product questions.
 
 ### Bestehen / Corpus is fully shaped when:
 
@@ -381,9 +381,10 @@
 - [x] We treat **usage rights independently from authenticity**.
 - [x] We know **how every exam becomes structured data**.
 - [x] We have a stable **exam/skill taxonomy**.
-- [ ] We know **how duplicates are neutralized**.
+- [x] We know **how duplicates are neutralized**.
 - [x] We know **how difficulty and TELC relevance are estimated**.
-- [ ] We know **what analytics the corpus must produce**.
-- [ ] We know **exactly what Bestehen / App consumes**.
+- [x] We know **what analytics the corpus must produce**.
+- [x] We know **exactly what Bestehen / App consumes**.
 - [ ] We have a **gold-standard benchmark dataset**.
-- [ ] No major product decision needs to be invented by the architecture agent.
+  - Deferred — implementation/bootstrap: Stage 16 fully defines the 16-slot seed, gold core, annotations, versioning, and acceptance gates, but the concrete `corpus-benchmark-1.0.0` source files and gold annotations have not yet been acquired/instantiated. See `corpus/17-bestehen-corpus-product-specification.md` §10.3.
+- [x] No major product decision needs to be invented by the architecture agent.
