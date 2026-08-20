@@ -361,10 +361,10 @@
 ## 17. Produce the Final Product Specification
 
 - [ ] Write the final Bestehen / Corpus PRD.
-- [ ] Document the canonical data model conceptually.
-- [ ] Document source tiers and confidence rules.
-- [ ] Document rights/usage classifications.
-- [ ] Document taxonomy and versioning.
+- [x] Document the canonical data model conceptually.
+- [x] Document source tiers and confidence rules.
+- [x] Document rights/usage classifications.
+- [x] Document taxonomy and versioning.
 - [ ] Document ingestion and review states.
 - [ ] Document deduplication behavior.
 - [ ] Document Corpus → App responsibilities.
@@ -375,14 +375,14 @@
 
 ### Bestehen / Corpus is fully shaped when:
 
-- [ ] We know **what to collect**.
-- [ ] We know **where to collect it from**.
-- [ ] We know **how to judge trustworthiness**.
-- [ ] We treat **usage rights independently from authenticity**.
-- [ ] We know **how every exam becomes structured data**.
-- [ ] We have a stable **exam/skill taxonomy**.
+- [x] We know **what to collect**.
+- [x] We know **where to collect it from**.
+- [x] We know **how to judge trustworthiness**.
+- [x] We treat **usage rights independently from authenticity**.
+- [x] We know **how every exam becomes structured data**.
+- [x] We have a stable **exam/skill taxonomy**.
 - [ ] We know **how duplicates are neutralized**.
-- [ ] We know **how difficulty and TELC relevance are estimated**.
+- [x] We know **how difficulty and TELC relevance are estimated**.
 - [ ] We know **what analytics the corpus must produce**.
 - [ ] We know **exactly what Bestehen / App consumes**.
 - [ ] We have a **gold-standard benchmark dataset**.
