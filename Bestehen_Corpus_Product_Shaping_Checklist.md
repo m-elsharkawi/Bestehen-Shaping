@@ -311,11 +311,11 @@
 
 ## 14. Define Cost, Scale, and Automation Principles
 
-- [ ] Estimate source/document/question volume targets.
-- [ ] Estimate AI processing needs by source type.
-- [ ] Decide which steps require higher-quality models.
-- [ ] Decide which steps should use deterministic/cheap processing.
-- [ ] Define batching and caching principles.
+- [x] Estimate source/document/question volume targets.
+- [x] Estimate AI processing needs by source type.
+- [x] Decide which steps require higher-quality models.
+- [x] Decide which steps should use deterministic/cheap processing.
+- [x] Define batching and caching principles.
 - [ ] Define retry/failure limits.
 - [ ] Define crawling etiquette and rate-limit principles.
 - [ ] Define raw-file/media storage expectations.
