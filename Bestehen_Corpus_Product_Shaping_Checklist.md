@@ -280,8 +280,8 @@
 - [x] Define how Corpus distinguishes A1-assisted, A2, A2/B1, and B1 use cases.
 - [x] Define how generated exercises remain grounded in corpus patterns without copying source material.
 - [x] Return provenance/attribution metadata where required.
-- [ ] Define versioning of the Corpus → App contract.
-- [ ] Define behavior when a source is reclassified or removed.
+- [x] Define versioning of the Corpus → App contract.
+- [x] Define behavior when a source is reclassified or removed.
 
 **Done when:** Bestehen / App can be designed against a stable conceptual interface.
 
