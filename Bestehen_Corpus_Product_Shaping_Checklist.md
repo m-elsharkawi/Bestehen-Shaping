@@ -289,21 +289,21 @@
 
 ## 13. Define Corpus Operations
 
-- [ ] Decide whether an internal operations dashboard is required.
-- [ ] Define views for:
-  - [ ] discovery queue,
-  - [ ] ingestion status,
-  - [ ] extraction failures,
-  - [ ] duplicate review,
-  - [ ] authenticity review,
-  - [ ] rights review,
-  - [ ] low-confidence items,
-  - [ ] taxonomy corrections.
-- [ ] Define manual-edit capabilities.
-- [ ] Define audit history.
-- [ ] Define source allow/block lists.
-- [ ] Define reprocessing controls.
-- [ ] Define corpus health metrics.
+- [x] Decide whether an internal operations dashboard is required.
+- [x] Define views for:
+  - [x] discovery queue,
+  - [x] ingestion status,
+  - [x] extraction failures,
+  - [x] duplicate review,
+  - [x] authenticity review,
+  - [x] rights review,
+  - [x] low-confidence items,
+  - [x] taxonomy corrections.
+- [x] Define manual-edit capabilities.
+- [x] Define audit history.
+- [x] Define source allow/block lists.
+- [x] Define reprocessing controls.
+- [x] Define corpus health metrics.
 
 **Done when:** The corpus can be maintained without direct database surgery.
 
