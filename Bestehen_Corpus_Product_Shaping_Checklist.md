@@ -268,18 +268,18 @@
 
 ## 12. Define the Contract with Bestehen / App
 
-- [ ] List every type of information the App needs from Corpus.
-- [ ] Separate:
-  - [ ] raw/reference content,
-  - [ ] structured metadata,
-  - [ ] aggregate statistics,
-  - [ ] skill relationships,
-  - [ ] exercise-generation patterns,
-  - [ ] difficulty/relevance signals.
-- [ ] Define how the App requests suitable exam patterns.
-- [ ] Define how Corpus distinguishes A1-assisted, A2, A2/B1, and B1 use cases.
-- [ ] Define how generated exercises remain grounded in corpus patterns without copying source material.
-- [ ] Return provenance/attribution metadata where required.
+- [x] List every type of information the App needs from Corpus.
+- [x] Separate:
+  - [x] raw/reference content,
+  - [x] structured metadata,
+  - [x] aggregate statistics,
+  - [x] skill relationships,
+  - [x] exercise-generation patterns,
+  - [x] difficulty/relevance signals.
+- [x] Define how the App requests suitable exam patterns.
+- [x] Define how Corpus distinguishes A1-assisted, A2, A2/B1, and B1 use cases.
+- [x] Define how generated exercises remain grounded in corpus patterns without copying source material.
+- [x] Return provenance/attribution metadata where required.
 - [ ] Define versioning of the Corpus → App contract.
 - [ ] Define behavior when a source is reclassified or removed.
 
