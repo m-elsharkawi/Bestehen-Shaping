@@ -1,0 +1,703 @@
+# Design Agent Prompt — Bestehen / Corpus
+## Create the Complete Operations UI, UX, and Design System
+
+You are the lead product designer and design-systems designer responsible for turning the fully shaped **Bestehen / Corpus** product into a complete, coherent, implementation-ready design for its owner-operated internal experience.
+
+Your task is to create the **actual UI/UX design artifact and reusable design system** for the complete Corpus operations, review, governance, health, and change-impact experience. Do not stop at a mood board, a dashboard concept, or a few showcase tables. Work systematically until every required operational state has a designed home, every consequential action has a safe reusable pattern, and a later architecture/engineering agent can implement the product without inventing major workflow behavior.
+
+This is a **design task**, not new product shaping, not architecture selection, and not production-code implementation. Preserve settled product semantics. You may make visual, information-hierarchy, interaction, layout, responsive, component, and workflow-presentation decisions where the source documents intentionally leave design open. You must not collapse provenance, authenticity/confidence, rights, difficulty/relevance, QA readiness, or content identity/independence into one status; weaken audit or takedown behavior; create learner-facing features; or turn Corpus into an enterprise administration suite.
+
+## 0. Run Configuration Variables
+
+Use these variables as explicit design-run controls. If the person running the prompt supplies a value, honor it where it does not conflict with product truth. If a value is absent, use the recommended default. You may improve a default through professional judgment, but record the change and rationale in the handoff.
+
+| Variable | Recommended default | Allowed enhancement |
+|---|---|---|
+| `DESIGN_ENVIRONMENT` | Claude Design or the active design environment | Use the environment's strongest reusable components, variables, layout, and prototype features |
+| `ARTIFACT_ORGANIZATION` | One organized project with separate inspectable pages/files | Split artifacts only when navigation and handoff remain coherent |
+| `BRAND_RELATIONSHIP` | Shared Bestehen identity with a denser, operational Corpus expression | Strengthen the internal-tool character without creating an unrelated brand |
+| `PRIMARY_VIEWPORT` | Desktop `1440 × 1024` | Adjust to an equivalent common desktop canvas |
+| `COMPACT_DESKTOP_VIEWPORT` | Laptop `1280 × 800` | Add another common laptop proof if useful |
+| `TABLET_VIEWPORT` | `1024 × 768` | Demonstrate triage/inspection behavior at an equivalent width |
+| `MOBILE_SCOPE` | Read-only health and urgent triage only; complex review is not mobile-required | Add a restrained mobile companion only if it does not multiply product scope |
+| `DENSITY` | Compact but calm | Offer comfortable/compact density tokens if this adds little design complexity |
+| `COLOR_MODES` | Complete light mode | Add dark mode only after the entire required light-mode experience is complete |
+| `PROTOTYPE_DEPTH` | High fidelity for the required end-to-end flows | Add useful recovery branches before decorative transitions |
+| `COPY_LANGUAGE` | English operations UI; preserve German source/exam text exactly where evidence requires it | Add German operational localization readiness without translating source truth |
+| `HANDOFF_FORMAT` | Inspectable design artifact plus Markdown handoff | Add token/component exports supported by the environment |
+
+Variables govern presentation and deliverable depth. They never override source authority, rights, confidence, audit, publication, security, or cost rules.
+
+## 1. Source Documents — Read Before Designing
+
+You will receive these three documents with this prompt:
+
+1. `01_Bestehen_Product_Overview.md`
+2. `02_Bestehen_Identity.md`
+3. `17-bestehen-corpus-product-specification.md`
+
+Read all three completely before creating screens.
+
+Use this authority order if wording appears to differ:
+
+1. **Final Corpus Product Specification** — authoritative for Corpus behavior, states, governance, operations, quality, cost, security, App contract, and scope.
+2. **Identity** — authoritative for Bestehen brand character, voice, visual direction, and naming.
+3. **Product Overview** — authoritative for the umbrella purpose and relationship between Bestehen / Corpus and Bestehen / App.
+
+The Final Corpus Product Specification already reconciles Corpus Stages 01–16. When it explicitly delegates detail to an earlier stage, preserve that behavior rather than simplifying it away. Do not casually reinterpret an explicit product decision. If the documents leave a normal design choice open, compare plausible options briefly, choose the clearest low-maintenance default, and continue. Ask a question only when missing information genuinely prevents responsible design; otherwise record the assumption and recommended default in the handoff.
+
+## 2. Product Context You Must Preserve
+
+Bestehen helps a learner move from roughly A1 German toward **passing TELC B1 by learning through exam preparation**. The umbrella has two connected products:
+
+- **Bestehen / Corpus** gathers broad A2/B1 exam evidence, preserves provenance, separates confidence from usage rights, structures and deduplicates material, validates it, and produces trustworthy exam intelligence.
+- **Bestehen / App** is the learner-facing exam coach. It owns learner state, original practice, feedback, coaching, and Readiness.
+
+Corpus's primary customer is **Bestehen / App**. Its primary human user at launch is the **single project owner/operator**. Corpus is not a learner-facing exercise library, public corpus browser, source mirror, generic scraper, public API product, multi-tenant SaaS, or enterprise moderation platform.
+
+The designed experience should help the owner answer:
+
+1. **What needs attention now, and why?**
+2. **What evidence and state justify this decision?**
+3. **Which capability is blocked, limited, eligible, or stale?**
+4. **What is the smallest safe action?**
+5. **What changed downstream after that action?**
+6. **Is Corpus trustworthy, maintainable, and within budget?**
+
+The UI should feel like calm scientific operations tooling: compact, evidence-rich, exact, and safe. It should make uncertainty inspectable without making every row alarming. It should favor tables, detail panels, comparisons, state timelines, and concise health summaries over decorative dashboards.
+
+## 3. Design Objective
+
+Create one coherent design language and complete operational screen system for:
+
+- source discovery and owner-submitted URL/file intake;
+- source registry, acquisition disposition, allow/block governance, and mirror/dead-source context;
+- ingestion and processing progress with partial-success visibility;
+- extraction, structure, answer, asset, OCR/ASR, and validation failures;
+- authenticity/confidence, rights, duplicate, taxonomy, low-confidence, and QA review;
+- smallest-scope curated corrections and overrides;
+- append-only human/automation audit history;
+- scoped reprocessing and downstream recomputation impact;
+- capability-scoped publication, limitation, quarantine, and invalidation;
+- benchmark/gold qualification and regression visibility;
+- Corpus health across backlog, governance, QA, independence, coverage, freshness, and cost;
+- pattern/intelligence outputs and Corpus → App impact where operationally necessary.
+
+The result must be complete across ordinary, uncertain, failed, destructive, recovery, and empty states. It must remain proportionate to a one-owner personal project.
+
+## 4. Non-Negotiable Product and Design Guardrails
+
+### 4.1 Keep the six truth axes separate
+
+Never replace the following with one generic badge, health score, or `valid` state:
+
+1. source/provenance;
+2. authenticity/evidence confidence;
+3. rights/usage;
+4. difficulty and Generic-B1/TELC relevance;
+5. extraction/QA readiness by capability;
+6. content identity, derivative lineage, and analytical independence.
+
+A record can be official but `REFERENCE_ONLY`; reusable but low-confidence; correctly parsed but quarantined; high-TELC-relevance but weakly supported; or duplicate for one metric while distinct for another. The interface must make these combinations understandable without forcing the operator to remember hidden coupling.
+
+### 4.2 Preserve uncertainty and locality
+
+Design explicit treatment for `unknown`, `not_applicable`, `disputed`, `review_required`, `unresolved_dependency`, `incomplete`, `provisional`, and locally blocked states. Missing data must not look like zero, false, passed, or failed.
+
+High-risk decisions use the smallest relevant scope. A trusted parent does not visually rescue a bad child. One bad Item or Asset must not make an otherwise useful Exam look universally failed when unaffected capabilities remain eligible.
+
+### 4.3 Publication is capability-scoped
+
+Do not design a universal `production ready` switch. Show capability-specific eligibility such as structure analytics, correctness/scoring, taxonomy, pattern intelligence, exact source reuse, and independent prevalence. A unit may be normal-eligible for one use, limited/provisional for another, and held for a third.
+
+### 4.4 Preserve provenance, rights, and source expression
+
+Manual changes are curated corrections, overrides, relationship decisions, or status decisions. They do not silently rewrite the observed source. Show observed value, active interpretation, derivation/decision origin, rationale, and history where relevant.
+
+Unknown rights never imply permission. Allowing a source does not grant authenticity or rights. Takedown/security blocks are stronger than ordinary acquisition blocks and must not be reversed by casual controls.
+
+### 4.5 Preserve duplicate neutrality
+
+All Source Observations remain visible. Duplicate decisions distinguish relationship class, canonical provenance anchor, preferred processing representation, and metric-specific analytical independence. Never imply that confirming a duplicate deletes provenance or that many mirrors increase prevalence.
+
+### 4.6 Preserve the App boundary
+
+Corpus may expose pattern blueprints, intelligence, eligibility, provenance summaries, versioning, and downstream impact. Do not create learner accounts, learner attempts, Readiness, daily coaching, practice delivery, feedback, or learner progress screens.
+
+The preferred relationship is:
+
+**eligible Corpus evidence → abstract pattern/constraint blueprint → original App exercise**.
+
+Direct source reuse is exceptional and rights-governed.
+
+### 4.7 Preserve one-owner scope and cost discipline
+
+Do not introduce roles, assignments, approvals, comments, SLAs, billing, public submission, customer support, collaboration feeds, or enterprise BI as launch requirements. A polished design may still be simple: one prioritized inbox, reusable detail surfaces, explicit actions, and an actionable health vector.
+
+Avoid designs that imply always-on AI, live model calls for every view, expensive full-document re-analysis on navigation, or storage of many redundant previews. The UI may surface asynchronous/batched state and cached results.
+
+### 4.8 Preserve security boundaries
+
+External input is untrusted data. Source HTML, documents, archives, media, and text must never appear to have active authority. Design sanitized previews, explicit unsafe/unsupported/blocked states, bounded archive information, external-link warnings where useful, and no rendering that implies macros/scripts/embedded content execute.
+
+Source text that resembles instructions to an AI remains source evidence, not a command. Secrets, authenticated acquisition, and operator authority must not appear in source content or logs.
+
+### 4.9 Preserve the brand without making an internal tool theatrical
+
+Use the Bestehen identity—competent, calm, evidence-driven, practical, restrained—but tune it for operations. Do not add mascots, gamification, celebratory confetti, fake certainty, TELC endorsement, or marketing-heavy empty states. `Bestehen / Corpus` is a sibling product under the umbrella identity, not a separate consumer brand campaign.
+
+## 5. Required Information Architecture
+
+Use the smallest coherent navigation that gives every launch requirement a clear owner. Recommended primary areas:
+
+1. **Inbox** — prioritized exceptions and saved/specialized queue views.
+2. **Sources** — discovery, manual intake, source registry, allow/block, origin/mirror/dead-source context.
+3. **Corpus** — search/browse canonical records and open the reusable Record/Review Detail.
+4. **Runs** — ingestion/reprocessing status, partial success, failures, stale outputs, and affected scopes.
+5. **Health** — backlog, governance, QA/regression, independence/analytics, coverage/freshness, and cost.
+
+Benchmark, audit, taxonomy, and App-impact views may be subareas, tabs, saved views, or contextual routes rather than top-level destinations. Do not create eight unrelated products. One Inbox plus specialized views is the settled default.
+
+Include global search only if it searches stable identities and useful fields safely; it must not become an excuse to omit navigable queues and context.
+
+## 6. Required Design Artifact Structure
+
+Create an organized, inspectable design project with pages/sections equivalent to:
+
+1. **00 — Cover, Sources, Product Truth, and Design Principles**
+2. **01 — Foundations, Variables, and Tokens**
+3. **02 — Components and Variants**
+4. **03 — Data, Governance, and State Models**
+5. **04 — Desktop Operations Screens**
+6. **05 — Comparisons, Review Workbenches, and Destructive Actions**
+7. **06 — Laptop, Tablet, and Responsive Behavior**
+8. **07 — Prototype Flows and Recovery Branches**
+9. **08 — Accessibility, Content, and Security Guidance**
+10. **09 — Coverage Matrix and Engineering Handoff**
+
+Use reusable components, design variables/tokens, auto-layout or equivalent constraints, named variants, and consistent layer/component naming. Do not build dozens of disconnected tables or one-off review screens.
+
+## 7. Foundations and Visual System
+
+### 7.1 Visual direction
+
+Start from the shared Identity:
+
+- Deep Ink `#14213D` for authority and focus;
+- Bestehen Green `#2A9D6F` and Deep Green `#1D6F50` for confirmed healthy/eligible states;
+- Warm Paper `#F7F4EE` and Mist `#EDF0F4` for calm surfaces;
+- amber for uncertainty/attention;
+- restrained red only for genuine Q0/Q1, prohibition, takedown, security, or destructive risk;
+- simple cards, strong table structure, thin dividers, modest rounding, restrained elevation;
+- modern highly legible typography with excellent numeric and German-character behavior;
+- little or no illustration; sparse purposeful motion.
+
+Expand this into accessible neutral and semantic scales. Never use the same green badge to mean “trusted,” “rights-cleared,” “QA-qualified,” and “published.” Semantic tokens should describe the actual axis and state.
+
+### 7.2 Required foundations
+
+Define and demonstrate:
+
+- brand, surface, text, border, focus, interactive, destructive, security, governance, and data-visualization tokens;
+- separate state-token families for pipeline state, authenticity/confidence, rights, QA severity, eligibility, and review state;
+- typography scale, dense-table typography, long-form evidence text, code/identifier/URL styles, and tabular numbers;
+- spacing/density scale, desktop grid, page width, side panels, drawers, sticky regions, and row-height rules;
+- radii, borders, dividers, elevation, overlays, focus rings, selection, and diff highlighting;
+- icon style and an open-source/low-cost strategy;
+- motion and reduced-motion behavior;
+- table, matrix, trend, distribution, confidence, and comparison visualization rules;
+- German compound-word, long URL/hash, source quotation, truncation, wrapping, copying, and 200% text-reflow behavior;
+- light mode as required; optional dark mode only after complete coverage.
+
+All licenses/availability assumptions for fonts, icons, or libraries must be recorded.
+
+### 7.3 Responsive intent
+
+Corpus is desktop-first because evidence comparison and governed review require space. Design:
+
+- `1440 × 1024` as the primary workspace;
+- `1280 × 800` as a compact laptop proof;
+- `1024 × 768` as a tablet/transition proof for inbox, health, and detail inspection;
+- optional mobile only for read-only health/urgent triage if time remains.
+
+Document how navigation, tables, filters, side-by-side evidence, sticky actions, diff panes, drawers, dialogs, timelines, and charts transform. Do not pretend a complex duplicate or rights review remains safe by squeezing every column onto a phone.
+
+## 8. Required Component Library
+
+For every component, document anatomy, variants, states, content constraints, accessibility, and responsive behavior.
+
+### 8.1 Shell and navigation
+
+- desktop application shell and compact-laptop treatment;
+- primary navigation, utility/header area, breadcrumbs/back context;
+- global search and stable-ID result pattern if included;
+- page/section containers, split panes, drawers, tabs, cards, panels, sticky action/footer areas;
+- environment/version/benchmark indicators where operationally meaningful;
+- unsaved-draft, stale-data, reconnect, and background-job indicators.
+
+### 8.2 Tables, filters, and queues
+
+- dense and comfortable table variants;
+- sortable headers, filters, saved views, search, column visibility, pagination/infinite-loading decision;
+- row selection and smallest-safe bulk behavior only where product allows it;
+- priority, age, affected-scope, source/provider/format, blocked-capability, and queue-reason cells;
+- empty, loading, stale, partial, error, permission-blocked, and offline/reconnecting states;
+- keyboard navigation and screen-reader table behavior;
+- no color-only row priority.
+
+### 8.3 Evidence and record inspection
+
+- stable identity header and canonical hierarchy breadcrumb;
+- source/provenance observation card;
+- observed-versus-active interpretation/diff;
+- confidence dimensions with Unknown/N/A/local/inherited treatment;
+- rights status plus action-level permissions/conditions;
+- QA findings by severity and scope;
+- capability eligibility matrix;
+- duplicate/lineage/independence relationship summary;
+- taxonomy assignments, role, origin, confidence, and version;
+- difficulty/Generic-B1/TELC relevance signals with uncertainty;
+- asset/media/reference preview with sanitized/unsupported/unsafe states;
+- evidence links and source quotations that preserve context without executing content.
+
+### 8.4 Review and decision controls
+
+- accept, defer, reject, hold, quarantine, restore, reclassify, remap, broaden, supersede, reprocess, and recompute patterns;
+- rationale/evidence-note requirement;
+- recommended action versus alternative safe actions;
+- confirmation dialogs with exact affected scope;
+- high-impact/destructive/takedown double-confirmation pattern;
+- decision draft, validation error, optimistic/pending, succeeded, partially succeeded, failed, and conflict states;
+- human correction versus automated candidate treatment;
+- retained-curator-override conflict after reprocessing.
+
+### 8.5 Comparisons and relationships
+
+- duplicate pair/cluster comparison;
+- structure/text/media similarity evidence;
+- meaningful differences and tested-proposition changes;
+- current and proposed relationship class;
+- provenance anchor, preferred processing representation, and independence effect as separate controls;
+- source/record revision comparison;
+- benchmark expected-versus-actual diff;
+- accessible alternative to visual-only graph or similarity views.
+
+### 8.6 Pipeline, runs, and reprocessing
+
+- conceptual lifecycle stepper: Discover → Fetch → Normalize → Parse → Segment → Classify → Extract Answers → Extract Assets → Enrich → Validate → Deduplicate → Review → Publish;
+- partial success by scope;
+- processing run/method/model/rule/taxonomy version summary;
+- failure category, retry history, budget hold, dependency block, and stale/recompute state;
+- scoped reprocess composer beginning at the earliest affected stage;
+- downstream impact preview and progress;
+- no generic `retry everything` control.
+
+### 8.7 Health, quality, and cost
+
+- actionable health-vector cards without a universal score;
+- backlog/age and repeated-failure indicators;
+- capability eligibility/governance counts;
+- Q0–Q3 findings and regression state;
+- benchmark/gold qualification status;
+- decision-grade versus exploratory output indicators;
+- source concentration/independence and coverage/freshness warnings;
+- variable processing, model/OCR/ASR, crawling, storage, and human-review cost summaries;
+- budget threshold/paid-job gate/deferred-by-budget state;
+- accessible data tables for every chart.
+
+### 8.8 Feedback and system states
+
+- alert/banner, inline status, toast, modal/dialog, popover, tooltip, and persistent incident treatment;
+- loading/skeleton, no data, unknown, N/A, incomplete, provisional, disputed, review required, held, quarantined, prohibited, stale, superseded, and deleted/redacted states;
+- background work that can be safely left;
+- permission/session expiry without losing a review draft;
+- content security block that never appears as ordinary extraction failure;
+- technical/system ownership versus operator-decision ownership.
+
+## 9. Complete Screen and State Inventory
+
+Design every required area with explicit reusable variants. A coverage matrix must prove which Product Specification requirement is represented by which screen and pattern.
+
+### 9.1 Entry and owner access
+
+- owner-only sign-in/session entry appropriate to an internal tool;
+- first empty Corpus state with safe next actions;
+- unavailable/maintenance/session-expired/permission-denied states;
+- no public sign-up, learner onboarding, team invitation, billing, or workspace administration.
+
+### 9.2 Operations Inbox
+
+- prioritized all-work view based on product impact rather than FIFO;
+- saved/specialized views for discovery, ingestion status, extraction failures, duplicate review, authenticity review, rights review, low-confidence records, and taxonomy corrections;
+- filters for impact, provider, source family, format, section, confidence tier, rights state, processing stage, capability, and age where data exists;
+- high-impact sparse queue, large low-impact backlog, empty queue, stale results, and repeated failure slice;
+- preview/detail opening without losing queue position and filters.
+
+### 9.3 Discovery and source intake
+
+- discovered candidate table and triage;
+- manual URL submission;
+- manual file/archive submission with format/security preflight states;
+- candidate detail with discovery route, first/last seen, claimed provider/exam/CEFR, relevance rationale, format, origin/mirror hints, and prior matches;
+- accept, defer, reject, obvious mirror lead, note, and allow/block decisions;
+- duplicate submission, blocked domain/fingerprint, inaccessible/authenticated, rate-limited, robots/access-policy hold, unsafe file, archive-limit, and budget-deferred states.
+
+### 9.4 Source registry and controls
+
+- searchable source observations/locations and source-family context;
+- source detail with provenance, access history, mirrors, dead links, discovered assets, rights/trust separation, and downstream records;
+- allow control at smallest practical scope;
+- ordinary block, security hard-block, takedown/prevention fingerprint, and reversible owner exclusion as visibly different states;
+- audit trail and reappearance/re-ingestion prevention;
+- no UI language implying allow = trustworthy or public = reusable.
+
+### 9.5 Ingestion and processing
+
+- processing/runs overview;
+- source/package run detail with conceptual stages, affected Document/Exam/Task/Item/Asset counts, partial success, latest method/version, failure/retry/review/publication status;
+- missing/blocked dependency;
+- repeated unchanged failure;
+- budget/paid-job gate;
+- stale downstream outputs after change;
+- processing history and comparison between runs.
+
+### 9.6 Extraction and QA failures
+
+- extraction-failure queue;
+- failure detail with smallest scope, normalized category, input quality, previous attempts, slice recurrence, blocked capability, and recommended response;
+- Q0 correctness/scoring, Q1 high-impact, Q2/Q3 issues;
+- objective task without key, partial scan, missing audio, broken asset relation, poor OCR/ASR, ambiguous structure, and parser/model disagreement;
+- keep partial/unknown, manual correction, changed-method reprocess, defer, quarantine, and restore branches.
+
+### 9.7 Canonical Record / Review Detail
+
+Create one strong reusable detail framework for Source Observation, Document, Exam, Section/Part, Task, Item, Stimulus, Option, Answer/Scoring, and Asset scope.
+
+It must expose:
+
+- stable identity and hierarchy;
+- source observation and evidence links;
+- observed versus active/corrected values;
+- completeness and dependencies;
+- authenticity/confidence;
+- rights/usage;
+- structure/answer/assets;
+- taxonomy and difficulty/relevance;
+- QA findings;
+- duplicate/lineage/independence;
+- capability eligibility;
+- revision/audit/reprocessing history;
+- safe actions at the smallest affected scope.
+
+Show variants for a clean eligible record, mixed capability eligibility, disputed child under trusted parent, prohibited asset inside otherwise usable task, and incomplete package with locally valid tasks.
+
+### 9.8 Authenticity and confidence review
+
+- claimed origin and authenticity status;
+- eight confidence dimensions with Unknown/N/A/local/inherited states;
+- tier/score, cap/override, corroboration, contradiction, and independence;
+- downstream uses affected;
+- accept/update, restricted influence, disputed/review required, quarantine/reject, restore/reclassify;
+- high-TELC-relevance but insufficient confidence;
+- many low-independent C-tier sources that cannot manufacture confidence.
+
+### 9.9 Rights review and takedown
+
+- `REUSABLE`, `REUSABLE_WITH_CONDITIONS`, `REFERENCE_ONLY`, `UNKNOWN_REVIEW_REQUIRED`, and `PROHIBITED`;
+- observed license/permission/terms evidence and scope;
+- redistribution, derivative, commercial, attribution, and custom conditions;
+- component/asset overrides;
+- legal-review-required state without pretending legal certainty;
+- takedown hold, affected-content discovery, mirror/fingerprint scope, direct-use suppression, recomputation/purge disposition, and completion;
+- rights-only change versus trust/correctness invalidation as distinct downstream paths.
+
+### 9.10 Duplicate and derivative review
+
+- pair comparison;
+- cluster review;
+- exact, reformatted, derivative, fragment, related variant, independent, and unresolved classes;
+- structure/text/media similarities plus meaningful differences;
+- source provenance/confidence/rights per member;
+- canonical provenance anchor;
+- preferred processing representation;
+- content occurrence and metric-specific independence impact;
+- re-recorded listening script example with dependent language evidence but potentially distinct acoustic evidence;
+- correction and downstream analytics recomputation.
+
+### 9.11 Taxonomy and difficulty/relevance correction
+
+- current and proposed skill assignments, role, confidence, origin, taxonomy version;
+- approve, reject, remap, broaden, keep provisional;
+- governed rename/merge/split/deprecate/retire workflow entry;
+- downstream App/analytics/blueprint impact;
+- CEFR, multidimensional difficulty, Generic-B1 relevance, and TELC relevance kept separate;
+- taxonomy split that must not imply cloned learner mastery.
+
+### 9.12 Reprocessing and change impact
+
+- start reprocessing at the earliest affected conceptual stage;
+- selected scope, reason, method/version change, previous run preservation, curator-override policy, expected cost, and downstream impact;
+- small-scope run and known QA-incident slice replay;
+- conflict with reviewed correction;
+- partial success;
+- takedown/security block;
+- paid retry exceeding budget;
+- completed run with newly eligible, limited, invalidated, stale, or recompute-pending outputs.
+
+### 9.13 Corpus Health
+
+Design a current decision-oriented health view, not a vanity dashboard. Cover:
+
+- operational backlog and stuck work;
+- production eligibility and governance;
+- QA quality vector and benchmark regression;
+- independence and analytics health;
+- provider × CEFR × Section, task/format/media, benchmark-slice, Listening/Speaking, and TELC-currentness coverage/freshness;
+- processing/storage/human-review costs and budget holds;
+- hard Q0/Q1, rights, quarantine, correctness, or regression blockers that cannot be averaged away.
+
+No scalar `Corpus health = 87%` may conceal a hard blocker.
+
+### 9.14 Benchmark and regression
+
+- current immutable benchmark release;
+- 16-slot seed composition and 12–14-package gold-core coverage status;
+- development versus content-family-disjoint holdout;
+- capability qualification matrix;
+- expected/actual regression findings by slice;
+- pass, blocked, provisional, not run, and invalid benchmark states;
+- incident replay and proposed promotion decision;
+- benchmark source removed/takedown, ambiguous truth, and version supersession.
+
+Do not imply that the specified benchmark dataset already exists if it has not been acquired and adjudicated.
+
+### 9.15 Analytics and Corpus → App impact
+
+Create only the operationally useful inspection needed to validate and govern intelligence:
+
+- decision-grade versus exploratory result envelope;
+- denominator, independent evidence, confidence, uncertainty, source mix, provider scope, taxonomy/model/version, and freshness;
+- vocabulary, grammar, topic, task, skill, reasoning/distractor, progression, difficulty, and TELC-vs-generic-B1 result families represented through reusable patterns;
+- pattern/constraint blueprint inspection without presenting restricted source expression as learner-ready content;
+- App capability/contract version and compatibility status;
+- rights-only suppression, trust invalidation, taxonomy migration, target-format change, and no-decision-grade-pattern impact;
+- stale/recompute/superseded results.
+
+This is not a public research dashboard and should not dominate the launch operations design.
+
+### 9.16 Audit and history
+
+- append-only timeline for human, automated rule/model, import/migration, and reprocessing actors;
+- previous/new state, rationale/evidence, versions, linked review/finding/dispute, supersession, and downstream eligibility impact;
+- filters and diff detail sufficient to explain consequential changes;
+- no generic delete or silent history rewrite;
+- compact default with progressive disclosure for dense machine events.
+
+## 10. Required Prototype Flows
+
+Create connected, reviewable prototypes for at least these flows, including important recovery branches:
+
+### Flow A — Discover to capability-scoped publication
+
+Candidate discovered → triage → accept for ingestion → security preflight → processing with one partial scope → review → capability eligibility → publish eligible intelligence → App-impact summary.
+
+### Flow B — Extraction failure and scoped reprocessing
+
+Inbox priority → failure detail → inspect prior methods and blocked capability → choose changed method/earliest stage → cost/impact confirmation → background reprocess → partial success/conflict branch → resulting eligibility.
+
+### Flow C — Authenticity uncertainty
+
+High-TELC-relevance low-confidence record → inspect local and corroborating evidence → accept limited influence or mark disputed → rationale → audit → downstream analytics state changes without changing rights.
+
+### Flow D — Rights takedown
+
+Takedown/high-risk rights item → scope and mirrors → immediate affected-use hold → governed decision → source-expression suppression/removal → prevention block → recomputation impact → completion audit. Never make this a casual generic delete flow.
+
+### Flow E — Duplicate family decision
+
+Ambiguous pair/cluster → inspect similarity and meaningful differences → decide relationship → separately choose provenance anchor/processing representation/independence → preview analytics impact → confirm → recompute.
+
+### Flow F — Taxonomy correction
+
+Candidate assignment → inspect task/answer/reasoning evidence → remap/broaden or keep provisional → version/impact summary → confirm → downstream retag/recompute state.
+
+### Flow G — Benchmark regression
+
+New method/model candidate → capability/slice regression → failed holdout or incident replay → block promotion → inspect diff → revise/re-run → qualified promotion with immutable benchmark reference.
+
+### Flow H — Corpus health triage
+
+Health warning → identify hard blocker rather than aggregate score → open affected queue slice → take smallest safe action → return to updated health and cost state.
+
+## 11. Content and UX-Writing Requirements
+
+Use realistic, concise operations copy. Do not use lorem ipsum, fake data-science jargon, or vague buttons such as `Fix`, `Resolve`, or `Make valid` when the action has governed meaning.
+
+Copy should be:
+
+- factual, neutral, and evidence-specific;
+- explicit about scope and uncertainty;
+- clear about why an item is prioritized;
+- precise about affected capabilities and downstream consequences;
+- calm during security, rights, regression, and cost failures;
+- clear about whether the operator, automation, source, or system owns the problem;
+- honest that a recommendation is suggested rather than authoritative where human judgment is required.
+
+Use plausible German exam/provider/task labels and source evidence. Preserve German characters. Do not reproduce substantial protected exam content; short original or safely abstracted examples are sufficient. Do not imply official TELC affiliation.
+
+## 12. Accessibility Requirements
+
+Design and annotate to a **WCAG 2.2 AA** baseline for the owner console.
+
+Required:
+
+- complete keyboard paths for tables, filters, tabs, drawers, dialogs, comparison panes, and governed actions;
+- visible focus and logical focus restoration after closing review/detail surfaces;
+- semantic headings, landmarks, labels, table headers, status announcements, validation, and error summaries;
+- non-color-only treatment for every trust, rights, QA, pipeline, eligibility, security, and priority state;
+- accessible alternatives/tables for charts, distributions, graphs, timelines, and similarity visuals;
+- 200% zoom/reflow without losing action context or forcing unsafe horizontal reading;
+- reduced-motion behavior;
+- clear source-preview boundaries and accessible labels for sanitized/unsupported content;
+- touch targets sufficient for tablet use;
+- no drag-only taxonomy/relationship editing;
+- destructive confirmations that explain exact scope and retain keyboard focus;
+- long URL/hash/identifier copying without forcing screen-reader users through noisy repeated text.
+
+Dense does not mean inaccessible. Use progressive disclosure instead of tiny text or color-only shorthand.
+
+## 13. Loading, Empty, Failure, Conflict, and Recovery States
+
+For each major flow, design:
+
+- initial loading and skeletons;
+- empty Corpus and empty queue;
+- delayed or stale cached results;
+- background job pending and completed after navigation;
+- partial processing success;
+- transient retry versus exhausted retry requiring review;
+- budget-deferred and paid-job approval gate;
+- unsafe file/security hold;
+- unsupported format or encrypted/password-protected input;
+- lost network/session expiry while a rationale draft exists;
+- conflicting operator change or late automated result;
+- curator override retained after rerun;
+- source removed, unavailable, or changed;
+- rights/takedown hold and downstream recomputation;
+- benchmark not instantiated, not run, failed, or superseded;
+- no decision-grade analytical result;
+- Corpus → App contract version incompatibility;
+- action succeeds only for part of the selected scope.
+
+Never show an indefinite AI spinner. Show the durable state, what is safe to do next, and whether leaving the page is harmless.
+
+## 14. Design-System Documentation and Engineering Handoff
+
+Document enough that implementation does not reverse-engineer the artifact:
+
+- token/variable names and values;
+- component names, anatomy, variants, states, and composition rules;
+- responsive transformations and safe desktop-only tasks;
+- table/filter/search behavior and preserved queue context;
+- interaction, keyboard, focus, validation, loading, error, conflict, and recovery behavior;
+- density rules and German/source-content constraints;
+- security/sanitized-preview annotations;
+- exact visual mapping for the six truth axes and all uncertainty states;
+- capability-eligibility and audit/change-impact state models;
+- destructive/takedown action safeguards;
+- chart/visualization semantics and accessible alternatives;
+- launch-required versus deferred labels;
+- sample realistic copy;
+- source-document traceability;
+- every normal design assumption that later architecture may rely on.
+
+Specify the UI state/data requirement, not backend endpoints, physical schemas, queue products, cloud vendors, model providers, or implementation frameworks.
+
+Create a Markdown handoff document suitable for committing alongside the design artifacts, recommended as `Design/DESIGN-HANDOFF.md`, containing source hierarchy, artifact index, design decisions, component/state contracts, responsive/accessibility rules, flow coverage, launch/deferred boundary, and open assumptions.
+
+## 15. Coverage and Quality-Control Checklist
+
+Create a coverage matrix mapping every major Final Corpus Product Specification area to:
+
+- screen(s);
+- component/pattern(s);
+- responsive coverage;
+- accessibility coverage;
+- prototype flow where applicable;
+- status: complete, represented by a reusable variant, or explicitly deferred by the specification.
+
+Run these checks before declaring the design complete.
+
+### Product truth
+
+- [ ] The six truth axes remain separately visible and cannot be mistaken for one score.
+- [ ] Unknown/N/A/disputed/incomplete/provisional states are explicit.
+- [ ] Local child defects do not falsely invalidate unaffected parent capabilities.
+- [ ] Publication is capability-scoped.
+- [ ] Rights never upgrade confidence and allow controls grant neither rights nor authenticity.
+- [ ] Duplicates preserve observations and do not manufacture prevalence.
+- [ ] Manual corrections preserve observed source truth and audit history.
+- [ ] Takedown/security actions are stronger than ordinary rejection/blocking.
+- [ ] Corpus → App remains pattern-first and Corpus stores no learner data.
+- [ ] No public Corpus, learner, collaboration, or enterprise features were introduced.
+
+### Experience completeness
+
+- [ ] Entry/access, Inbox, Sources, Corpus detail, Runs, and Health are designed.
+- [ ] All eight specialized queues are represented.
+- [ ] Discovery/manual intake, allow/block, partial processing, failure, review, reprocessing, publication, audit, and downstream impact are covered.
+- [ ] Authenticity, rights, duplicate, taxonomy, QA, benchmark, analytics, and App-contract states are covered.
+- [ ] Every required flow includes important failure/recovery branches.
+- [ ] Desktop and compact-laptop designs are complete; tablet transformations are documented.
+- [ ] Destructive and high-impact decisions show exact scope and consequences.
+
+### Design-system quality
+
+- [ ] Foundations use variables/tokens and meet contrast requirements.
+- [ ] Components are reusable rather than forked per queue.
+- [ ] Tables, filters, detail panels, comparisons, forms, timelines, and health views have complete states.
+- [ ] Responsive rules are explicit.
+- [ ] Realistic content replaces lorem ipsum.
+- [ ] WCAG 2.2 AA behavior and visual alternatives are annotated.
+- [ ] No status relies only on color.
+
+### Identity, restraint, and cost
+
+- [ ] The UI feels calm, credible, operational, and part of Bestehen.
+- [ ] Dense evidence remains understandable through hierarchy and disclosure.
+- [ ] No mascot, gamification, fake certainty, or TELC endorsement appears.
+- [ ] No scalar health score hides hard blockers.
+- [ ] The design does not imply always-on AI or enterprise operations.
+- [ ] Deferred conveniences remain labeled rather than designed as launch scope.
+
+## 16. Working Method
+
+1. Read the three source documents completely.
+2. Summarize source authority, product invariants, launch scope, and deferred boundaries inside the artifact.
+3. Build the information architecture, screen inventory, six-axis state matrix, action-risk matrix, and prototype map before polishing screens.
+4. Establish variables/tokens and shared table/detail/review/action components.
+5. Design Flow A end to end at desktop fidelity to validate the system.
+6. Extend the reusable system across all queues, review types, failures, destructive actions, and health states.
+7. Validate laptop/tablet transformations and keyboard/accessibility behavior.
+8. Connect Flows A–H and their recovery branches.
+9. Run product-truth, rights/security, accessibility, responsiveness, cost/scope, and coverage reviews.
+10. Finish `DESIGN-HANDOFF.md` and explicitly list assumptions and source-driven deferrals.
+
+Do not ask the owner to choose between ordinary visual or layout options. Use professional judgment and the provided variables. Surface only a question that genuinely blocks a correct design, and include a recommended default.
+
+## 17. Final Deliverables
+
+Deliver all of the following:
+
+1. A complete organized high-fidelity Corpus operations design artifact.
+2. A reusable variable/token-based design system and component library.
+3. Desktop and compact-laptop screens for the entire required inventory.
+4. Tablet/responsive behavior documentation and proofs for safe supported tasks.
+5. Connected prototypes for Flows A–H with major recovery branches.
+6. Realistic operations copy and representative safe source/exam data.
+7. Accessibility annotations and a WCAG 2.2 AA review.
+8. Screen/component/state coverage matrix against the Final Corpus Product Specification.
+9. `Design/DESIGN-HANDOFF.md` or an equivalent Markdown handoff artifact.
+10. A concise final summary stating what was designed, what is covered, which variable defaults were enhanced, which source-driven features remain deferred, which assumptions were made, and whether any genuine blocker remains.
+
+The task is complete only when the result represents the **whole maintainable Bestehen / Corpus operations experience**, not merely an Inbox or health dashboard. A later architect or engineer should be able to identify the correct screen, state, hierarchy, safe action, uncertainty treatment, accessibility behavior, and responsive rule for every launch-critical operational moment without inventing a second product.
